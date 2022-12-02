@@ -2,7 +2,7 @@ name: "my-website"
 output_dir: '.'
 
 navbar:
-  title: "My Website"
+  title: "Data-driven Economics"
   left:
     - text: "Home"
       href: index.html
