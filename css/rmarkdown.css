@@ -88,10 +88,10 @@ p {
 
 .band .imageFour {
   position: absolute;
-  width: 450px;
+  width: 340px;
   height: auto;
   right: 50px;
-  bottom: 10px;
+  bottom: 90px;
   z-index:1;
 }
 

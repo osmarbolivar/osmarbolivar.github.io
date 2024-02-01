@@ -2,14 +2,16 @@
 title: "Education in Bolivia: Striving for Equitable Access and Quality"
 output: 
   html_document:
-    toc: true
-    toc_float: true
-    toc_depth: 3 
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html] 
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+# Education in Bolivia: Striving for Equitable Access and Quality
 
 Education in Bolivia has been a subject of both triumphs and challenges, mirroring the country's efforts to bridge socio-economic gaps and promote equal opportunities for its citizens. As a nation rich in cultural diversity and history, Bolivia recognizes the importance of education as a catalyst for societal progress and personal growth. Despite its endeavors, the education system grapples with notable strengths and weaknesses, which have profound implications for its efficiency and accuracy in resource allocation.
 
