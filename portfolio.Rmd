@@ -22,8 +22,8 @@ output:
         <div class="galleryItemDescription">How community-level poverty evolved between 2012 and 2022.</div>
       </div>
       <div class="galleryItem">
-        <a href="https://github.com/svmiller/svm-r-markdown-templates/blob/master/article-example/svm-rmarkdown-article-example.pdf"><img class="galleryItemImage" src="images/multipliers.png"/></a>
-        <a href="https://github.com/svmiller/svm-r-markdown-templates/blob/master/article-example/svm-rmarkdown-article-example.pdf" class="galleryItemLabel">Growth-and-employment Enhancing Activities</a>
+        <a href="R_multipliers.html"><img class="galleryItemImage" src="images/multipliers.png"/></a>
+        <a href="R_multipliers.html" class="galleryItemLabel">Growth-and-employment Enhancing Activities</a>
         <div class="galleryItemDescription">How can we prioritize economic activities to foster growth and job creation, while making the most of limited resources?.</div>
       </div>
       <div class="galleryItem">

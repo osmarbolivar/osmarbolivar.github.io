@@ -1,0 +1,80 @@
+---
+title: "Growth-and-employment Enhancing Activities"
+output:
+  html_document:
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Growth-and-employment Enhancing Activities
+
+In the dynamic landscape of Bolivia's economy, a profound question emerges: ***How can we prioritize economic activities to foster growth and job creation, while making the most of limited resources?*** This question lies at the heart of a strategic endeavor aimed at invigorating the Bolivian economy. I'll explore the multi-faceted world of multiplier effects and their profound impact on key economic variables.
+
+For a more comprehensive insight into the methodology and detailed breakdown of estimates, please refer to Bolivar (2022).[^1]
+
+## Navigating Economic Prioritization
+
+Resource constraints demand precision when allocating funds, and cost-effective strategies are essential to steer Bolivia's economic course. At the core of this pursuit lies the vital inquiry of which economic activities merit prioritization for driving economic growth and generating employment opportunities. To answer this question, I delve into the realm of multiplier effects, focusing on critical variables: Gross Value of Production (GVP), Value Added (VA), and Employment.
+
+This empirical analysis serves two pivotal purposes:
+
+1.  To pinpoint the economic activities that exert the most substantial influence on overall economic dynamism and employment levels.
+2.  To guide the judicious allocation of fiscal resources, thus increasing the likelihood of achieving cost-effective public interventions. Achieving this goal involves boosting the most dynamic sectors, thereby amplifying the intervention effects through the intrinsic multiplier effect within these targeted economic activities.
+
+## Unpacking the Multiplier Effects
+
+In this journey of economic exploration, the estimations rely on Type II multipliers sourced from Bolivar (2022). These multipliers are essential as they quantify the ripple effect of GVP, value added, and employment within the framework of economic activities outlined in Bolivia's national accounts. The intricate Input-Output model acts as the guiding compass in this endeavor.
+
+Type II multipliers encapsulate three key effects:
+
+1.  **The Direct Effect**: This signifies the immediate impact on an activity when there's increased demand for the products it produces.
+2.  **The Indirect Effect**: This characterizes the subsequent changes in all other activities due to the intermediate consumption of products from a specific activity.
+3.  **The Induced Effect**: This effect comes into play when households expand their consumption in response to increased incomes, setting off further alterations at the aggregate level.
+
+
+<div style="margin-bottom: 20px;"></div>
+```{=tex}
+\begin{equation}
+    \mbox{ Type II multipliers } = \mbox{ Direct Effect } + \mbox{ Indirect Effect } + \mbox{ Induced Effect }
+\end{equation}
+```
+<div style="margin-bottom: 20px;"></div>
+
+What sets these multipliers apart is their adjustment. They're fine-tuned to unveil which activities are the most dynamic in terms of production and employment, based on the production and consumption of only domestic products.
+
+## Impressive Insights: Multiplier Effects on GVP
+
+Turning our attention to Gross Value of Production (GVP), Figure 1 offers valuable insights. Here, we discover that the services and food industry activities have the most substantial multiplier effects on aggregate production of domestic origin. In fact, the top five activities that shine include livestock products, meat, milling, dairy, and hotels and restaurants. For every Bs 1 increase in demand for their products, the value of national production (GVP) swells by around Bs 3.4.
+
+The secret behind this remarkable performance lies in the substantial indirect effects these activities generate, which even surpass the direct effect. Furthermore, the induced effects are of great magnitude due to these sectors' labor-intensiveness, where more resources are directed towards worker remuneration. Additionally, a larger proportion of resources becomes available for consumption, all thanks to the relatively high Marginal Propensity to Consume (MPC) in these activities.
+
+In stark contrast, extractive activities showcase a less impressive multiplier effect on global production. For instance, a Bs 1 increase in the demand for products from the oil and gas sector translates to a mere Bs 1.6 expansion in Bolivia's gross output. This is due to their weak interrelationship with other economic activities in intermediate consumption and a reduced induced effect.
+
+![FIGURE 1. GVP Multipliers by activity](Files_multipliers/multip_gvp.png)
+<div style="margin-bottom: 30px;"></div>
+
+## Amplifying Value Added: Multiplier Effects on VA
+
+Shifting our focus to Value Added (VA), Figure 2 paints a compelling picture. Most economic activities with above-average multiplier effects are found within the realm of services. By stimulating demand for specific service activities, we can achieve greater dynamism in value added, which is closely related to GDP.
+
+Leading the pack in generating high returns in national value added are education and health services, general government, building construction (spanning residential, commercial, industrial buildings, hospitals, schools, hotels, and more), along with forestry and timber activities. These activities exhibit relatively high direct effects, coupled with substantial induced effects that even outshine the direct impact. Their cost structure heavily relies on labor, making them labor-intensive and well-paid sectors.  
+
+![FIGURE 2. VA Multipliers by activity](Files_multipliers/multip_va.png)
+<div style="margin-bottom: 30px;"></div>
+
+## Job Creation Dynamo: Multiplier Effects on Employment
+
+Finally, let's explore the multiplier effects on employment. On average, an increase of Bs 1 million in demand translates to the creation of 51 new jobs in Bolivia. However, agricultural activities stand out, producing multiplier effects that are 1.8 to 2.7 times the average. The majority of these new jobs are direct, further highlighting the significance of the agricultural sector. Additionally, industries related to food, education, health, and hotels and restaurants have a profound impact on job creation.
+
+![FIGURE 3. Employment Multipliers by activity](Files_multipliers/multip_employment.png)
+<div style="margin-bottom: 30px;"></div>  
+
+In closing, Bolivia's economic landscape holds immense potential. Understanding and harnessing the power of multiplier effects in different economic activities is the key to unlocking this potential. These insights not only aid in making informed decisions but also play a crucial role in shaping the future of Bolivia's economy, paving the way for growth and prosperity.
+
+
+[^1]: Bolivar, O. (2022).[***"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"***](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/multiplicadores.pdf). Cuadernos de Investigación Económica Boliviana, 5(2): 7-64.

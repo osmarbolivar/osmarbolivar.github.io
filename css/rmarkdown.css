@@ -1,9 +1,10 @@
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica Neue, Arial, Arial;
   background-color:#fff;
 
   font-weight: normal;
   color: #404040;
+  font-size: 16px;
 }
 
 html, body, .footerPushDown {
@@ -613,17 +614,23 @@ table.table td a:only-child:active {
 /* offset scroll position for anchor links  */
 
 .section h1 {
-  padding-top: 58px;
-  margin-top: -58px;
+  padding-top: 20px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #336b85;
 }
 
 .section h2 {
   padding-top: 58px;
   margin-top: -58px;
+  color: #668b86;
 }
 .section h3 {
   padding-top: 58px;
   margin-top: -58px;
+  color: #99ab87;
 }
 .section h4 {
   padding-top: 58px;

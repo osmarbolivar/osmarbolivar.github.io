@@ -3,7 +3,6 @@ output:
   html_document:
     theme: sandstone
     highlight: tango
-    mathjax: null
     toc_depth: 3
     toc_float:
       collapsed: false
