@@ -19,9 +19,7 @@ Click on the image below to download Bolivia's 2022 Built-Up Classification. Ple
 **Bolivar (2023). Bolivia’s Built-Up Areas. https://osmarbolivar.github.io/R_built_up.html.**
 
 <div style="text-align:center;">
-  <a href="Built_up/ghsl_bolivia_2022_500m.tif" download>
-    <img src="Built_up/built_up_web.PNG" alt="Bolivia's 2022 Built-Up Classification" width="60%" height="60%">
-  </a>
+  <a href="Built_up/ghsl_bolivia_2022_500m.tif" download><img src="Built_up/built_up_web.PNG" alt="Bolivia's 2022 Built-Up Classification" width="60%" height="60%"></a>
 </div>
 <div style="margin-bottom: 30px;"></div>
 

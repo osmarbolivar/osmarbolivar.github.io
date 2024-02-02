@@ -8,7 +8,7 @@ output:
 ---
 
 ## **Journals**  
-
+<div style="margin-bottom: 30px;"></div>  
 
 #### — Bolivar, O. (2024). **"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"**. *Latin American Journal of Central Banking* (Revised and invited to resubmit)
 
@@ -30,9 +30,9 @@ output:
 
 
 
-
+<div style="margin-bottom: 30px;"></div>  
 ## **Working papers**   
-
+<div style="margin-bottom: 30px;"></div>  
 
 #### — Bolivar, O. (2023). [**"Evolución de la pobreza en las comunidades de Bolivia entre 2012 y 2022: Un enfoque de machine learning y teledetección"**](https://mpra.ub.uni-muenchen.de/118932/1/MPRA_paper_118932.pdf). MPRA Paper from University Library of Munich. 
 
