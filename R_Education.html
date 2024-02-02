@@ -247,27 +247,27 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 <p>In the year 2016, notable municipalities with the most elevated teacher-to-school ratios were El Alto (27), Colcapihua (24), Oruro (22), and Villa Huanuni (20). In particular, these municipalities attained a ratio of 20 or higher, a value that surpasses even that of capital cities such as Nuestra Señora de La Paz, Cochabamba, or Santa Cruz de la Sierra. Moreover, it is crucial to underscore that these municipalities exhibited a significant advancement in the allocation of teachers between 2000 and 2016.</p>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-10th highest teacher-to-school municipalities
+TABLE 1. 10th highest teacher-to-school municipalities
 </caption>
 <thead>
 <tr>
-<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;">
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
 Department
 </th>
-<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;">
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
 Municipality
 </th>
-<th style="text-align:right;font-weight: bold;color: white !important;background-color: #cccb88 !important;">
-Year.2000
+<th style="text-align:right;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+2000
 </th>
-<th style="text-align:right;font-weight: bold;color: white !important;background-color: #cccb88 !important;">
-Year.2016
+<th style="text-align:right;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+2016
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 La Paz
 </td>
 <td style="text-align:left;">
@@ -281,7 +281,7 @@ El Alto
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 Cochabamba
 </td>
 <td style="text-align:left;">
@@ -295,7 +295,7 @@ Colcapirhua
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 Oruro
 </td>
 <td style="text-align:left;">
@@ -309,7 +309,7 @@ Oruro
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 Oruro
 </td>
 <td style="text-align:left;">
@@ -323,7 +323,7 @@ Villa Huanuni
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 Cochabamba
 </td>
 <td style="text-align:left;">
@@ -337,7 +337,7 @@ Quillacollo
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 Potosi
 </td>
 <td style="text-align:left;">
@@ -351,7 +351,7 @@ Llallagua
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 Chuquisaca
 </td>
 <td style="text-align:left;">
@@ -365,7 +365,7 @@ Sucre
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 Cochabamba
 </td>
 <td style="text-align:left;">
@@ -379,7 +379,7 @@ Cochabamba
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 La Paz
 </td>
 <td style="text-align:left;">
@@ -393,7 +393,7 @@ Nuestra Senora de La Paz
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;">
+<td style="text-align:left;">
 Santa Cruz
 </td>
 <td style="text-align:left;">
@@ -422,104 +422,162 @@ Montero
 
 </div>
 <p>To explore potential determinants influencing the allocation of teachers per 1000 inhabitants (within the age range of 5 to 29 years), a logit model was estimated, and the resulting marginal effects are presented in the following table. The dependent variable in this model is a dummy variable, taking the value of 1 for municipalities with a ratio of teachers per 1000 inhabitants higher than the average in 2016. The explanatory variables utilized are based on data from the year 2012, as more up-to-date information on these variables is unavailable. This approach also allows for an interpretation in line with past needs or characteristics of the municipalities that may influence the probability of registering ratios of teachers per 1000 inhabitants higher than the average.</p>
-<table>
-<caption>Logit model: Teacher-to-1000-inhabitants marginal effects. Standard errors are shown in parentheses. *** indicates statistical significance at the 1% level.</caption>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+TABLE 2. Logit model: Teacher-to-1000-inhabitants marginal effects
+</caption>
 <thead>
-<tr class="header">
-<th>Dep. Variable: 1 if teacher-to-1000 &gt; mean</th>
-<th>dy/dx</th>
+<tr>
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+Dep. Variable: 1 if teacher-to-1000 &gt; mean
+</th>
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+dy_dx
+</th>
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+SE
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>% population attending secondary school</td>
-<td>10.5578***</td>
+<tr>
+<td style="text-align:left;">
+% population attending secondary school
+</td>
+<td style="text-align:left;">
+10.5578***
+</td>
+<td style="text-align:left;">
+(2.552)
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td>(2.552)</td>
+<tr>
+<td style="text-align:left;">
+% population attending public school
+</td>
+<td style="text-align:left;">
+6.9818***
+</td>
+<td style="text-align:left;">
+(1.562)
+</td>
 </tr>
-<tr class="odd">
-<td>% population attending public school</td>
-<td>6.9818***</td>
+<tr>
+<td style="text-align:left;">
+% population not attending school
+</td>
+<td style="text-align:left;">
+5.1757***
+</td>
+<td style="text-align:left;">
+(1.337)
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td>(1.562)</td>
+<tr>
+<td style="text-align:left;">
+% Rural Population
+</td>
+<td style="text-align:left;">
+0.5188***
+</td>
+<td style="text-align:left;">
+(0.131)
+</td>
 </tr>
-<tr class="odd">
-<td>% population not attending school</td>
-<td>5.1757***</td>
+<tr>
+<td style="text-align:left;">
+Years of education (mean)
+</td>
+<td style="text-align:left;">
+-0.0787***
+</td>
+<td style="text-align:left;">
+(0.030)
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td>(1.337)</td>
+<tr>
+<td style="text-align:left;">
+% Spanish-spoken population
+</td>
+<td style="text-align:left;">
+0.2120
+</td>
+<td style="text-align:left;">
+(0.305)
+</td>
 </tr>
-<tr class="odd">
-<td>% Rural Population</td>
-<td>0.5188***</td>
+<tr>
+<td style="text-align:left;">
+% population attending primary school
+</td>
+<td style="text-align:left;">
+-8.7773
+</td>
+<td style="text-align:left;">
+(31.025)
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td>(0.131)</td>
+<tr>
+<td style="text-align:left;">
+Illiteracy rate
+</td>
+<td style="text-align:left;">
+-0.0233
+</td>
+<td style="text-align:left;">
+(0.017)
+</td>
 </tr>
-<tr class="odd">
-<td>Years of education (mean)</td>
-<td>-0.0787***</td>
+<tr>
+<td style="text-align:left;">
+Poverty rate
+</td>
+<td style="text-align:left;">
+-0.0040
+</td>
+<td style="text-align:left;">
+(0.003)
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td>(0.030)</td>
+<tr>
+<td style="text-align:left;">
+Municipal Health Index
+</td>
+<td style="text-align:left;">
+-0.4963
+</td>
+<td style="text-align:left;">
+(0.520)
+</td>
 </tr>
-<tr class="odd">
-<td>% Spanish-spoken population</td>
-<td>0.2120</td>
+<tr>
+<td style="text-align:left;">
+Pseudo R-2
+</td>
+<td style="text-align:left;">
+0.2434
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
-<tr class="even">
-<td></td>
-<td>(0.305)</td>
-</tr>
-<tr class="odd">
-<td>% population attending primary school</td>
-<td>-8.7773</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>(31.025)</td>
-</tr>
-<tr class="odd">
-<td>Illiteracy rate</td>
-<td>-0.0233</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>(0.017)</td>
-</tr>
-<tr class="odd">
-<td>Poverty rate</td>
-<td>-0.0040</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>(0.003)</td>
-</tr>
-<tr class="odd">
-<td>Municipal Health Index</td>
-<td>-0.4963</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>(0.520)</td>
-</tr>
-<tr class="odd">
-<td>Pseudo R-squ.:</td>
-<td>0.2434</td>
-</tr>
-<tr class="even">
-<td>No. Observations:</td>
-<td>339</td>
+<tr>
+<td style="text-align:left;">
+Obs.
+</td>
+<td style="text-align:left;">
+339
+</td>
+<td style="text-align:left;">
+</td>
 </tr>
 </tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup></sup> Note: *** indicates statistical significance at the 1% level.
+</td>
+</tr>
+</tfoot>
 </table>
 <p>Preliminary findings reveal several intriguing observations. Notably, the likelihood of having a ratio of teachers per 1000 inhabitants above the average is positively associated with a higher proportion of the population attending the secondary level. Similarly, in municipalities with a greater proportion of the population attending public schools, the probability of assigning more teachers per 1000 inhabitants increases.</p>
 <p>Conversely, a higher probability of having a higher ratio of teachers per 1000 inhabitants in 2016 is observed for municipalities that displayed a relatively high percentage of their population not attending any educational unit in 2012. This could indicate a prioritization of teacher allocation in municipalities with lower participation in formal educational learning.</p>
