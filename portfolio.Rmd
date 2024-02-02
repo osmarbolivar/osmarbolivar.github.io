@@ -37,8 +37,8 @@ output:
         <div class="galleryItemDescription">How Night Lights are used to appoach GDP.</div>
       </div>
       <div class="galleryItem">
-        <a href="Education.html"><img class="galleryItemImage" src="images/back-to-school.jpg"/></a>
-        <a href="Education.html" class="galleryItemLabel">Education in Bolivia</a>
+        <a href="R_Education.html"><img class="galleryItemImage" src="images/back-to-school.jpg"/></a>
+        <a href="R_Education.html" class="galleryItemLabel">Education in Bolivia</a>
         <div class="galleryItemDescription">Shedding light on the strides made in providing accessible education, disparities, and the ongoing efforts to optimize the allocation of resources.</div>
       </div>
     </div>
