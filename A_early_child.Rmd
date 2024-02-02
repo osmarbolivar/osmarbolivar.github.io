@@ -1,0 +1,19 @@
+---
+title: "How early childhood determines success?"
+output: 
+  html_document:
+    toc_float: false
+    includes:
+      before_body: [include_header.html, include_header_navpage.html] 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(kableExtra)
+```
+
+# How early childhood determines success?
+
+Work in progress. **FORTHCOMING**.
+

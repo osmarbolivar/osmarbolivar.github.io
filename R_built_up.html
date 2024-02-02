@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Night Lights and GDP</title>
+
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<meta name="description" content="My website - Osmar Bolivar." />
+
+<script type="text/javascript" src="js/redirect.js"></script>
+<script type="text/javascript" src="js/rmarkdown.js"></script>
+
+<!-- Google Tag Manager -->
+ <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHBDBW7');</script>
+ <!-- End Google Tag Manager -->
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHBDBW7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="rStudioHeader" class="alwaysShrunk">
+  <div class="innards bandContent">
+    <div>
+      <a class="productName" href="index.html">My Website</a>
+      <div class="rStudio"><span class="light">Osmar Bolivar</span></div>
+    </div>
+
+    <div id="menu">
+      <div id="menuToggler"></div>
+      <div id="menuItems">
+        <a class="menuItem" href="index.html">Home</a>
+        <a class="menuItem" href="portfolio.html">My Portfolio</a>
+        <a class="menuItem" href="Papers.html">Papers</a>
+        <a class="menuItem" href="Papers.html">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+#TOC {
+  margin-left: 35px;
+  margin-top: 90px;
+}
+</style>
+
+<script type="text/javascript">
+$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+</script>
+
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">
+
+<style type="text/css">
+.title {
+  display: none;
+}
+#disqus_thread {
+  display: none;
+}
+</style>
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Night Lights and GDP</h1>
+
+</div>
+
+
+<div id="bolivias-built-up-areas" class="section level1">
+<h1>Bolivia’s Built-Up Areas</h1>
+<p>Click on the image below to download Bolivia’s 2022 Built-Up Classification. Please reference as:<br />
+<strong>Bolivar (2023). Bolivia’s Built-Up Areas. <a href="https://osmarbolivar.github.io/R_built_up.html" class="uri">https://osmarbolivar.github.io/R_built_up.html</a>.</strong></p>
+<div style="text-align:center;">
+<p><a href="Built_up/ghsl_bolivia_2022_500m.tif" download> <img src="Built_up/built_up_web.PNG" alt="Bolivia's 2022 Built-Up Classification" width="60%" height="60%"> </a></p>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<p>Bolivia, like many countries, is seeking innovative ways to stimulate economic growth, monitor urban expansion, and make informed policy decisions. One of the powerful tools in this quest is remote sensing, particularly in the classification of built-up areas. <strong><em>But what is built-up classification, and how can it influence economic planning and environmental management?</em></strong><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<div id="the-significance-of-built-up-classification" class="section level2">
+<h2>The Significance of Built-Up Classification</h2>
+<p>Built-up classification involves identifying and mapping areas with high-density human development, including buildings and infrastructure. These areas are key indicators of economic activity, as they usually align with high population density and productivity. Remote sensing, a technology harnessing satellite imagery and advanced algorithms, plays a pivotal role in understanding the spatial and temporal dynamics of these built-up areas.</p>
+<p>By analyzing built-up classification data, researchers can:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Estimate economic growth:</strong> Built-up areas are strong proxies for economic activity. By tracking changes in these regions, economists can estimate economic growth over time.</p></li>
+<li><p><strong>Identify areas of economic activity:</strong> Understanding where economic activities are concentrated is crucial for policymakers. It helps in directing resources and investments to regions with the most potential for growth.</p></li>
+<li><p><strong>Monitor urban expansion:</strong> With remote sensing, we can track how cities expand and evolve. This information is vital for city planners and policymakers focused on urban sustainability.</p></li>
+</ol>
+<p>Additionally, remote sensing can shed light on the environmental impact of economic activities, helping identify issues like pollution and urban heat island effects.</p>
+</div>
+<div id="the-global-human-settlement-layer-ghsl-a-valuable-resource" class="section level2">
+<h2>The Global Human Settlement Layer (GHSL): A Valuable Resource</h2>
+<p>One widely recognized tool for mapping built-up areas is the Global Human Settlement Layer (GHSL). Developed by the European Commission, this high-resolution dataset offers a comprehensive view of human settlements across the globe. GHSL combines satellite imagery, census data, and other sources to provide details on built-up areas, population density, and other urban characteristics.</p>
+<p>The GHSL is an invaluable resource, but it has a limitation. The last update available is from 2015. For researchers and policymakers seeking more up-to-date information, this gap can be a challenge. To bridge this gap, machine learning algorithms come to the rescue. These algorithms can be trained to predict built-up areas with high accuracy.</p>
+</div>
+<div id="bolivias-built-up-classification-filling-the-gap." class="section level2">
+<h2>Bolivia’s Built-Up Classification: Filling the Gap.</h2>
+<p>Currently, there is no classification of built-up areas for Bolivia. Such data would be incredibly useful for predicting economic activity at a detailed geographic level. To address this gap, a Random Forest algorithm was trained using GHSL images. This algorithm classifies 1km pixels into built-up or non-built-up areas, utilizing data from the Landsat-8 satellite’s various bands and pixel-level light brightness levels.</p>
+<p>The Random Forest (RF) model was chosen due to its effectiveness and wide applicability. It’s a well-established algorithm known for its robust performance across various domains and problems.</p>
+<p>To train the RF model, urban clusters of low and high density were defined as built-up areas, while uninhabited and rural areas were defined as non-built-up areas. The images used for training are from the 2015 GHSL dataset, the latest available.</p>
+</div>
+<div id="evaluating-algorithm-performance" class="section level2">
+<h2>Evaluating Algorithm Performance</h2>
+<p>To evaluate the performance of the classifier algorithm, two key metrics are used: Accuracy (ACC) and the Matthews Correlation Coefficient (MCC). ACC measures the proportion of correct predictions made by the classifier, while MCC measures the correlation between predicted and actual labels, accounting for both true positive and true negative rates.</p>
+<p>On the training sample, the algorithm performs exceptionally well, with ACC measuring 0.995 and MCC at 0.917. However, when tested on the validation sample, the MCC drops to 0.702, indicating potential overfitting. While this may suggest the algorithm isn’t generalizing as well to new data, it’s essential to remember that an MCC score of 0.5 or above is considered good, with 0 indicating a random classifier.</p>
+<p>A comparison between GHSL and Random Forest classified built-up is presented in Figure 1.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Built_up/comparison.PNG" style="width:70.0%;height:70.0%" alt="FIGURE 1. Original and Random Forest built-up classification" />
+<div class="figcaption">FIGURE 1. Original and Random Forest built-up classification</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+</div>
+<div id="bringing-insights-to-bolivias-economic-landscape" class="section level2">
+<h2>Bringing Insights to Bolivia’s Economic Landscape</h2>
+<p>The algorithm trained using Landsat-8 and nighttime lights imagery is now being used to predict built-up areas across Bolivia at a 500-meter-pixel resolution for the year 2022. The primary aim is to provide a new level of spatial granularity for analyzing Bolivia’s economic activity.</p>
+<p>This endeavor opens up exciting possibilities for economic planning, environmental management, and sustainable growth in Bolivia. With remote sensing and advanced algorithms, the future of economic analysis is looking brighter than ever.</p>
+<p>The output of the Bolivia’s 2022 built-up image classification can be downloaded from this page.</p>
+</div>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>The following studies were used as pivotal support for the content of this article:</p>
+<ul>
+<li>Duro, Franklin &amp; Dubé (2012). <em>A comparison of pixel-based and object-based image analysis with selected machine learning algorithms for the classification of agricultural landscapes using spot-5 hrg imagery</em>. Remote sensing of environment, 118 , 259–272.</li>
+<li>Kussul, Lavreniuk, Skakun &amp; Shelestov (2017). <em>Deep learning classification of land cover and crop types using remote sensing data</em>. IEEE Geoscience and Remote Sensing Letters, 14 (5), 778–782.</li>
+<li>Chicco &amp; Jurman (2020). The advantages of the matthews correlation coefficient (mcc) over f1 score and accuracy in binary classification evaluation. BMC genomics, 21 , 1–13.</li>
+<li>Jiang et al. (2020). Detecting the dynamics of urban growth in africa using dmsp/ols nighttime light data. Land , 10(1), 13</li>
+<li>Corbane et al. (2021). <em>Convolutional neural networks for global human settlements mapping from sentinel-2 satellite imagery</em>. Neural Computing and Applications, 33 , 6697–6720.</li>
+<li>Liu, Zuo &amp; Dong (2021). <em>Analysis of temporal and spatial characteristics of urban expansion in Xiaonan district from 1990 to 2020 using time series landsat imagery</em>. Remote Sensing, 13 (21), 4299.</li>
+<li>Zhou et al. (2021). <em>Urban sprawl and changes in land-use efficiency in the beijing–tianjin–hebei region, China from 2000 to 2020: A spatiotemporal analysis using earth observation data</em>. Remote Sensing, 13 (15), 2850.</li>
+</ul>
+<a href="#fnref1" class="footnote-back">↩︎</a></li>
+</ol>
+</div>
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">© Copyright 2024.</div>
+  <div id="logos">
+    <a href="https://github.com/osmarbolivar" class="footerLogo gitHub"></a>
+    <a href="https://www.linkedin.com/in/osmar-bolivar-rosales/" class="footerLogo linkedIn"></a>
+  </div>
+</div>
+</div>
+
+<!-- bizible -->
+<script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>
+
+<!-- disqus -->
+<div id="disqus_thread" class="standardPadding"></div>
+<script type="text/javascript" src="js/disqus.js"></script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script type="text/javascript" src="js/external-links.js"></script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
