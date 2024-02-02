@@ -19,7 +19,7 @@ Click on the image below to download Bolivia's 2022 Built-Up Classification. Ple
 **Bolivar (2023). Bolivia’s Built-Up Areas. https://osmarbolivar.github.io/R_built_up.html.**
 
 <div style="text-align:center;">
-  <a href="Built_up/ghsl_bolivia_2022_500m.tif" download><img src="Built_up/built_up_web.PNG" alt="Bolivia's 2022 Built-Up Classification" width="60%" height="60%"></a>
+  <a href="Built_up/ghsl_bolivia_2022_500m.tif" download><img src="Built_up/built_up_web_adj.png" alt="Bolivia's 2022 Built-Up Classification" width="60%" height="60%"></a>
 </div>
 <div style="margin-bottom: 30px;"></div>
 
@@ -62,7 +62,7 @@ On the training sample, the algorithm performs exceptionally well, with ACC meas
 A comparison between GHSL and Random Forest classified built-up is presented in Figure 1.
 
 <div style="text-align:center;">
-  ![FIGURE 1. Original and Random Forest built-up classification](Built_up/comparison.PNG){width=70% height=70%}
+  ![FIGURE 1. Original and Random Forest built-up classification](Built_up/comparison_adj.png){width=70% height=70%}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 
