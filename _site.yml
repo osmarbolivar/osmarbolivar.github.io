@@ -11,4 +11,4 @@ output:
       before_body: include_header.html
       after_body: include_footer.html
     css: css/rmarkdown.css
-    pandoc_args: --wrap=none
+    pandoc_args: --wrap=preserve
