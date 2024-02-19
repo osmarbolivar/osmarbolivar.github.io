@@ -26,10 +26,6 @@ $("#pageContent").removeClass("standardPadding");
 
 <!--html_preserve-->
 
-<title> Website - Osmar Bolivar</title>
-
-<meta name="description"
-content="I share insights in regard to applied AI and data science for data-driven economics">
 
 <div id="homeContent">
   <div class="band full orange first rightText">
