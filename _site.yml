@@ -1,3 +1,5 @@
+name: "Osmar Bolivar"
+title: "My Website"
 output_dir: '.'
 output:
   html_document:
@@ -12,3 +14,6 @@ output:
       after_body: include_footer.html
     css: css/rmarkdown.css
     pandoc_args: --wrap=preserve
+site:
+  author: "Osmar Bolivar"
+  description: "I share insights in regard to applied AI and data science for data-driven economics"

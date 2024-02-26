@@ -1,5 +1,6 @@
 ---
 title: "My Portfolio"
+description: "I share insights in regard to applied AI and data science for data-driven economics."
 output:
   html_document:
     toc_float: false

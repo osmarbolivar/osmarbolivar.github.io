@@ -1,11 +1,13 @@
 ---
 title: "Working Papers & Research Articles"
+description: "I share insights in regard to applied AI and data science for data-driven economics."
 output:
   html_document:
     toc_float: false
     includes:
       before_body: [include_header.html, include_header_navpage.html]
 ---
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HJ5VRY62"></script>
