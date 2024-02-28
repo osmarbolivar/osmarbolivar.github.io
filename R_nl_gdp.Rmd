@@ -1,5 +1,6 @@
 ---
 title: "Night Lights and GDP"
+description: "Research - Night Lights and GDP"
 output: 
   html_document:
     toc_float: false

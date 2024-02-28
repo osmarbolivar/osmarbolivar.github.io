@@ -1,5 +1,6 @@
 ---
-title: "Night Lights and GDP"
+title: "Bolivia’s Built-Up Areas"
+description: "Research - Bolivia’s Built-Up Areas"
 output: 
   html_document:
     toc_float: false

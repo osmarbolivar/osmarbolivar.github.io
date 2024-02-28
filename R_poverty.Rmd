@@ -1,5 +1,6 @@
 ---
 title: "Combining Machine Learning and Remote-sensing to predict Community-level Poverty in Bolivia"
+description: "Research - Combining Machine Learning and Remote-sensing to predict Community-level Poverty in Bolivia"
 output:
   html_document:
     toc_float: false

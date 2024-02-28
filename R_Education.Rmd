@@ -1,5 +1,6 @@
 ---
 title: "Education in Bolivia: Striving for Equitable Access and Quality"
+description: "Research - Education in Bolivia"
 output: 
   html_document:
     toc_float: false

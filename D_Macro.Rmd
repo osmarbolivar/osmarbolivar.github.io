@@ -1,5 +1,6 @@
 ---
 title: "Bolivia: Macro indicators"
+description: "Dashboard - Bolivia: Macro indicators"
 output: 
   html_document:
     toc_float: false

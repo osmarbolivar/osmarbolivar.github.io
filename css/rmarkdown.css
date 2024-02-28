@@ -96,6 +96,14 @@ p {
   z-index:1;
 }
 
+.band .imageFive {
+  position: absolute;
+  width: 10px;
+  height: auto;
+  left: 10px;
+}
+
+
 #rStudioHeader {
   position: fixed;
   top: 0px;
