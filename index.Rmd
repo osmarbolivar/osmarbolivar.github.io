@@ -1,5 +1,5 @@
 ---
-title: "My Website - Osmar Bolivar"
+title: "My Website - Osmar Bolivar Rosales"
 description: "I share insights in regard to applied AI and data science for data-driven economics."
 output:
   html_document:

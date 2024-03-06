@@ -1,4 +1,4 @@
-name: "Osmar Bolivar"
+name: "Osmar Bolivar Rosales"
 title: "My Website"
 output_dir: '.'
 output:
@@ -15,5 +15,5 @@ output:
     css: css/rmarkdown.css
     pandoc_args: --wrap=preserve
 site:
-  author: "Osmar Bolivar"
+  author: "Osmar Bolivar Rosales"
   description: "I share insights in regard to applied AI and data science for data-driven economics"
