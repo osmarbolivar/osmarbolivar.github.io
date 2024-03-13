@@ -22,13 +22,13 @@ output:
 ## **Journals**  
 <div style="margin-bottom: 30px;"></div>  
 
-#### — Bolivar, O. (2024). **"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"**. *Latin American Journal of Central Banking* (Revised and invited to resubmit)
+#### — Bolivar, O. (2024). **"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"**. *Latin American Journal of Central Banking* (Forthcoming)
 
 #### — Bolivar, O., Huanto, C. & Teran, R. (2023). **"Expectativas de inflación: Dinámica y efectos para América del Sur"**. *Cuadernos de Investigación Económica Boliviana*, 6(1).
 
-#### — Bolivar, O. (2022). [**"Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/paper_ee2022.pdf). First Place in the call for papers of the 15th Meeting of Economists of Bolivia organized by the Central Bank of Bolivia (*Forthcoming publication in the Revista de Análisis del Banco Central de Bolivia*).
+#### — Bolivar, O. (2022). [**"Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/paper_ee2022.pdf). *Revista de Análisis del Banco Central de Bolivia* (Forthcoming).
 
-#### —  Bolivar, O. (2022). [**"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/multiplicadores.pdf). *Cuadernos de Investigación Económica Boliviana*, 5(2): 7-64.
+#### —  Bolivar, O. (2022). [**"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"**](https://ideas.repec.org/a/efp/journl/v5y2022i2p7-64.html). *Cuadernos de Investigación Económica Boliviana*, 5(2): 7-64.
 
 #### —  Bolivar, O. (2021). [**"Boyanza Tributaria: Relación con la sostenibilidad fiscal y estabilizadores automáticos"**](https://repositorio.economiayfinanzas.gob.bo/documentos/2018/UAEF/CIEB/ii_Art%C3%ADculos/Volumen%20IV/Numero%202/V4N2_Paper2.pdf.pdf). *Cuadernos de Investigación Económica Boliviana*, 4(2): 53-95.
 
