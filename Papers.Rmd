@@ -22,11 +22,11 @@ output:
 ## **Journals**  
 <div style="margin-bottom: 30px;"></div>  
 
-#### — Bolivar, O. (2024). **"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"**. *Latin American Journal of Central Banking* (Forthcoming)
+#### — Bolivar, O. (2024). [**"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"**](https://www.sciencedirect.com/science/article/pii/S2666143824000085). *Latin American Journal of Central Banking* 5(3).
 
 #### — Bolivar, O., Huanto, C. & Teran, R. (2023). **"Expectativas de inflación: Dinámica y efectos para América del Sur"**. *Cuadernos de Investigación Económica Boliviana*, 6(1).
 
-#### — Bolivar, O. (2022). [**"Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/paper_ee2022.pdf). *Revista de Análisis del Banco Central de Bolivia* (Forthcoming).
+#### — Bolivar, O. (2023). [**"Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/paper_ee2022.pdf). *Revista de Análisis del Banco Central de Bolivia* (Forthcoming).
 
 #### —  Bolivar, O. (2022). [**"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"**](https://ideas.repec.org/a/efp/journl/v5y2022i2p7-64.html). *Cuadernos de Investigación Económica Boliviana*, 5(2): 7-64.
 

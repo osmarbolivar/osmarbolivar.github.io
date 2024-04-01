@@ -58,7 +58,7 @@ $("#pageContent").removeClass("standardPadding");
   </div>
 
   <div class="band full third rightText">
-    <img class="imageThree" src="images/papers_for_bands.png"/>
+    <img class="imageThree" src="images/images_for_bands.png"/>
     <div class="bandContent vCenter">
       <div class="blurb">
         <div>
