@@ -22,7 +22,7 @@ output:
 ## **Journals**  
 <div style="margin-bottom: 30px;"></div>  
 
-#### — Bolivar, O. (2024). [**"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"**](https://www.sciencedirect.com/science/article/pii/S2666143824000085). *Latin American Journal of Central Banking* 5(3).
+#### — Bolivar, O. (2024). [**"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"**](https://www.sciencedirect.com/science/article/pii/S2666143824000085). *Latin American Journal of Central Banking* 5(3). 100126
 
 #### — Bolivar, O., Huanto, C. & Teran, R. (2023). **"Expectativas de inflación: Dinámica y efectos para América del Sur"**. *Cuadernos de Investigación Económica Boliviana*, 6(1).
 
@@ -30,13 +30,13 @@ output:
 
 #### —  Bolivar, O. (2022). [**"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"**](https://ideas.repec.org/a/efp/journl/v5y2022i2p7-64.html). *Cuadernos de Investigación Económica Boliviana*, 5(2): 7-64.
 
-#### —  Bolivar, O. (2021). [**"Boyanza Tributaria: Relación con la sostenibilidad fiscal y estabilizadores automáticos"**](https://repositorio.economiayfinanzas.gob.bo/documentos/2018/UAEF/CIEB/ii_Art%C3%ADculos/Volumen%20IV/Numero%202/V4N2_Paper2.pdf.pdf). *Cuadernos de Investigación Económica Boliviana*, 4(2): 53-95.
+#### —  Bolivar, O. (2021). [**"Boyanza Tributaria: Relación con la sostenibilidad fiscal y estabilizadores automáticos"**](https://ideas.repec.org/a/efp/journl/v4y2021i2p53-96.html). *Cuadernos de Investigación Económica Boliviana*, 4(2): 53-95.
 
-#### —  Bolivar, O. (2016). [**"Bolivianization and Effectiveness of the Monetary Policy"**](https://medios.economiayfinanzas.gob.bo/MH/documentos/CIEB/ii_Articulos/Volumen_1/Numero_2/Ingles/CIEB_2016_Ing_Paper_2.pdf). *Cuadernos de Investigación Económica Boliviana*, 1(2): 55-98.
+#### —  Bolivar, O. (2016). [**"Bolivianization and Effectiveness of the Monetary Policy"**](https://ideas.repec.org/a/efp/journl/v1y2015i2p1-40.html). *Cuadernos de Investigación Económica Boliviana*, 1(2): 55-98.
 
-#### —  Bolivar, O. & D. Ugarte (2015). [**"Domestic Demand as Engine of the Economic Growth in Bolivia"**](https://medios.economiayfinanzas.gob.bo/MH/documentos/CIEB/CIEB_Paper1_Bolivian_Economic.pdf). *Cuadernos de Investigación Económica Boliviana*, 1(1): 7-44. 
+#### —  Bolivar, O. & D. Ugarte (2015). [**"Domestic Demand as Engine of the Economic Growth in Bolivia"**](https://ideas.repec.org/a/efp/journl/v1y2015i1p1-27.html). *Cuadernos de Investigación Económica Boliviana*, 1(1): 7-44. 
 
-#### —  Ugarte, D. & Bolivar, O. (2015). [**"The Effect of Income Redistribution on Poverty Reduction of Bolivia"**](https://medios.economiayfinanzas.gob.bo/MH/documentos/CIEB/CIEB_Paper_2_Bolivian_Economic.pdf). *Cuadernos de Investigación Económica Boliviana*, 1(1): 45-80. 
+#### —  Ugarte, D. & Bolivar, O. (2015). [**"The Effect of Income Redistribution on Poverty Reduction of Bolivia"**](https://ideas.repec.org/a/efp/journl/v1y2015i1p1-25.html). *Cuadernos de Investigación Económica Boliviana*, 1(1): 45-80. 
 
 #### —  Ugarte, D. & Bolivar, O. (2015). [**"La Relación Precio del Petróleo y Crecimiento Económico en Bolivia: El Rol de la Política Económica"**](https://www.bcb.gob.bo/webdocs/publicacionesbcb/revista_analisis/ra_vol22/articulo_1_v22.pdf). *Revista de Análisis del Banco Central de Bolivia*, 22(1): 9-40.   
 
