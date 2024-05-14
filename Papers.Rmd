@@ -27,23 +27,24 @@ output:
 ::: {style="margin-bottom: 30px;"}
 :::
 
-#### --- Bolivar, O. (2024). [**"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"**](https://www.sciencedirect.com/science/article/pii/S2666143824000085). *Latin American Journal of Central Banking* 5(3). 100126
 
-#### --- Bolivar, O., Huanto, C. & Teran, R. (2023). **"Expectativas de inflación: Dinámica y efectos para América del Sur"**. *Cuadernos de Investigación Económica Boliviana*, 6(1).
+<h4>--- Bolivar, O. (2024). <a href="https://www.sciencedirect.com/science/article/pii/S2666143824000085" target="_blank"><strong>"GDP Nowcasting: A machine learning and remote sensing data-based approach for Bolivia"</strong></a>. <em>Latin American Journal of Central Banking</em> 5(3). 100126</h4>
 
-#### --- Bolivar, O. (2023). [**"Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur"**](docs/papers_docs/Paper_EE2022.pdf). *Revista de Análisis del Banco Central de Bolivia* (Forthcoming).
+<h4>--- Bolivar, O., Huanto, C. & Teran, R. (2023). <strong>"Expectativas de inflación: Dinámica y efectos para América del Sur"</strong>. <em>Cuadernos de Investigación Económica Boliviana</em>, 6(1).</h4>
 
-#### --- Bolivar, O. (2022). [**"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"**](https://ideas.repec.org/a/efp/journl/v5y2022i2p7-64.html). *Cuadernos de Investigación Económica Boliviana*, 5(2): 7-64.
+<h4>--- Bolivar, O. (2023). <a href="docs/papers_docs/Paper_EE2022.pdf" target="_blank"><strong>"Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur"</strong></a>. <em>Revista de Análisis del Banco Central de Bolivia</em> (Forthcoming).</h4>
 
-#### --- Bolivar, O. (2021). [**"Boyanza Tributaria: Relación con la sostenibilidad fiscal y estabilizadores automáticos"**](https://ideas.repec.org/a/efp/journl/v4y2021i2p53-96.html). *Cuadernos de Investigación Económica Boliviana*, 4(2): 53-95.
+<h4>--- Bolivar, O. (2022). <a href="https://ideas.repec.org/a/efp/journl/v5y2022i2p7-64.html" target="_blank"><strong>"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"</strong></a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 5(2): 7-64.</h4>
 
-#### --- Bolivar, O. (2016). [**"Bolivianization and Effectiveness of the Monetary Policy"**](https://ideas.repec.org/a/efp/journl/v1y2015i2p1-40.html). *Cuadernos de Investigación Económica Boliviana*, 1(2): 55-98.
+<h4>--- Bolivar, O. (2021). <a href="https://ideas.repec.org/a/efp/journl/v4y2021i2p53-96.html" target="_blank"><strong>"Boyanza Tributaria: Relación con la sostenibilidad fiscal y estabilizadores automáticos"</strong></a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 4(2): 53-95.</h4>
 
-#### --- Bolivar, O. & D. Ugarte (2015). [**"Domestic Demand as Engine of the Economic Growth in Bolivia"**](https://ideas.repec.org/a/efp/journl/v1y2015i1p1-27.html). *Cuadernos de Investigación Económica Boliviana*, 1(1): 7-44.
+<h4>--- Bolivar, O. (2016). <a href="https://ideas.repec.org/a/efp/journl/v1y2015i2p1-40.html" target="_blank"><strong>"Bolivianization and Effectiveness of the Monetary Policy"</strong></a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 1(2): 55-98.</h4>
 
-#### --- Ugarte, D. & Bolivar, O. (2015). [**"The Effect of Income Redistribution on Poverty Reduction of Bolivia"**](https://ideas.repec.org/a/efp/journl/v1y2015i1p1-25.html). *Cuadernos de Investigación Económica Boliviana*, 1(1): 45-80.
+<h4>--- Bolivar, O. & D. Ugarte (2015). <a href="https://ideas.repec.org/a/efp/journl/v1y2015i1p1-27.html" target="_blank"><strong>"Domestic Demand as Engine of the Economic Growth in Bolivia"</strong></a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 1(1): 7-44.</h4>
 
-#### --- Ugarte, D. & Bolivar, O. (2015). [**"La Relación Precio del Petróleo y Crecimiento Económico en Bolivia: El Rol de la Política Económica"**](https://www.bcb.gob.bo/webdocs/publicacionesbcb/revista_analisis/ra_vol22/articulo_1_v22.pdf). *Revista de Análisis del Banco Central de Bolivia*, 22(1): 9-40.
+<h4>--- Ugarte, D. & Bolivar, O. (2015). <a href="https://ideas.repec.org/a/efp/journl/v1y2015i1p1-25.html" target="_blank"><strong>"The Effect of Income Redistribution on Poverty Reduction of Bolivia"</strong></a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 1(1): 45-80.</h4>
+
+<h4>--- Ugarte, D. & Bolivar, O. (2015). <a href="https://www.bcb.gob.bo/webdocs/publicacionesbcb/revista_analisis/ra_vol22/articulo_1_v22.pdf" target="_blank"><strong>"La Relación Precio del Petróleo y Crecimiento Económico en Bolivia: El Rol de la Política Económica"</strong></a>. <em>Revista de Análisis del Banco Central de Bolivia</em>, 22(1): 9-40.</h4>
 
 ::: {style="margin-bottom: 30px;"}
 :::
@@ -53,14 +54,15 @@ output:
 ::: {style="margin-bottom: 30px;"}
 :::
 
-#### --- Bolivar, O. (2023). [**"Evolución de la pobreza en las comunidades de Bolivia entre 2012 y 2022: Un enfoque de machine learning y teledetección"**](https://mpra.ub.uni-muenchen.de/118932/1/MPRA_paper_118932.pdf). MPRA Paper from University Library of Munich.
+<h4>--- Bolivar, O. (2023). <a href="https://mpra.ub.uni-muenchen.de/118932/1/MPRA_paper_118932.pdf" target="_blank"><strong>"Evolución de la pobreza en las comunidades de Bolivia entre 2012 y 2022: Un enfoque de machine learning y teledetección"</strong></a>. MPRA Paper from University Library of Munich.</h4>
 
-#### --- Bolivar, O. (2022). [**"Roads illuminate development: Using nightlight luminosity to assess the impact of transport infrastructure"**](https://scioteca.caf.com/handle/123456789/1910). Research Department Working Papers 1910, CAF - Development Bank of Latin America.
+<h4>--- Bolivar, O. (2022). <a href="https://scioteca.caf.com/handle/123456789/1910" target="_blank"><strong>"Roads illuminate development: Using nightlight luminosity to assess the impact of transport infrastructure"</strong></a>. Research Department Working Papers 1910, CAF - Development Bank of Latin America.</h4>
 
-#### --- Bolivar, O. (2020). [**"Evaluación de impacto de la infraestructura vial en el crecimiento económico: Una aproximación con base en información satelital de luminosidad para Bolivia"**](docs/papers_docs/libro_caf_paper1-comprimido.pdf). CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (págs. 11-70). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
+<h4>--- Bolivar, O. (2020). <a href="docs/papers_docs/libro_caf_paper1-comprimido.pdf" target="_blank"><strong>"Evaluación de impacto de la infraestructura vial en el crecimiento económico: Una aproximación con base en información satelital de luminosidad para Bolivia"</strong></a>. CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (págs. 11-70). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.</h4>
 
-#### --- Bolivar, O. & Ugarte, D. (2020). [**"Evaluación de impacto de la infraestructura vial sobre las condiciones socioeconómicas de la población"**](docs/papers_docs/libro_caf_paper2.pdf). CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (pp. 71-117). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
+<h4>--- Bolivar, O. & Ugarte, D. (2020). <a href="docs/papers_docs/libro_caf_paper2.pdf" target="_blank"><strong>"Evaluación de impacto de la infraestructura vial sobre las condiciones socioeconómicas de la población"</strong></a>. CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (pp. 71-117). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.</h4>
 
-#### --- Ugarte, D. & Bolivar, O. (2019). [**"Descentralización en Bolivia: eficacia y externalidades"**](http://www.inesad.edu.bo/pdf/wp2018/wp06_2018.pdf). CAF-INESAD-ABCE (Ed.), Investigaciones para el Desarrollo Económico de Bolivia (pp. 113-168). La Paz, Bolivia.
+<h4>--- Ugarte, D. & Bolivar, O. (2019). <a href="http://www.inesad.edu.bo/pdf/wp2018/wp06_2018.pdf" target="_blank"><strong>"Descentralización en Bolivia: eficacia y externalidades"</strong></a>. CAF-INESAD-ABCE (Ed.), Investigaciones para el Desarrollo Económico de Bolivia (pp. 113-168). La Paz, Bolivia.</h4>
 
-#### --- Bolivar, O. (2017). [**"Desdolarización en Bolivia: Interacción con la Política Monetaria y el Tipo de Cambio"**](https://eeb.bcb.gob.bo/sites/default/files/programa/Osmar_Bolivar_1310_TC_P1.pdf). Research paper presented at the 10th Meeting of Economists of Bolivia organized by the Central Bank of Bolivia.
+<h4>--- Bolivar, O. (2017). <a href="https://eeb.bcb.gob.bo/sites/default/files/programa/Osmar_Bolivar_1310_TC_P1.pdf" target="_blank"><strong>"Desdolarización en Bolivia: Interacción con la Política Monetaria y el Tipo de Cambio"</strong></a>. Research paper presented at the 10th Meeting of Economists of Bolivia organized by the Central Bank of Bolivia.</h4>
+
