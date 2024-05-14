@@ -595,6 +595,10 @@ p {
   background-image: url(../images/facebookLogo.svg);
 }
 
+#rStudioFooter .bandContent .footerLogo.researchgate {
+  background-image: url(../images/researchgate.svg);
+}
+
 .screenshot {
   border: 1px solid #ccc;
 }

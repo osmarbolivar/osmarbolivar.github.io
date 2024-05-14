@@ -42,11 +42,11 @@ output:
         <a href="R_built_up.html" class="galleryItemLabel">Bolivia's Built-up areas</a>
         <div class="galleryItemDescription">Download a raster file with Bolivia's 2022 Built-Up Classification.</div>
       </div>
-      <div class="galleryItem">
+      <!--div class="galleryItem">
         <a href="R_nl_gdp.html"><img class="galleryItemImage" src="images/NightLights.png"/></a>
         <a href="R_nl_gdp.html" class="galleryItemLabel">Night Lights and GDP</a>
         <div class="galleryItemDescription">How Night Lights are used to approach GDP?</div>
-      </div>
+      </div-->
       <div class="galleryItem">
         <a href="R_Education.html"><img class="galleryItemImage" src="images/back-to-school.jpg"/></a>
         <a href="R_Education.html" class="galleryItemLabel">Education in Bolivia</a>

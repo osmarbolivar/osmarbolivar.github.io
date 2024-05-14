@@ -22,7 +22,7 @@ output:
   gtag('config', 'G-F5HJ5VRY62');
 </script>
 ```
-## **Journals**
+## **Journal Papers**
 
 ::: {style="margin-bottom: 30px;"}
 :::
@@ -31,7 +31,7 @@ output:
 
 #### --- Bolivar, O., Huanto, C. & Teran, R. (2023). **"Expectativas de inflación: Dinámica y efectos para América del Sur"**. *Cuadernos de Investigación Económica Boliviana*, 6(1).
 
-#### --- Bolivar, O. (2023). [**"Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/paper_ee2022.pdf). *Revista de Análisis del Banco Central de Bolivia* (Forthcoming).
+#### --- Bolivar, O. (2023). [**"Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur"**](docs/papers_docs/Paper_EE2022.pdf). *Revista de Análisis del Banco Central de Bolivia* (Forthcoming).
 
 #### --- Bolivar, O. (2022). [**"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"**](https://ideas.repec.org/a/efp/journl/v5y2022i2p7-64.html). *Cuadernos de Investigación Económica Boliviana*, 5(2): 7-64.
 
@@ -48,7 +48,7 @@ output:
 ::: {style="margin-bottom: 30px;"}
 :::
 
-## **Working papers**
+## **Working Papers**
 
 ::: {style="margin-bottom: 30px;"}
 :::
@@ -57,9 +57,9 @@ output:
 
 #### --- Bolivar, O. (2022). [**"Roads illuminate development: Using nightlight luminosity to assess the impact of transport infrastructure"**](https://scioteca.caf.com/handle/123456789/1910). Research Department Working Papers 1910, CAF - Development Bank of Latin America.
 
-#### --- Bolivar, O. (2020). [**"Evaluación de impacto de la infraestructura vial en el crecimiento económico: Una aproximación con base en información satelital de luminosidad para Bolivia"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/libro_caf_paper1-comprimido.pdf). CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (págs. 11-70). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
+#### --- Bolivar, O. (2020). [**"Evaluación de impacto de la infraestructura vial en el crecimiento económico: Una aproximación con base en información satelital de luminosidad para Bolivia"**](docs/papers_docs/libro_caf_paper1-comprimido.pdf). CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (págs. 11-70). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
 
-#### --- Bolivar, O. & Ugarte, D. (2020). [**"Evaluación de impacto de la infraestructura vial sobre las condiciones socioeconómicas de la población"**](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/libro_caf_paper2.pdf). CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (pp. 71-117). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
+#### --- Bolivar, O. & Ugarte, D. (2020). [**"Evaluación de impacto de la infraestructura vial sobre las condiciones socioeconómicas de la población"**](docs/papers_docs/libro_caf_paper2.pdf). CAF-UDAPE, & O. Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (pp. 71-117). La Paz, Bolivia: Editorial del Estado Plurinacional de Bolivia.
 
 #### --- Ugarte, D. & Bolivar, O. (2019). [**"Descentralización en Bolivia: eficacia y externalidades"**](http://www.inesad.edu.bo/pdf/wp2018/wp06_2018.pdf). CAF-INESAD-ABCE (Ed.), Investigaciones para el Desarrollo Económico de Bolivia (pp. 113-168). La Paz, Bolivia.
 
