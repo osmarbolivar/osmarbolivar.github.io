@@ -71,7 +71,7 @@ output:
 
 <h4>--- Bolivar, O. (2024). <a href="docs/papers_docs/WP_Weekly_Inflation_Forecast.pdf" target="_blank"><strong>"Weekly Inflation Forecasting: A Two-Step Machine Learning Methodology"</strong></a>. Submitted to the Call for Papers: 2024 CEMLA Central Bank Award.</h4>
 
-<h4>--- Bolivar, O. (2024). <a href="docs/papers_docs/WP_Geopolitical_Shocks.pdf" target="_blank"><strong>"Tensiones Geopolíticas: Efectos Macroeconómicos en Bolivia, Chile y Perú"</strong></a>. Submitted to the Call for Papers: 2024 Meeting of Economists of Bolivia - Central Bank of Bolivia.</h4>
+<h4>--- Bolivar, O. & Huanto, C. (2024). <a href="docs/papers_docs/WP_Geopolitical_Shocks.pdf" target="_blank"><strong>"Tensiones Geopolíticas: Efectos Macroeconómicos en Bolivia, Chile y Perú"</strong></a>. Submitted to the Call for Papers: 2024 Meeting of Economists of Bolivia - Central Bank of Bolivia.</h4>
 
 <h4>--- Bolivar, O. (2023). <a href="https://mpra.ub.uni-muenchen.de/118932/1/MPRA_paper_118932.pdf" target="_blank"><strong>"Evolución de la pobreza en las comunidades de Bolivia entre 2012 y 2022: Un enfoque de machine learning y teledetección"</strong></a>. MPRA Paper from University Library of Munich.</h4>
 
