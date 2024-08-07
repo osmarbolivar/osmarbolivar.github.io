@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Forecasting Weekly Inflation with Machine Learning</title>
+
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<meta name="description" content="I share insights in regard to applied AI and data science for data-driven economics"/>
+
+<script type="text/javascript" src="js/redirect.js"></script>
+<script type="text/javascript" src="js/rmarkdown.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5SMWF48P');</script>
+<!-- End Google Tag Manager -->
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SMWF48P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<meta name="description" content="I share insights in regard to applied AI and data science for data-driven economics"/>
+
+<div id="rStudioHeader" class="alwaysShrunk">
+  <div class="innards bandContent">
+    <div>
+      <a class="productName" href="index.html">My Website</a>
+      <div class="rStudio"><span class="light">Osmar Bolivar Rosales</span></div>
+    </div>
+
+    <div id="menu">
+      <div id="menuToggler"></div>
+      <div id="menuItems">
+        <a class="menuItem" href="index.html">Home</a>
+        <a class="menuItem" href="portfolio.html">My Portfolio</a>
+        <a class="menuItem" href="Papers.html">Papers</a>
+        <a class="menuItem" href="About.html">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+#TOC {
+  margin-left: 35px;
+  margin-top: 90px;
+}
+</style>
+
+<script type="text/javascript">
+$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+</script>
+
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">
+
+<style type="text/css">
+.title {
+  display: none;
+}
+#disqus_thread {
+  display: none;
+}
+</style>
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Forecasting Weekly Inflation with Machine Learning</h1>
+
+</div>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HJ5VRY62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F5HJ5VRY62');
+</script>
+<div id="forecasting-weekly-inflation-with-machine-learning" class="section level1">
+<h1>Forecasting Weekly Inflation with Machine Learning</h1>
+<div style="text-align:center;">
+<div class="float">
+<img src="Weekly_inflation/Weekly_Forecast_No_COM.PNG" style="width:100.0%;height:80.0%" alt="FIGURE 1. Weekly y-o-y Inflation for Bolivia" />
+<div class="figcaption">FIGURE 1. Weekly y-o-y Inflation for Bolivia</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<p>Inflation forecasting is a critical aspect of economic policy and financial planning. Accurate predictions enable policymakers to take preemptive measures, businesses to plan effectively, and investors to make informed decisions. Traditional models, while useful, often fall short in capturing the complex dynamics of inflation, particularly at high frequencies such as weekly intervals.</p>
+<p>In this blog post, I introduce a novel approach to forecasting weekly inflation rates using a two-step machine learning methodology. This research aims to enhance the precision and timeliness of inflation forecasts, providing valuable insights for both economists and practitioners. For a comprehensive understanding of the methodology and results, readers are encouraged to refer to the full working paper: <a href="https://osmarbolivar.github.io/docs/papers_docs/WP_Weekly_Inflation_Forecast.pdf">Weekly Inflation Forecasting: A Two-Step Machine Learning Methodology</a></p>
+<div id="methodological-framework" class="section level2">
+<h2>Methodological Framework</h2>
+<p>This study proposes a two-step methodology for weekly forecasting, leveraging machine learning algorithms initially trained on monthly data and then applied to weekly data for higher frequency forecasting. The dataset <span class="math inline">\(\mathcal{D}\)</span> includes daily, weekly, and monthly observations, with the target variable <span class="math inline">\(Y\)</span> and features <span class="math inline">\(X\)</span> derived from averages of high-frequency data.</p>
+<p><strong>Step 1: Monthly Inflation Forecasting</strong></p>
+<p>High-frequency data is aggregated into monthly averages to align with the frequency of the target variable. The aggregated feature <span class="math inline">\(x_{i,m}\)</span> for month <span class="math inline">\(m\)</span> is calculated as:</p>
+<p><span class="math display">\[
+x_{i,m} = \frac{1}{N_m} \sum_{t \in M} x_{i,t}^{d}
+\]</span></p>
+<p>where <span class="math inline">\(N_m\)</span> is the number of days in month <span class="math inline">\(m\)</span>, and <span class="math inline">\(M\)</span> is the set of all days within that month. The target variable <span class="math inline">\(Y_m\)</span> is computed similarly. A machine learning algorithm is then trained on the aggregated dataset <span class="math inline">\(\mathcal{D}_m = \{(X_m, Y_m)\}\)</span>.</p>
+<p><strong>Step 2: Applying Monthly-Validated Algorithms for Weekly Prediction</strong></p>
+<p>For weekly predictions, the monthly-trained algorithm is used, adjusting inputs by calculating weekly averages of daily data:</p>
+<p><span class="math display">\[
+x_{i,w} = \frac{1}{N_w} \sum_{t \in W} x_{i,t}^{d}
+\]</span></p>
+<p>where <span class="math inline">\(x_{i,w}\)</span> is the weekly average of feature <span class="math inline">\(i\)</span>, <span class="math inline">\(N_w\)</span> the number of days in week <span class="math inline">\(w\)</span>, and <span class="math inline">\(W\)</span> the set of all days within that week.</p>
+<p>The assumption underlying this approach is that the data distribution remains consistent across time frequencies, ensuring that the algorithm captures patterns applicable across varying time scales:</p>
+<p><span class="math display">\[
+\mathbb{E}[Y_w] \approx \mathbb{E}[Y_m], \text{ given } \mathbb{E}[x_{i,w}] \approx \mathbb{E}[x_{i,m}]
+\]</span></p>
+<p>This ensures that the expected values of weekly and monthly target variables are closely aligned.</p>
+<div id="target-variable" class="section level3">
+<h3>Target Variable</h3>
+<p>This research employs a two-step methodology to forecast weekly inflation, with a particular focus on developing economies where access to high-frequency data is limited. Bolivia serves as the case study, representing a scenario where the most detailed publicly available data is monthly inflation statistics. This poses a unique challenge for predicting inflation due to the absence of high-frequency financial and stock market data commonly accessible in more developed economies.</p>
+<p>The Consumer Price Index (CPI) is identified as the target variable (<span class="math inline">\(Y_m\)</span>) due to its substantial correlation with the selected features, which enhances the forecasting capabilities of the machine learning algorithms deployed for predicting weekly inflation rates.</p>
+<p>The CPI data facilitates step 1 of the two-step methodology for weekly forecasting, encompassing the training and validation of algorithms for monthly inflation forecasting, with the time series spanning from January 2011 to December 2023.</p>
+</div>
+<div id="features" class="section level3">
+<h3>Features</h3>
+<p>This section outlines the assembly of a diverse dataset, poised for the two-step methodology aimed at forecasting weekly inflation. The dataset is segmented into five groups: wholesale prices, Google Trends data, financial variables, commodity prices, and lags. This categorization enables a holistic analysis that melds global economic insights with localized market conditions and the intricate dynamics of inflation.</p>
+<p>The data compilation process is designed to facilitate the construction of time-series across daily, weekly, and monthly intervals, potentially serving as features within the forecasting methodology:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Wholesale Prices</strong>: Incorporates wholesale price data from Bolivia’s Agro-Environmental and Productive Observatory (OAP), offering insights into market supply and demand dynamics. The dataset includes monthly (<span class="math inline">\(x_{i,m}^{\text{WS}}\)</span>) and weekly (<span class="math inline">\(x_{i,w}^{\text{WS}}\)</span>) averages derived from daily observations across various products.</li>
+<li><strong>Google Trends Data</strong>: Captures shifts in consumer sentiment towards economic indicators and commodities. Weekly (<span class="math inline">\(x_{i,w}^{\text{GT}}\)</span>) and monthly (<span class="math inline">\(x_{i,m}^{\text{GT}}\)</span>) time series are compiled, with a transformation applied to weekly data to align with monthly aggregates.</li>
+<li><strong>Financial Variables</strong>: Includes the Housing Development Unit (UFV) and the USD/BOB exchange rate, which serve as potential predictors of inflation. Despite Bolivia’s fixed exchange rate regime, the USD/BOB rate from Google Finance offers variability suitable for forecasting purposes. The dataset also includes the LIBOR rate due to its significant correlation with Bolivia’s CPI.</li>
+<li><strong>Commodity Prices</strong>: Traces global economic influences on domestic inflation through a broad array of goods, allowing the model to account for external shocks and supply chain dynamics.</li>
+<li><strong>Lags</strong>: To capture seasonality and persistence within inflation trends, lags of the CPI variable (1, 2, 3, 6, 9, and 12 months) are included as potential predictors.</li>
+</ol>
+<p>Following the compilation of over 500 high-frequency potential predictors, a correlation analysis filters variables based on their relationship with the CPI, adhering to a threshold for positive correlation greater than 0.5. This rigorous selection criteria narrows down the feature matrix <span class="math inline">\(X\)</span> to a total of 86 variables, optimized for the forecasting model.</p>
+</div>
+<div id="training-validation-and-test-sets" class="section level3">
+<h3>Training, Validation, and Test Sets</h3>
+<p>Step 1 of the methodology leverages the monthly-frequency feature matrix <span class="math inline">\(X_m\)</span> and the target variable <span class="math inline">\(Y_m\)</span> as inputs, denoted as <span class="math inline">\(\mathcal{D}_m = \{(X_m, Y_m)\}\)</span>. This dataset forms the basis for training and validating machine learning algorithms with the goal of accurately forecasting monthly inflation rates. The dataset is partitioned such that 80% is designated for training, and the remaining 20% for validation.</p>
+<p>This subdivision strategy opts for a random assignment of observations to training and validation sets, informed by the dataset’s feature composition and the inclusion of CPI lags, ensuring that the models are trained and validated against a broad spectrum of inflationary dynamics encapsulating the entire analysis period.</p>
+<p>Proceeding to step 2 of the methodology, the algorithms, trained and validated on the monthly data (<span class="math inline">\(\mathcal{D}_m\)</span>), are applied to a weekly-frequency feature matrix (<span class="math inline">\(X_w\)</span>), positioning <span class="math inline">\(X_w\)</span> as the test set for generating weekly forecasts of the target variable <span class="math inline">\(Y_w\)</span>.</p>
+<p>Prior to analysis, both <span class="math inline">\(\mathcal{D}_m\)</span> and <span class="math inline">\(X_w\)</span> are subjected to z-score normalization to ensure uniformity across variables and minimize potential biases.</p>
+</div>
+<div id="machine-learning-algorithms" class="section level3">
+<h3>Machine Learning Algorithms</h3>
+<p>The machine learning algorithms selected include Ridge Regression, Lasso Regression, ElasticNet, AdaBoost Regressor, Gradient Boosting Regressor, Random Forest Regression, and Extra Trees Regressor. These algorithms are optimized through hyperparameter tuning using a 5-fold cross-validation technique to ensure robust performance on unseen data.</p>
+</div>
+<div id="aggregated-metrics-for-forecasting" class="section level3">
+<h3>Aggregated Metrics for Forecasting</h3>
+<p>Aggregated forecast metrics are constructed to enhance overall forecasting performance by combining the heterogeneity and variability of individual predictions. This approach includes computing arithmetic and weighted means of individual predictions, as well as other aggregated metrics, to leverage the strengths of different algorithms.</p>
+</div>
+</div>
+<div id="results" class="section level2">
+<h2>Results</h2>
+<div id="monthly-inflation-forecasting" class="section level3">
+<h3>Monthly Inflation Forecasting</h3>
+<p>The methodology commenced with training and validating seven machine learning algorithms to forecast monthly inflation in Bolivia <strong>(Step 1)</strong>. Each model underwent 5-fold cross-validation, evaluated using mean squared error (MSE), mean absolute error (MAE), and the <span class="math inline">\(R^2\)</span>. Hyperparameter tuning significantly enhanced all models, underscoring the importance of optimal parameter selection.</p>
+<p>Table 1 displays the performance of individual algorithms and aggregated forecast metrics. At individual level, the Extra Trees (ET) algorithm emerged as the most accurate, followed by Gradient Boosting Regressor (GBR) and Ridge. Ensemble methods, particularly the weighted arithmetic mean of the three best-performing algorithms (<span class="math inline">\(\hat{\pi}_{\text{WAM-BEST}}\)</span>), achieved the highest accuracy.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Weekly_inflation/Evaluation_forecast.PNG" style="width:70.0%;height:80.0%" alt="Table 1. Forecast Evaluation by Aggregated Forecast Metrics and Algorithms" />
+<div class="figcaption">Table 1. Forecast Evaluation by Aggregated Forecast Metrics and Algorithms</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<p>Figures 2 and 3 illustrate the forecast interval (The upper and lower limits are determined by the maximum and minimum values from the forecasts generated by the three best-performing algorithms.) and final model to forecast y-o-y inflation (The final model is the weighted arithmetic mean of the three best-performing algorithms (<span class="math inline">\(\hat{\pi}_{\text{WAM-BEST}}\)</span>). The final model accurately captured significant inflation fluctuations, achieving a MSE of 0.051, MAE of 0.168, and <span class="math inline">\(R^2\)</span> of 0.986 on the validation set.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Weekly_inflation/Monthly_Forecast_interval_NoCOM.PNG" style="width:80.0%;height:80.0%" alt="FIGURE 2. Monthly Forecast Interval and y-o-y Inflation for Bolivia" />
+<div class="figcaption">FIGURE 2. Monthly Forecast Interval and y-o-y Inflation for Bolivia</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<div style="text-align:center;">
+<div class="float">
+<img src="Weekly_inflation/Monthly_Forecast_NoCOM.PNG" style="width:80.0%;height:80.0%" alt="FIGURE 3. Monthly Inflation Forecast for Bolivia" />
+<div class="figcaption">FIGURE 3. Monthly Inflation Forecast for Bolivia</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<p>Comparative analysis with similar studies reveals that the proposed final model’s performance is among the best, with notably low MSE and MAE values. It effectively surpasses traditional econometric approaches and survey-based forecasting methods. For greater detail on robustness and predictive capability, refer to the <a href="https://osmarbolivar.github.io/docs/papers_docs/WP_Weekly_Inflation_Forecast.pdf">Working Paper</a>.</p>
+</div>
+<div id="weekly-inflation-forecasting" class="section level3">
+<h3>Weekly Inflation Forecasting</h3>
+<p>Step 1 of the methodology established the final forecast model as the weighted arithmetic mean of the three best-performing algorithms. This model was applied to forecast weekly inflation from the first week of 2019 to the last week of 2023 (See Figue 1). The weekly forecasts align well with broader monthly trends, capturing within-month variations and providing early signals of inflationary shifts, crucial for economic policymaking.</p>
+<p>The advantages of weekly over monthly forecasts are significant:<br />
+- <strong>Timeliness:</strong> Weekly data provides more immediate insights for quick economic responses.<br />
+- <strong>Detail:</strong> Within-month fluctuations reveal transient economic shocks that monthly data may miss.<br />
+- <strong>Predictive Accuracy:</strong> A better understanding of inflation dynamics enhances economic decision-making.</p>
+<p>The model supports one-month-ahead forecasts, allowing policymakers to adapt strategies proactively. For instance, an unexpected weekly rise in inflation could prompt immediate measures before monthly data confirms the trend.</p>
+<p>Moreover, validation using the two-sample Smirnov test confirmed that distributions of weekly predicted inflation are statistically indistinguishable from observed monthly inflation, supporting the model’s reliability.</p>
+<p>Additionally, the model effectively captured inflationary impacts during significant events, such as the political crisis in November 2019 and the drought and civil strike in late 2022, demonstrating its value for real-time economic analysis.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Weekly_inflation/Event2019_upscale.PNG" style="width:70.0%;height:80.0%" alt="FIGURE 4. Monthly Observed y-o-y Inflation and Weekly Forecast from October to December 2019" />
+<div class="figcaption">FIGURE 4. Monthly Observed y-o-y Inflation and Weekly Forecast from October to December 2019</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<div style="text-align:center;">
+<div class="float">
+<img src="Weekly_inflation/Event2022_upscale.PNG" style="width:70.0%;height:80.0%" alt="FIGURE 5. Monthly Observed y-o-y Inflation and Weekly Forecast from September to December 2022" />
+<div class="figcaption">FIGURE 5. Monthly Observed y-o-y Inflation and Weekly Forecast from September to December 2022</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>This research demonstrates the efficacy of a two-step machine learning methodology in forecasting weekly inflation rates. This method delivers robust performance in both monthly and weekly forecasts. The approach is particularly valuable for developing economies with limited access to high-frequency financial data, providing a reliable tool for policymakers and economic planners.</p>
+<p>For a detailed examination of the methodology, dataset, and results, refer to the full working paper: <a href="https://osmarbolivar.github.io/docs/papers_docs/WP_Weekly_Inflation_Forecast.pdf">Weekly Inflation Forecasting: A Two-Step Machine Learning Methodology</a>.</p>
+</div>
+</div>
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">© Copyright 2024.</div>
+  <div id="logos">
+    <a href="https://github.com/osmarbolivar" class="footerLogo gitHub"></a>
+    <a href="https://www.researchgate.net/profile/Osmar-Bolivar" class="footerLogo researchgate"></a>
+    <a href="https://www.linkedin.com/in/osmar-bolivar-rosales/" class="footerLogo linkedIn"></a>
+  </div>
+</div>
+</div>
+
+<!-- bizible -->
+<script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>
+
+<!-- disqus -->
+<div id="disqus_thread" class="standardPadding"></div>
+<script type="text/javascript" src="js/disqus.js"></script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script type="text/javascript" src="js/external-links.js"></script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
