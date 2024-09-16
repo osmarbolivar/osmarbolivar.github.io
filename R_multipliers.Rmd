@@ -95,4 +95,4 @@ Finally, let's explore the multiplier effects on employment. On average, an incr
 In closing, Bolivia's economic landscape holds immense potential. Understanding and harnessing the power of multiplier effects in different economic activities is the key to unlocking this potential. These insights not only aid in making informed decisions but also play a crucial role in shaping the future of Bolivia's economy, paving the way for growth and prosperity.
 
 
-[^1]: Bolivar, O. (2022).[***"Efecto Multiplicador: Evidencia empírica para una asignación costo-efectiva de la inversión pública"***](https://osmarbolivar.weebly.com/uploads/1/4/5/6/145648625/multiplicadores.pdf). Cuadernos de Investigación Económica Boliviana, 5(2): 7-64.
+[^1]: Bolivar, O. (2022).[***"Fiscal Multipliers: Empirical Evidence for a Cost-Effective Allocation of Public Investment"***](https://ideas.repec.org/a/efp/journl/v5y2022i2p1-28.html). Cuadernos de Investigación Económica Boliviana, 5(2): 1-28.
