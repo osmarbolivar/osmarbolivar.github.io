@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Fiscal Multipliers</title>
+
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<meta name="description" content="I share insights in regard to applied AI and data science for data-driven economics"/>
+
+<script type="text/javascript" src="js/redirect.js"></script>
+<script type="text/javascript" src="js/rmarkdown.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5SMWF48P');</script>
+<!-- End Google Tag Manager -->
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SMWF48P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<meta name="description" content="I share insights in regard to applied AI and data science for data-driven economics"/>
+
+<div id="rStudioHeader" class="alwaysShrunk">
+  <div class="innards bandContent">
+    <div>
+      <a class="productName" href="index.html">My Website</a>
+      <div class="rStudio"><span class="light">Osmar Bolivar Rosales</span></div>
+    </div>
+
+    <div id="menu">
+      <div id="menuToggler"></div>
+      <div id="menuItems">
+        <a class="menuItem" href="index.html">Home</a>
+        <a class="menuItem" href="portfolio.html">My Portfolio</a>
+        <a class="menuItem" href="Papers.html">Papers</a>
+        <a class="menuItem" href="About.html">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+#TOC {
+  margin-left: 35px;
+  margin-top: 90px;
+}
+</style>
+
+<script type="text/javascript">
+$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+</script>
+
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">
+
+<style type="text/css">
+.title {
+  display: none;
+}
+#disqus_thread {
+  display: none;
+}
+</style>
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Fiscal Multipliers</h1>
+
+</div>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HJ5VRY62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F5HJ5VRY62');
+</script>
+<div id="fiscal-multipliers" class="section level1">
+<h1>Fiscal Multipliers</h1>
+<p>Public investment is a crucial policy tool for fostering economic development, especially in countries like Bolivia, where government spending can significantly enhance economic activity and improve living standards. In this blog, I summarize my research <a href="https://ideas.repec.org/a/efp/journl/v5y2022i2p1-28.html">Fiscal Multipliers: Empirical Evidence for a Cost-Effective Allocation of Public Investment</a>, with a focus on fiscal multipliers of public investment at the sectoral level in Bolivia. By identifying sector-specific public investment shocks, I provide insights into the most cost-effective areas for public investment, comparing sectors such as infrastructure, productive, and social.</p>
+<div id="empirical-strategy" class="section level2">
+<h2>Empirical Strategy</h2>
+<p>The empirical approach estimates the multiplier effects of public investment across various sectors as reported by the Bolivia’s Vice Ministry of Public Investment and External Financing. The sectors are grouped into three major categories: Productive, Infrastructure, and Social. Each category consists of specific sub-sectors, as shown in Table 1.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Fiscal_multipliers/tab_0.png" style="width:40.0%;height:20.0%" alt="Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia" />
+<div class="figcaption">Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<div id="estimation-framework" class="section level3">
+<h3>Estimation Framework</h3>
+<p>The multiplier effects are calculated as the cumulative response of nominal GDP to public investment shocks, based on the approach by Ilzetzki et al. (2013). The cumulative multiplier (<span class="math inline">\(M_T\)</span>) is defined as:</p>
+<p><span class="math display">\[
+M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
+\]</span></p>
+<p>where <span class="math inline">\(\Delta PIB_t\)</span> and <span class="math inline">\(\Delta g_t\)</span> represent changes in nominal GDP and public investment, respectively.</p>
+<p>To estimate these multiplier effects, Bayesian Structural Vector Autoregressive (BSVAR) models are employed. The key methodological challenge is identifying fiscal policy shocks, which is addressed using the identification algorithm by Arias et al. (2018). This method uses sign and zero restrictions to identify structural shocks, allowing for a robust estimation of the effects of public investment.</p>
+<p>Separate BSVAR models are constructed for each sector <span class="math inline">\(i\)</span> where public investment is allocated. The analysis uses quarterly data from 2006Q1 to 2022Q3, with the vector of endogenous variables including year-over-year variations in nominal GDP, nominal public investment in sector <span class="math inline">\(i\)</span>, the Consumer Price Index (CPI), financial system liquidity, and the WTI oil price. The models include four lags to account for seasonal effects.</p>
+<p>The identification strategy is designed to capture the dynamics of key structural shocks affecting the Bolivian economy, summarized in Table 2.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Fiscal_multipliers/tab_1.png" style="width:70.0%;height:80.0%" alt="Table 2. Identification Strategy for Structural Shocks" />
+<div class="figcaption">Table 2. Identification Strategy for Structural Shocks</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<p>The identification assumptions are as follows:</p>
+<ul>
+<li><p><strong>Aggregate Supply and Demand Shocks</strong>: Both have a positive contemporaneous effect on output, but differ in their impact on prices. Aggregate supply shocks typically lead to price reductions through productivity gains.</p></li>
+<li><p><strong>Expansionary Fiscal Policy Shock</strong>: Defined as a discretionary increase in public investment sustained for at least one year, associated with a positive impact on output. Public investment in sector <span class="math inline">\(i\)</span> is budgeted in advance, making it unlikely to be contemporaneously adjusted in response to other economic shocks.</p></li>
+<li><p><strong>Monetary Policy Shocks</strong>: Identified through increases in financial system liquidity. No contemporaneous effect on output is assumed, consistent with the notion that monetary policy does not have an immediate impact on aggregate activity.</p></li>
+<li><p><strong>Commodity Prices</strong>: Treated as exogenous to domestic conditions. Domestic shocks do not contemporaneously affect international commodity prices, reflecting Bolivia’s status as a small open economy.</p></li>
+</ul>
+<p>For interpretation, the accumulated public investment multiplier for sector <span class="math inline">\(i\)</span> at time <span class="math inline">\(T\)</span> (<span class="math inline">\(\hat{M}_{i,T}\)</span>) is computed as the ratio between the median values of the posterior distributions for accumulated GDP responses (<span class="math inline">\(\hat{R}_T^{GDP}\)</span>) and public investment responses (<span class="math inline">\(\hat{R}_T^{g}\)</span>).</p>
+<div style="margin-bottom: 30px;">
+
+</div>
+</div>
+</div>
+<div id="key-findings" class="section level2">
+<h2>Key Findings</h2>
+<div id="multiplier-effects-across-major-sectors" class="section level3">
+<h3>Multiplier Effects Across Major Sectors</h3>
+<p>The analysis reveals that among the three major public investment categories, social investment yields the highest multiplier effect, making it the most cost-effective. Figure 1 presents an overview of multiplier effects for public investment across Productive, Infrastructure, and Social sectors.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Fiscal_multipliers/fig_1.png" style="width:70.0%;height:80.0%" alt="Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit." />
+<div class="figcaption">Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit.</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<div id="social-investment-as-a-priority" class="section level4">
+<h4>Social Investment as a Priority</h4>
+<p>Investments in social sectors, including urban development, education, health, and basic sanitation, show the strongest multiplier effects, with basic sanitation projects being particularly impactful. These projects, which employ a high proportion of locally sourced inputs and labor, contribute significantly to economic growth. Figure 2 illustrates the multiplier effects of investments in specific social sectors.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Fiscal_multipliers/fig_2.png" style="width:70.0%;height:80.0%" alt="Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Results represent the median of posterior distributions from Impulse Response Functions." />
+<div class="figcaption">Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Results represent the median of posterior distributions from Impulse Response Functions.</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<p>Basic sanitation projects have a contemporaneous multiplier effect of 0.76 and a medium-term effect of 1.17, underscoring their importance in stimulating the economy while addressing fundamental needs.</p>
+</div>
+</div>
+<div id="productive-and-infrastructure-investments" class="section level3">
+<h3>Productive and Infrastructure Investments</h3>
+<p>Productive investments, such as in hydrocarbons and agriculture, also exhibit significant multiplier effects, albeit lower than those for social sectors. The multiplier for hydrocarbons, for instance, exceeds one in the medium term, suggesting substantial potential for economic returns.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Fiscal_multipliers/fig_3.png" style="width:70.0%;height:95.0%" alt="Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors (Hydrocarbons, Agriculture, Industry, Mining, and Energy). Note: Results represent the median of posterior distributions from Impulse Response Functions." />
+<div class="figcaption">Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors (Hydrocarbons, Agriculture, Industry, Mining, and Energy). Note: Results represent the median of posterior distributions from Impulse Response Functions.</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<p>Infrastructure investment, while crucial for long-term growth, shows the lowest multiplier effect among the three categories. Transportation infrastructure, in particular, has the least immediate impact on GDP, indicating that while these investments are essential for enhancing productivity and market connectivity, their short-term effects are less pronounced.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Fiscal_multipliers/fig_4.png" style="width:70.0%;height:80.0%" alt="Figure 4. Multiplier Effect on Nominal GDP of Public Investment Shocks in Infrastructure (Transportation, Communication, and Water Resources). Note: Results represent the median of posterior distributions from Impulse Response Functions." />
+<div class="figcaption">Figure 4. Multiplier Effect on Nominal GDP of Public Investment Shocks in Infrastructure (Transportation, Communication, and Water Resources). Note: Results represent the median of posterior distributions from Impulse Response Functions.</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+</div>
+</div>
+<div id="comparative-analysis-of-sectoral-multipliers" class="section level2">
+<h2>Comparative Analysis of Sectoral Multipliers</h2>
+<p>Table 2 summarizes the estimated multiplier effects across sectors, highlighting those with the highest return per unit of investment.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Fiscal_multipliers/tab_2.png" style="width:40.0%;height:70.0%" alt="Table 2. Summary of Public Investment Multiplier Effects by Sector" />
+<div class="figcaption">Table 2. Summary of Public Investment Multiplier Effects by Sector</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<p>The analysis indicates that sanitation projects, hydrocarbons, and urban development deliver the highest returns, while sectors like mining and industry exhibit lower multipliers, possibly due to longer project implementation periods.</p>
+</div>
+<div id="policy-implications" class="section level2">
+<h2>Policy Implications</h2>
+<p>The findings from this study offer significant insights for public policy in Bolivia. Prioritizing social investments, particularly in basic sanitation, can maximize economic returns from public spending.</p>
+<p>Infrastructure investments, while not yielding high short-term multipliers, are essential for improving productivity, reducing costs, and enhancing market access. A strategic approach is necessary to leverage the broader, long-term benefits of infrastructure.</p>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>This study presents an alternative methodological framework for estimating fiscal multipliers using a sector-specific BSVAR approach. The findings emphasize the value of targeted public investment planning, demonstrating that investments in social infrastructure, such as basic sanitation and health, yield the highest economic returns in Bolivia.</p>
+<p>These insights are intended to support policymakers in making evidence-based decisions to achieve cost-effective public resource allocation that aligns with broader economic growth objectives.</p>
+</div>
+</div>
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<div id="rStudioFooter" class="band full">
+<div class="bandContent">
+  <div id="copyright">© Copyright 2024.</div>
+  <div id="logos">
+    <a href="https://github.com/osmarbolivar" class="footerLogo gitHub"></a>
+    <a href="https://www.researchgate.net/profile/Osmar-Bolivar" class="footerLogo researchgate"></a>
+    <a href="https://www.linkedin.com/in/osmar-bolivar-rosales/" class="footerLogo linkedIn"></a>
+  </div>
+</div>
+</div>
+
+<!-- bizible -->
+<script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>
+
+<!-- disqus -->
+<div id="disqus_thread" class="standardPadding"></div>
+<script type="text/javascript" src="js/disqus.js"></script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script type="text/javascript" src="js/external-links.js"></script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
