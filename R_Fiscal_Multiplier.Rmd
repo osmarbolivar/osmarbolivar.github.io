@@ -1,6 +1,6 @@
 ---
 title: "Fiscal Multipliers"
-description: "Fiscal Multipliers: Empirical Evidence for a Cost-Effective Allocation of Public Investment"
+description: "Empirical Evidence for a Cost-Effective Allocation of Public Investment"
 output:
   html_document:
     toc_float: false
