@@ -227,10 +227,19 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 </script>
 <div id="fiscal-multipliers" class="section level1">
 <h1>Fiscal Multipliers</h1>
-<p>Public investment is a crucial policy tool for fostering economic development, especially in countries like Bolivia, where government spending can significantly enhance economic activity and improve living standards. In this blog, I summarize my research <a href="https://ideas.repec.org/a/efp/journl/v5y2022i2p1-28.html">Fiscal Multipliers: Empirical Evidence for a Cost-Effective Allocation of Public Investment</a>, with a focus on fiscal multipliers of public investment at the sectoral level in Bolivia. By identifying sector-specific public investment shocks, I provide insights into the most cost-effective areas for public investment, comparing sectors such as infrastructure, productive, and social.</p>
+<div style="text-align:center;">
+<div class="float">
+<img src="Fiscal_multipliers/fig_1.PNG" style="width:70.0%;height:80.0%" alt="Figure 1. Multiplier Effect on Nominal GDP of Public Investment Shocks: Productive, Infrastructure, and Social. Note: Values indicate the expected monetary increase in nominal GDP following shocks that increase the fiscal variables by 1 monetary unit." />
+<div class="figcaption">Figure 1. Multiplier Effect on Nominal GDP of Public Investment Shocks: Productive, Infrastructure, and Social. Note: Values indicate the expected monetary increase in nominal GDP following shocks that increase the fiscal variables by 1 monetary unit.</div>
+</div>
+</div>
+<div style="margin-bottom: 30px;">
+
+</div>
+<p>Public investment is a crucial policy tool for fostering economic development, especially in countries like Bolivia, where government spending can significantly enhance economic activity and improve living standards. In this blog, I summarize my research <a href="https://ideas.repec.org/a/efp/journl/v5y2022i2p1-28.html" target="_blank"><strong>Fiscal Multipliers: Empirical Evidence for a Cost-Effective Allocation of Public</strong></a>, with a focus on fiscal multipliers of public investment at the sectoral level in Bolivia. By identifying sector-specific public investment shocks, I provide insights into the most cost-effective areas for public investment, comparing sectors such as infrastructure, productive, and social.</p>
 <div id="empirical-strategy" class="section level2">
 <h2>Empirical Strategy</h2>
-<p>The empirical approach estimates the multiplier effects of public investment across various sectors as reported by the Bolivia’s Vice Ministry of Public Investment and External Financing. The sectors are grouped into three major categories: Productive, Infrastructure, and Social. Each category consists of specific sub-sectors, as shown in Table 1.</p>
+<p>The empirical approach estimates the multiplier effects of public investment across various sectors as reported by the Bolivia’s Vice Ministry of Public Investment and External Financing. The sectors are grouped into three major categories: Productive, Infrastructure, and Social. Each category consists of specific sub-sectors, as shown in <strong><em>Table 1</em></strong>.</p>
 <div style="text-align:center;">
 <div class="float">
 <img src="Fiscal_multipliers/tab_0.PNG" style="width:40.0%;height:20.0%" alt="Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia" />
@@ -242,17 +251,17 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 </div>
 <div id="estimation-framework" class="section level3">
 <h3>Estimation Framework</h3>
-<p>The multiplier effects are calculated as the cumulative response of nominal GDP to public investment shocks, based on the approach by Ilzetzki et al. (2013). The cumulative multiplier (<span class="math inline">\(M_T\)</span>) is defined as:</p>
+<p>The multiplier effects are calculated as the cumulative response of nominal GDP to public investment shocks, based on the approach by <strong>Ilzetzki et al. (2013)</strong><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. The cumulative multiplier (<span class="math inline">\(M_T\)</span>) is defined as:</p>
 <p><span class="math display">\[
 M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
 \]</span></p>
 <p>where <span class="math inline">\(\Delta PIB_t\)</span> and <span class="math inline">\(\Delta g_t\)</span> represent changes in nominal GDP and public investment, respectively.</p>
-<p>To estimate these multiplier effects, Bayesian Structural Vector Autoregressive (BSVAR) models are employed. The key methodological challenge is identifying fiscal policy shocks, which is addressed using the identification algorithm by Arias et al. (2018). This method uses sign and zero restrictions to identify structural shocks, allowing for a robust estimation of the effects of public investment.</p>
+<p>To estimate these multiplier effects, Bayesian Structural Vector Autoregressive (BSVAR) models are employed. The key methodological challenge is identifying fiscal policy shocks, which is addressed using the identification algorithm by <strong>Arias et al. (2018)</strong><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. This method uses sign and zero restrictions to identify structural shocks, allowing for a robust estimation of the effects of public investment.</p>
 <p>Separate BSVAR models are constructed for each sector <span class="math inline">\(i\)</span> where public investment is allocated. The analysis uses quarterly data from 2006Q1 to 2022Q3, with the vector of endogenous variables including year-over-year variations in nominal GDP, nominal public investment in sector <span class="math inline">\(i\)</span>, the Consumer Price Index (CPI), financial system liquidity, and the WTI oil price. The models include four lags to account for seasonal effects.</p>
-<p>The identification strategy is designed to capture the dynamics of key structural shocks affecting the Bolivian economy, summarized in Table 2.</p>
+<p>The identification strategy is designed to capture the dynamics of key structural shocks affecting the Bolivian economy, summarized in <strong><em>Table 2</em></strong>.</p>
 <div style="text-align:center;">
 <div class="float">
-<img src="Fiscal_multipliers/tab_identif.png" style="width:65.0%;height:65.0%" alt="Table 2. Identification Strategy for Structural Shocks" />
+<img src="Fiscal_multipliers/tab_1.PNG" style="width:65.0%;height:65.0%" alt="Table 2. Identification Strategy for Structural Shocks" />
 <div class="figcaption">Table 2. Identification Strategy for Structural Shocks</div>
 </div>
 </div>
@@ -276,23 +285,14 @@ M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
 <h2>Key Findings</h2>
 <div id="multiplier-effects-across-major-sectors" class="section level3">
 <h3>Multiplier Effects Across Major Sectors</h3>
-<p>The analysis reveals that among the three major public investment categories, social investment yields the highest multiplier effect, making it the most cost-effective. Figure 1 presents an overview of multiplier effects for public investment across Productive, Infrastructure, and Social sectors.</p>
-<div style="text-align:center;">
-<div class="float">
-<img src="Fiscal_multipliers/fig_1.PNG" style="width:80.0%;height:80.0%" alt="Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit." />
-<div class="figcaption">Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit.</div>
-</div>
-</div>
-<div style="margin-bottom: 30px;">
-
-</div>
+<p>The analysis reveals that among the three major public investment categories, social investment yields the highest multiplier effect, making it the most cost-effective. <strong><em>Figure 1</em></strong> presents an overview of multiplier effects for public investment across Productive, Infrastructure, and Social sectors.</p>
 <div id="social-investment-as-a-priority" class="section level4">
 <h4>Social Investment as a Priority</h4>
-<p>Investments in social sectors, including urban development, education, health, and basic sanitation, show the strongest multiplier effects, with basic sanitation projects being particularly impactful. These projects, which employ a high proportion of locally sourced inputs and labor, contribute significantly to economic growth. Figure 2 illustrates the multiplier effects of investments in specific social sectors.</p>
+<p>Investments in social sectors, including urban development, education, health, and basic sanitation, show the strongest multiplier effects, with basic sanitation projects being particularly impactful. These projects, which employ a high proportion of locally sourced inputs and labor, contribute significantly to economic growth. <strong><em>Figure 2</em></strong> illustrates the multiplier effects of investments in specific social sectors.</p>
 <div style="text-align:center;">
 <div class="float">
-<img src="Fiscal_multipliers/fig_2.PNG" style="width:70.0%;height:80.0%" alt="Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Results represent the median of posterior distributions from Impulse Response Functions." />
-<div class="figcaption">Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Results represent the median of posterior distributions from Impulse Response Functions.</div>
+<img src="Fiscal_multipliers/fig_2.PNG" style="width:70.0%;height:80.0%" alt="Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Values indicate the expected monetary increase in nominal GDP following shocks that increase the fiscal variables by 1 monetary unit." />
+<div class="figcaption">Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Values indicate the expected monetary increase in nominal GDP following shocks that increase the fiscal variables by 1 monetary unit.</div>
 </div>
 </div>
 <div style="margin-bottom: 30px;">
@@ -306,8 +306,8 @@ M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
 <p>Productive investments, such as in hydrocarbons and agriculture, also exhibit significant multiplier effects, albeit lower than those for social sectors. The multiplier for hydrocarbons, for instance, exceeds one in the medium term, suggesting substantial potential for economic returns.</p>
 <div style="text-align:center;">
 <div class="float">
-<img src="Fiscal_multipliers/fig_3.PNG" style="width:70.0%;height:95.0%" alt="Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors (Hydrocarbons, Agriculture, Industry, Mining, and Energy). Note: Results represent the median of posterior distributions from Impulse Response Functions." />
-<div class="figcaption">Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors (Hydrocarbons, Agriculture, Industry, Mining, and Energy). Note: Results represent the median of posterior distributions from Impulse Response Functions.</div>
+<img src="Fiscal_multipliers/fig_3.PNG" style="width:70.0%;height:90.0%" alt="Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors: Hydrocarbons, Agriculture, Industry, Mining, and Energy. Note: Values indicate the expected monetary increase in nominal GDP following shocks that increase the fiscal variables by 1 monetary unit." />
+<div class="figcaption">Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors: Hydrocarbons, Agriculture, Industry, Mining, and Energy. Note: Values indicate the expected monetary increase in nominal GDP following shocks that increase the fiscal variables by 1 monetary unit.</div>
 </div>
 </div>
 <div style="margin-bottom: 30px;">
@@ -316,8 +316,8 @@ M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
 <p>Infrastructure investment, while crucial for long-term growth, shows the lowest multiplier effect among the three categories. Transportation infrastructure, in particular, has the least immediate impact on GDP, indicating that while these investments are essential for enhancing productivity and market connectivity, their short-term effects are less pronounced.</p>
 <div style="text-align:center;">
 <div class="float">
-<img src="Fiscal_multipliers/fig_4.PNG" style="width:70.0%;height:80.0%" alt="Figure 4. Multiplier Effect on Nominal GDP of Public Investment Shocks in Infrastructure (Transportation, Communication, and Water Resources). Note: Results represent the median of posterior distributions from Impulse Response Functions." />
-<div class="figcaption">Figure 4. Multiplier Effect on Nominal GDP of Public Investment Shocks in Infrastructure (Transportation, Communication, and Water Resources). Note: Results represent the median of posterior distributions from Impulse Response Functions.</div>
+<img src="Fiscal_multipliers/fig_4.PNG" style="width:70.0%;height:80.0%" alt="Figure 4. Multiplier Effect on Nominal GDP of Public Investment Shocks in Infrastructure: Transportation, Communication, and Water Resources. Note: Values indicate the expected monetary increase in nominal GDP following shocks that increase the fiscal variables by 1 monetary unit." />
+<div class="figcaption">Figure 4. Multiplier Effect on Nominal GDP of Public Investment Shocks in Infrastructure: Transportation, Communication, and Water Resources. Note: Values indicate the expected monetary increase in nominal GDP following shocks that increase the fiscal variables by 1 monetary unit.</div>
 </div>
 </div>
 <div style="margin-bottom: 30px;">
@@ -327,10 +327,10 @@ M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
 </div>
 <div id="comparative-analysis-of-sectoral-multipliers" class="section level2">
 <h2>Comparative Analysis of Sectoral Multipliers</h2>
-<p>Table 2 summarizes the estimated multiplier effects across sectors, highlighting those with the highest return per unit of investment.</p>
+<p><strong><em>Table 2</em></strong> summarizes the estimated multiplier effects across sectors, highlighting those with the highest return per unit of investment.</p>
 <div style="text-align:center;">
 <div class="float">
-<img src="Fiscal_multipliers/tab_2.PNG" style="width:40.0%;height:70.0%" alt="Table 2. Summary of Public Investment Multiplier Effects by Sector" />
+<img src="Fiscal_multipliers/tab_2.PNG" style="width:40.0%;height:65.0%" alt="Table 2. Summary of Public Investment Multiplier Effects by Sector" />
 <div class="figcaption">Table 2. Summary of Public Investment Multiplier Effects by Sector</div>
 </div>
 </div>
@@ -349,6 +349,13 @@ M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
 <p>This study presents an alternative methodological framework for estimating fiscal multipliers using a sector-specific BSVAR approach. The findings emphasize the value of targeted public investment planning, demonstrating that investments in social infrastructure, such as basic sanitation and health, yield the highest economic returns in Bolivia.</p>
 <p>These insights are intended to support policymakers in making evidence-based decisions to achieve cost-effective public resource allocation that aligns with broader economic growth objectives.</p>
 </div>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>Ilzetzki, E., Mendoza, E. G., y Végh, C. A. (2013). <strong>How big (small?) are f iscal multipliers?</strong> <em>Journal of monetary economics, 60(2)</em>:239–254.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Arias, J. E., Rubio-Ram´ırez, J. F., y Waggoner, D. F. (2018). <strong>Inference based on structural vector autoregressions identified with sign and zero restrictions: Theory and applications</strong>. <em>Econometrica, 86(2)</em>:685–720.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 
   </div> <!-- articleBandContent -->
