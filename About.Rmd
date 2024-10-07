@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "I share insights in regard to applied AI and data science for data-driven economics."
+description: "I share insights in regard to applied econometrics, AI and data science for data-driven economics."
 output:
   html_document:
     toc_float: false
@@ -20,7 +20,7 @@ output:
 
 # About
 
-Passionate about driving transformative progress at the intersection of AI and data-driven economics. Committed to shaping a future where data serves as a dynamic catalyst for informed governance and sustainable development. Ready to contribute to innovative solutions that bridge technology and economic insights.
+As an economist specializing in economic research, policy analysis, and data-driven decision-making, I am passionate about harnessing the transformative potential of AI and advanced econometric methods to address complex macro and microeconomic challenges. With a proven track record in leading AI-driven projects, conducting socio-economic assessments, and designing data governance frameworks, I am committed to evidence-based policy-making that promotes sustainable development. My expertise extends to collaborating with international organizations and providing technical insights to inform public policy in Bolivia, bridging technology and economic insights for a more informed and resilient future.
 
 <div style="margin-bottom: 30px;"></div>  
 ## Experience / Skills

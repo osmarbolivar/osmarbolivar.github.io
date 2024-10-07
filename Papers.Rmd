@@ -1,6 +1,6 @@
 ---
 title: "Working Papers & Research Articles"
-description: "I share insights in regard to applied AI and data science for data-driven economics."
+description: "I share insights in regard to applied econometrics, AI and data science for data-driven economics."
 output:
   html_document:
     toc_float: false

@@ -140,5 +140,5 @@ This study presents an alternative methodological framework for estimating fisca
 These insights are intended to support policymakers in making evidence-based decisions to achieve cost-effective public resource allocation that aligns with broader economic growth objectives.
 
 [^1]: Ilzetzki, E., Mendoza, E. G., y Végh, C. A. (2013). **How big (small?) are f iscal multipliers?** *Journal of monetary economics, 60(2)*:239–254.
-[^2]: Arias, J. E., Rubio-Ram´ırez, J. F., y Waggoner, D. F. (2018). **Inference based on structural vector autoregressions identified with sign and zero restrictions: Theory and applications**. *Econometrica, 86(2)*:685–720.
+[^2]: Arias, J. E., Rubio-Ramírez, J. F., y Waggoner, D. F. (2018). **Inference based on structural vector autoregressions identified with sign and zero restrictions: Theory and applications**. *Econometrica, 86(2)*:685–720.
 
