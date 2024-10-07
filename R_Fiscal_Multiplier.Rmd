@@ -34,9 +34,10 @@ Public investment is a crucial policy tool for fostering economic development, e
 
 The empirical approach estimates the multiplier effects of public investment across various sectors as reported by the Bolivia's Vice Ministry of Public Investment and External Financing. The sectors are grouped into three major categories: Productive, Infrastructure, and Social. Each category consists of specific sub-sectors, as shown in Table 1.
 
-::: {style="text-align:center;"}
-![Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia](Fiscal_multipliers/tab_0.png){width="40%" height="20%"}
-:::
+
+<div style="text-align:center;">
+  ![Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia](Fiscal_multipliers/tab_0.png){width="40%" height="20%"}
+</div>
 <div style="margin-bottom: 30px;"></div>
 
 ### Estimation Framework
@@ -55,9 +56,9 @@ Separate BSVAR models are constructed for each sector $i$ where public investmen
 
 The identification strategy is designed to capture the dynamics of key structural shocks affecting the Bolivian economy, summarized in Table 2.
 
-::: {style="text-align:center;"}
-![Table 2. Identification Strategy for Structural Shocks](Fiscal_multipliers/tab_1.png){width="70%" height="80%"}
-:::
+<div style="text-align:center;">
+  ![Table 2. Identification Strategy for Structural Shocks](Fiscal_multipliers/tab_1.png){width="70%" height="80%"}
+</div>
 <div style="margin-bottom: 30px;"></div>
 
 The identification assumptions are as follows:
@@ -80,18 +81,18 @@ For interpretation, the accumulated public investment multiplier for sector $i$ 
 
 The analysis reveals that among the three major public investment categories, social investment yields the highest multiplier effect, making it the most cost-effective. Figure 1 presents an overview of multiplier effects for public investment across Productive, Infrastructure, and Social sectors.
 
-::: {style="text-align:center;"}
-![Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit.](Fiscal_multipliers/fig_1.png){width="70%" height="80%"}
-:::
+<div style="text-align:center;">
+  ![Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit.](Fiscal_multipliers/fig_1.png){width="70%" height="80%"}
+</div>
 <div style="margin-bottom: 30px;"></div>
 
 #### Social Investment as a Priority
 
 Investments in social sectors, including urban development, education, health, and basic sanitation, show the strongest multiplier effects, with basic sanitation projects being particularly impactful. These projects, which employ a high proportion of locally sourced inputs and labor, contribute significantly to economic growth. Figure 2 illustrates the multiplier effects of investments in specific social sectors.
 
-::: {style="text-align:center;"}
-![Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_2.png){width="70%" height="80%"}
-:::
+<div style="text-align:center;">
+  ![Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_2.png){width="70%" height="80%"}
+</div>
 <div style="margin-bottom: 30px;"></div>
 
 Basic sanitation projects have a contemporaneous multiplier effect of 0.76 and a medium-term effect of 1.17, underscoring their importance in stimulating the economy while addressing fundamental needs.
@@ -100,25 +101,25 @@ Basic sanitation projects have a contemporaneous multiplier effect of 0.76 and a
 
 Productive investments, such as in hydrocarbons and agriculture, also exhibit significant multiplier effects, albeit lower than those for social sectors. The multiplier for hydrocarbons, for instance, exceeds one in the medium term, suggesting substantial potential for economic returns.
 
-::: {style="text-align:center;"}
-![Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors (Hydrocarbons, Agriculture, Industry, Mining, and Energy). Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_3.png){width="70%" height="95%"}
-:::
+<div style="text-align:center;">
+  ![Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors (Hydrocarbons, Agriculture, Industry, Mining, and Energy). Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_3.png){width="70%" height="95%"}
+</div>
 <div style="margin-bottom: 30px;"></div>
 
 Infrastructure investment, while crucial for long-term growth, shows the lowest multiplier effect among the three categories. Transportation infrastructure, in particular, has the least immediate impact on GDP, indicating that while these investments are essential for enhancing productivity and market connectivity, their short-term effects are less pronounced.
 
-::: {style="text-align:center;"}
+<div style="text-align:center;">
 ![Figure 4. Multiplier Effect on Nominal GDP of Public Investment Shocks in Infrastructure (Transportation, Communication, and Water Resources). Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_4.png){width="70%" height="80%"}
-:::
+</div>
 <div style="margin-bottom: 30px;"></div>
 
 ## Comparative Analysis of Sectoral Multipliers
 
 Table 2 summarizes the estimated multiplier effects across sectors, highlighting those with the highest return per unit of investment.
 
-::: {style="text-align:center;"}
-![Table 2. Summary of Public Investment Multiplier Effects by Sector](Fiscal_multipliers/tab_2.png){width="40%" height="70%"}
-:::
+<div style="text-align:center;">
+  ![Table 2. Summary of Public Investment Multiplier Effects by Sector](Fiscal_multipliers/tab_2.png){width="40%" height="70%"}
+</div>
 <div style="margin-bottom: 30px;"></div>
 
 The analysis indicates that sanitation projects, hydrocarbons, and urban development deliver the highest returns, while sectors like mining and industry exhibit lower multipliers, possibly due to longer project implementation periods.
