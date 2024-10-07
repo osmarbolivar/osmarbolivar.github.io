@@ -9,7 +9,11 @@ output:
 ---
 
 <!-- Google tag (gtag.js) -->
+
+```{=html}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HJ5VRY62"></script>
+```
+```{=html}
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -17,6 +21,7 @@ output:
 
   gtag('config', 'G-F5HJ5VRY62');
 </script>
+```
 
 <!--html_preserve-->
 
