@@ -57,7 +57,7 @@ Separate BSVAR models are constructed for each sector $i$ where public investmen
 The identification strategy is designed to capture the dynamics of key structural shocks affecting the Bolivian economy, summarized in Table 2.
 
 <div style="text-align:center;">
-  ![Table 2. Identification Strategy for Structural Shocks](Fiscal_multipliers/tab_1.PNG){width="70%" height="80%"}
+  ![Table 2. Identification Strategy for Structural Shocks](Fiscal_multipliers/tab_identif.png){width="65%" height="65%"}
 </div>
 <div style="margin-bottom: 30px;"></div>
 
@@ -82,7 +82,7 @@ For interpretation, the accumulated public investment multiplier for sector $i$ 
 The analysis reveals that among the three major public investment categories, social investment yields the highest multiplier effect, making it the most cost-effective. Figure 1 presents an overview of multiplier effects for public investment across Productive, Infrastructure, and Social sectors.
 
 <div style="text-align:center;">
-  ![Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit.](Fiscal_multipliers/fig_1.PNG){width="70%" height="80%"}
+  ![Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit.](Fiscal_multipliers/fig_1.PNG){width="80%" height="80%"}
 </div>
 <div style="margin-bottom: 30px;"></div>
 
