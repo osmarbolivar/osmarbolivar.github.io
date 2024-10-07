@@ -36,7 +36,7 @@ The empirical approach estimates the multiplier effects of public investment acr
 
 
 <div style="text-align:center;">
-  ![Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia](Fiscal_multipliers/tab_0.png){width="40%" height="20%"}
+  ![Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia](Fiscal_multipliers/tab_0.PNG){width="40%" height="20%"}
 </div>
 <div style="margin-bottom: 30px;"></div>
 
@@ -57,7 +57,7 @@ Separate BSVAR models are constructed for each sector $i$ where public investmen
 The identification strategy is designed to capture the dynamics of key structural shocks affecting the Bolivian economy, summarized in Table 2.
 
 <div style="text-align:center;">
-  ![Table 2. Identification Strategy for Structural Shocks](Fiscal_multipliers/tab_1.png){width="70%" height="80%"}
+  ![Table 2. Identification Strategy for Structural Shocks](Fiscal_multipliers/tab_1.PNG){width="70%" height="80%"}
 </div>
 <div style="margin-bottom: 30px;"></div>
 
@@ -82,7 +82,7 @@ For interpretation, the accumulated public investment multiplier for sector $i$ 
 The analysis reveals that among the three major public investment categories, social investment yields the highest multiplier effect, making it the most cost-effective. Figure 1 presents an overview of multiplier effects for public investment across Productive, Infrastructure, and Social sectors.
 
 <div style="text-align:center;">
-  ![Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit.](Fiscal_multipliers/fig_1.png){width="70%" height="80%"}
+  ![Figure 1. Multiplier Effect on Nominal GDP of Public Investment, Current Expenditure, and Tax Revenue Shocks. Note: Results represent the median of posterior distributions from Impulse Response Functions. Values indicate the expected monetary increase in nominal GDP following shocks that increase fiscal variables by 1 unit.](Fiscal_multipliers/fig_1.PNG){width="70%" height="80%"}
 </div>
 <div style="margin-bottom: 30px;"></div>
 
@@ -91,7 +91,7 @@ The analysis reveals that among the three major public investment categories, so
 Investments in social sectors, including urban development, education, health, and basic sanitation, show the strongest multiplier effects, with basic sanitation projects being particularly impactful. These projects, which employ a high proportion of locally sourced inputs and labor, contribute significantly to economic growth. Figure 2 illustrates the multiplier effects of investments in specific social sectors.
 
 <div style="text-align:center;">
-  ![Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_2.png){width="70%" height="80%"}
+  ![Figure 2. Multiplier Effect on Nominal GDP of Public Investment Shocks in Urban Development, Education, Basic Sanitation, and Health. Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_2.PNG){width="70%" height="80%"}
 </div>
 <div style="margin-bottom: 30px;"></div>
 
@@ -102,14 +102,14 @@ Basic sanitation projects have a contemporaneous multiplier effect of 0.76 and a
 Productive investments, such as in hydrocarbons and agriculture, also exhibit significant multiplier effects, albeit lower than those for social sectors. The multiplier for hydrocarbons, for instance, exceeds one in the medium term, suggesting substantial potential for economic returns.
 
 <div style="text-align:center;">
-  ![Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors (Hydrocarbons, Agriculture, Industry, Mining, and Energy). Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_3.png){width="70%" height="95%"}
+  ![Figure 3. Multiplier Effect on Nominal GDP of Public Investment Shocks in Productive Sectors (Hydrocarbons, Agriculture, Industry, Mining, and Energy). Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_3.PNG){width="70%" height="95%"}
 </div>
 <div style="margin-bottom: 30px;"></div>
 
 Infrastructure investment, while crucial for long-term growth, shows the lowest multiplier effect among the three categories. Transportation infrastructure, in particular, has the least immediate impact on GDP, indicating that while these investments are essential for enhancing productivity and market connectivity, their short-term effects are less pronounced.
 
 <div style="text-align:center;">
-![Figure 4. Multiplier Effect on Nominal GDP of Public Investment Shocks in Infrastructure (Transportation, Communication, and Water Resources). Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_4.png){width="70%" height="80%"}
+![Figure 4. Multiplier Effect on Nominal GDP of Public Investment Shocks in Infrastructure (Transportation, Communication, and Water Resources). Note: Results represent the median of posterior distributions from Impulse Response Functions.](Fiscal_multipliers/fig_4.PNG){width="70%" height="80%"}
 </div>
 <div style="margin-bottom: 30px;"></div>
 
@@ -118,7 +118,7 @@ Infrastructure investment, while crucial for long-term growth, shows the lowest 
 Table 2 summarizes the estimated multiplier effects across sectors, highlighting those with the highest return per unit of investment.
 
 <div style="text-align:center;">
-  ![Table 2. Summary of Public Investment Multiplier Effects by Sector](Fiscal_multipliers/tab_2.png){width="40%" height="70%"}
+  ![Table 2. Summary of Public Investment Multiplier Effects by Sector](Fiscal_multipliers/tab_2.PNG){width="40%" height="70%"}
 </div>
 <div style="margin-bottom: 30px;"></div>
 
