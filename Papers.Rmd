@@ -77,7 +77,7 @@ output:
 ::: {style="margin-bottom: 30px;"}
 :::
 
-<h4>--- Bolivar, O. (2024). <a href="https://www.researchgate.net/publication/383174571_Weekly_Inflation_Forecasting_A_Two-Step_Machine_Learning_Methodology" target="_blank"><strong>"Weekly Inflation Forecasting: A Two-Step Machine Learning Methodology"</strong></a>. Available at ResearchGate.</h4>
+<h4>--- Bolivar, O. (2024). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5001681" target="_blank"><strong>"Weekly Inflation Forecasting: A Two-Step Machine Learning Methodology"</strong></a>. Available at SSRN.</h4>
 
 <h4>--- Bolivar, O. & Huanto, C. (2024). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4947966" target="_blank"><strong>"Geopolitical Risk Shocks: Macroeconomic Effects in Bolivia, Chile, and Peru"</strong></a>. Available at SSRN.</h4>
 
