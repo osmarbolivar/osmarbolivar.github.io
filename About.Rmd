@@ -40,7 +40,7 @@ Economic Research • AI • Machine Learning • Econometrics • Remote Sensin
 ## Affiliations/Networks
 
 <div data-share-badge-host="https://quarcs-lab.org/">
-  <a href="https://quarcs-lab.org/about/">
+  <a href="https://quarcs.netlify.app/about/">
     <img src="images/QuaRCSnetwork.png" alt="QuaRCS Lab" width="170" height="170">
   </a>
   <a href="https://www.linkedin.com/company/lac-investment-network/">
