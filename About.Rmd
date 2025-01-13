@@ -22,20 +22,57 @@ output:
 
 As an economist specializing in economic research, policy analysis, and data-driven decision-making, I am passionate about harnessing the transformative potential of AI and advanced econometric methods to address complex macro and microeconomic challenges. With a proven track record in leading AI-driven projects, conducting socio-economic assessments, and designing data governance frameworks, I am committed to evidence-based policy-making that promotes sustainable development. My expertise extends to collaborating with international organizations and providing technical insights to inform public policy in Bolivia, bridging technology and economic insights for a more informed and resilient future.
 
+
 <div style="margin-bottom: 30px;"></div>  
 ## Experience / Skills
-<div style="margin-bottom: 30px;"></div>  
-
 Economic Research • AI • Machine Learning • Econometrics • Remote Sensing • Data Science / Critical Thinking • Problem Solving
+
+
+
+
+<div style="margin-bottom: 50px;"></div>  
+## Honors & Awards
+  <article>
+    <img src="images/CEMLA2023.jpg" alt="CEMLA 2023 Award" width="300">
+    <p>
+      <strong>First Place</strong> - 2023 Central Bank Award Rodrigo Gómez by the Center for Latin American Monetary Studies (CEMLA).
+    </p>
+  </article>
+  <article>
+    <img src="images/15EEB.jpg" alt="EEB 2022 Award" width="300">
+    <p>
+      <strong>First Place</strong> - 2022 Meeting of Economists of Bolivia by the Central Bank of Bolivia.
+    </p>
+  </article>
+  <article>
+    <img src="images/caf_roads.jpg" alt="CAF 2021 Award" width="300">
+    <p>
+      <strong>Finalist & Funding</strong> - Research Proposal Call by the Development Bank of Latin America (CAF), 2021.
+    </p>
+  </article>
+  <article>
+    <img src="images/caf2019.png" alt="CAF 2020 Award" width="300">
+    <p>
+      <strong>Winner & Funding</strong> - Research Proposal Call "Economic Development in Bolivia" by CAF, 2020.
+    </p>
+  </article>
+  <article>
+    <img src="images/ee2015.png" alt="EEB 2015 Award" width="300">
+    <p>
+      <strong>First Place</strong> - 2015 Meeting of Economists of Bolivia by the Central Bank of Bolivia.
+    </p>
+  </article>
+
+
+
 
 <div style="margin-bottom: 30px;"></div>  
 ## Badges
 <div style="margin-bottom: 30px; display: flex; justify-content: space-between;">
-
   <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1ecb82e6-a19e-4e0f-af9d-9938734efe69" data-share-badge-host="https://www.credly.com"></div>
   <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
 </div>
+
 
 ## Affiliations/Networks
 
@@ -50,43 +87,13 @@ Economic Research • AI • Machine Learning • Econometrics • Remote Sensin
 
 
 
-
-<div style="margin-bottom: 50px;"></div>  
-## Honors & awards
-<div style="margin-bottom: 30px;"></div>  
-
-
-<!-- Rodrigo Gomez 2023 -->
-<img src="images/CEMLA2023.jpg" alt="CEMLA 2023 Award" width="300" height="100" style="margin-right: 20px;">
-<p style="font-size: 18px;">First Place of the Call for Papers: 2023 Central Bank Award Rodrigo Gómez by the Center for Latin American Monetary Studies (CEMLA).</p>
-
-<div style="margin-bottom: 30px;"></div>  
-<!-- EE 2022 -->
-<img src="images/15EEB.jpg" alt="EEB 2022 Award" width="300" height="100" style="margin-right: 20px;">
-<p style="font-size: 18px;">First Place of the Call for Papers: 2022 Meeting of Economists of Bolivia by the Central Bank of Bolivia.</p>
-
-<div style="margin-bottom: 30px;"></div>  
-<!-- EE 2022 -->
-<img src="images/caf_roads.jpg" alt="CAF 2021 Award" width="300" height="100" style="margin-right: 20px;">
-<p style="font-size: 18px;">Funding as a Finalist in the Research Proposal Call "Integration in Latin America: The Role of Regulations, Administrative Procedures, and Physical Infrastructure" by the Development Bank of Latin America (CAF).</p>
-
-<div style="margin-bottom: 30px;"></div>  
-<!-- CAF 2020 -->
-<img src="images/caf2019.png" alt="CAF 2020 Award" width="300" height="100" style="margin-right: 20px;">
-<p style="font-size: 18px;">Funding as a Winner of the Research Proposal Call "Research on Economic Development in Bolivia" by the Development Bank of Latin America (CAF).</p>
-
-<div style="margin-bottom: 30px;"></div>  
-<!-- EE 2022 -->
-<img src="images/ee2015.png" alt="EEB 2015 Award" width="300" height="100" style="margin-right: 20px;">
-<p style="font-size: 18px;">First Place of the Call for Papers: 2015 Meeting of Economists of Bolivia by the Central Bank of Bolivia.</p>
-
-
-<div style="margin-bottom: 30px;"></div>  
+<div style="margin-bottom: 40px;"></div>
 ## CV
-<div style="margin-bottom: 30px;"></div>  
+  <p>
+    Download my latest CV by clicking the button below:
+  </p>
+  <a href="docs/CV_Osmar_Bolivar(Nov2024).pdf" download="CV_Osmar_Bolivar(Nov2024).pdf" style="display: inline-block; padding: 10px 20px; background-color: #8fb538; color: white; text-decoration: none; border-radius: 5px; font-size: 18px;">Download CV</a>
 
-
-<iframe class="scribd_iframe_embed" title="CV Osmar Bolivar" src="https://www.scribd.com/embeds/703234342/content?start_page=1&view_mode=scroll&access_key=key-9U5w7WLAj7pgPwmUjCmO" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7729220222793488" scrolling="no" width="100%" height="600" frameborder="0"></iframe>
 
 
 
