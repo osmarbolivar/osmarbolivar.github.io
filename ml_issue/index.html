@@ -65,13 +65,41 @@
         a:hover {
             text-decoration: underline;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem;
+            }
+            main {
+                padding: 1rem;
+                margin: 1rem auto;
+            }
+            h1 {
+                font-size: 1.5rem;
+                margin-left: 0;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+            ul {
+                padding-left: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="LOGO-MEFP-200.png" alt="MEFP Logo" style="height: 80px; vertical-align: middle;">
-        <img src="IDB-Logo.png" alt="IDB Logo" style="height: 80px; vertical-align: middle; margin-left: 5px;">
-        <h1 style="display: inline; margin-left: 70px;">Número Especial - Cuadernos de Investigación Económica Boliviana (CIEB)</h1>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <img src="LOGO-MEFP-200.png" alt="MEFP Logo" style="height: 80px; margin-right: 30px;">
+            <h1 style="flex-grow: 1; text-align: left; margin: 0;">Número Especial - Cuadernos de Investigación Económica Boliviana (CIEB)</h1>
+            <img src="IDB-Logo.png" alt="IDB Logo" style="height: 80px; margin-right: 170px;">
+        </div>
     </header>
     <main>
         <section class="call-for-papers">
@@ -106,23 +134,24 @@
             <h2>Premios y Reconocimientos</h2>
             <p>Para reconocer contribuciones destacadas, se otorgarán premios monetarios a los tres mejores artículos y otros aceptados para publicación. Estos incentivos buscan fomentar investigaciones de alta calidad y reconocer el trabajo de investigadores en la vanguardia de ML y políticas económicas.</p>
             <ul>
-                <li><strong>Primer Premio:</strong> USD 1,500</li>
-                <li><strong>Segundo Premio:</strong> USD 1,000</li>
-                <li><strong>Tercer Premio:</strong> USD 500</li>
-                <li><strong>Otros artículos seleccionados para publicación:</strong> USD 200.</li>
+                <li><strong>Primer Premio:</strong> Bs 10.500</li>
+                <li><strong>Segundo Premio:</strong> Bs 7.000</li>
+                <li><strong>Tercer Premio:</strong> Bs 3.500</li>
+                <li><strong>Otros artículos seleccionados para publicación:</strong> Bs 1.400.</li>
             </ul>
+            <p>Los recursos para los premios monetarios son financiados y ejecutados por el BID, en el marco de la Cooperación Técnica BID-MEFP, cuyo objetivo es fortalecer las capacidades del MEFP en la implementación del Laboratorio de Inteligencia Artificial (Lab-IA).</p>
         </section>
         
         <section class="cronograma">
             <h2>Cronograma e Información</h2>
             <ul>
-                <li><strong>Fecha límite para el envío de trabajos:</strong> 15 de junio de 2025</li>
+                <li><strong>Fecha límite para el envío de trabajos:</strong> 15 de junio de 2025.</li>
                 <ul>
                     <li>Enviar trabajos, en su versión final, a: <a href="mailto:cieb.mefp@economiayfinanzas.gob.bo">cieb.mefp@economiayfinanzas.gob.bo</a></li>
                     <li>Los trabajos deben seguir las normas de publicación de la revista CIEB (<a href="https://www.economiayfinanzas.gob.bo/cieb" target="_blank">click para más detalle</a>) y sujetarse a un proceso de revisión por pares (externos).</li>
                 </ul>
-                <li><strong>Notificación de resultados:</strong> 17 de agosto de 2025</li>
-                <li><strong>Publicación del número especial:</strong> 31 de agosto de 2025</li>
+                <li><strong>Notificación de resultados:</strong> 17 de agosto de 2025.</li>
+                <li><strong>Publicación del número especial:</strong> 31 de agosto de 2025.</li>
             </ul>
         </section>
         
