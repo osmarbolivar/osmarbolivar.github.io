@@ -83,7 +83,7 @@ output:
 ::: {style="margin-bottom: 30px;"}
 :::
 
-<h4>--- Bolivar, O. & Huanto, C. (2025). <a href="docs/papers_docs/WP_Crypto_Sentiment_Inflation" target="_blank"><strong>"Sentiment, Cryptocurrency and Inflation: A Transmission Chanel in Bolivia"</strong></a>. <em>Available at SSRN</em>.</h4>
+<h4>--- Bolivar, O. & Huanto, C. (2025). <a href="docs/papers_docs/WP_Crypto_Sentiment_Inflation.pdf" target="_blank"><strong>"Sentiment, Cryptocurrency and Inflation: A Transmission Chanel in Bolivia"</strong></a>. <em>Available at SSRN</em>.</h4>
 
 <h4>--- Bolivar, O. (2024). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5001681" target="_blank"><strong>"Weekly Inflation Forecasting: A Two-Step Machine Learning Methodology"</strong></a>. <em>Available at SSRN</em>.</h4>
 
