@@ -55,7 +55,7 @@ output:
 	</div>
     <div class="galleryItems">
 		<div class="galleryItem">
-        <a href="R_built_up.html"><img class="galleryItemImage" src="images/built_up_areas.png"/>
+        <a href="R_built_up.html"><img class="galleryItemImage" src="images/built_up_areas.png"/></a>
         <a href="R_built_up.html" class="galleryItemLabel">Bolivia's Built-up areas</a>
         <div class="galleryItemDescription">Download a raster file with Bolivia's 2022 Built-Up Classification.</div>
       </div>
