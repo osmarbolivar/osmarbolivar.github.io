@@ -85,7 +85,7 @@ output:
 
 <h4>--- Bolivar, O. & Huanto, C. (2025). <a href="docs/papers_docs/WP_Crypto_Sentiment_Inflation.pdf" target="_blank"><strong>"Sentiment, Cryptocurrency and Inflation: A Transmission Chanel in Bolivia"</strong></a>. <em>Available at SSRN</em>.</h4>
 
-<h4>--- Bolivar, O., Canavire-Bacarreza, G. & Balthrop. A. (2025). <a href="docs/papers_docs/Ecuador_Roads(XXI RIDGE FORUM).pdf" target="_blank"><strong>"Hit the Road Jack: High-Quality Roads, Poverty and the Middle Class in Ecuador"</strong></a>. <em>Proceeding Paper -- 18th Meeting LACEA Impact Evaluation Network</em>, 2025 RIDGE May Forum.</em>.</h4>
+<h4>--- Bolivar, O., Canavire-Bacarreza, G. & Balthrop. A. (2025). <a href="docs/papers_docs/Ecuador_Roads(XXI RIDGE FORUM).pdf" target="_blank"><strong>"Hit the Road Jack: High-Quality Roads, Poverty and the Middle Class in Ecuador"</strong></a>. <em>Proceeding Paper -- 18th Meeting LACEA Impact Evaluation Network</em>, 2025 RIDGE May Forum</em>.</h4>
 
 <h4>--- Bolivar, O. (2024). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5001681" target="_blank"><strong>"Weekly Inflation Forecasting: A Two-Step Machine Learning Methodology"</strong></a>. <em>Available at SSRN</em>.</h4>
 
