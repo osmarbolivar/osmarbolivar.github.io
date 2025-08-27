@@ -76,8 +76,8 @@ Economic Research • AI • Machine Learning • Econometrics • Remote Sensin
 
 ## Affiliations/Networks
 
-<div data-share-badge-host="https://quarcs-lab.org/">
-  <a href="https://quarcs.netlify.app/about/">
+<div data-share-badge-host="https://avilaboratory.com/">
+  <a href="https://avilaboratory.com/">
     <img src="images/logo 3 (AVI-Lab).jpg" alt="AVI Lab" width="170" height="170">
   </a>
   <a href="https://quarcs.netlify.app/about/">
