@@ -66,7 +66,7 @@ output:
 ::: {style="margin-bottom: 30px;"}
 :::
 
-<h4>--- —	Bolivar, O. & Mendez, C. (2025). <a href="docs/papers_docs/PAPER_community_poverty_mapping.pdf" target="_blank"><strong>"Predicting community-level poverty in Bolivia: Insights from satellite imagery, census data, and spatial modeling"</strong></a>. <em>Nagoya University (Ed.), Revisiting the Poverty-Growth-Inequality Triangle in the Post-Pandemic Era (in progress).</em> Japan: Routledge – Taylor & Francis Group</h4>
+<h4>--- Bolivar, O. & Mendez, C. (2025). <a href="docs/papers_docs/PAPER_community_poverty_mapping.pdf" target="_blank"><strong>"Predicting community-level poverty in Bolivia: Insights from satellite imagery, census data, and spatial modeling"</strong></a>. <em>Nagoya University (Ed.), Revisiting the Poverty-Growth-Inequality Triangle in the Post-Pandemic Era (in progress).</em> Japan: Routledge – Taylor & Francis Group</h4>
 
 <h4>--- Bolivar, O. (2020). <a href="https://www.researchgate.net/publication/381968382_Evaluacion_de_Impacto_de_la_Infraestructura_Vial_en_el_Crecimiento_Economico_Una_Aproximacion_con_base_en_Informacion_Satelital_de_Luminosidad_para_Bolivia" target="_blank"><strong>"Evaluación de impacto de la infraestructura vial en el crecimiento económico: Una aproximación con base en información satelital de luminosidad para Bolivia"</strong></a>. <em>CAF-UDAPE, Osmar Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (págs. 11-70).</em> La Paz, Bolivia.</h4>
 
@@ -83,7 +83,7 @@ output:
 ::: {style="margin-bottom: 30px;"}
 :::
 
-<h4>--- Bolivar, O. & Huanto, C. (2025). <a href="docs/papers_docs/WP_Crypto_Sentiment_Inflation.pdf" target="_blank"><strong>"Sentiment, Cryptocurrency and Inflation: A Transmission Chanel in Bolivia"</strong></a>. <em>Available at SSRN</em>.</h4>
+<h4>--- Bolivar, O. & Huanto, C. (2025). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353057" target="_blank"><strong>"Sentiment, Cryptocurrency and Inflation: A Transmission Chanel in Bolivia"</strong></a>. <em>Available at SSRN</em>.</h4>
 
 <h4>--- Bolivar, O., Canavire-Bacarreza, G. & Balthrop. A. (2025). <a href="docs/papers_docs/Ecuador_Roads(XXI RIDGE FORUM).pdf" target="_blank"><strong>"Hit the Road Jack: High-Quality Roads, Poverty and the Middle Class in Ecuador"</strong></a>. <em>Proceeding Paper -- 18th Meeting LACEA Impact Evaluation Network</em>, 2025 RIDGE May Forum</em>.</h4>
 
