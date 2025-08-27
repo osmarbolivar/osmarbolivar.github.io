@@ -78,6 +78,9 @@ Economic Research • AI • Machine Learning • Econometrics • Remote Sensin
 
 <div data-share-badge-host="https://quarcs-lab.org/">
   <a href="https://quarcs.netlify.app/about/">
+    <img src="images/logo 3 (AVI-Lab).jpg" alt="AVI Lab" width="170" height="170">
+  </a>
+  <a href="https://quarcs.netlify.app/about/">
     <img src="images/QuaRCSnetwork.png" alt="QuaRCS Lab" width="170" height="170">
   </a>
   <a href="https://www.linkedin.com/company/lac-investment-network/">
@@ -92,7 +95,7 @@ Economic Research • AI • Machine Learning • Econometrics • Remote Sensin
   <p>
     Download my latest CV by clicking the button below:
   </p>
-  <a href="docs/CV_Osmar_Bolivar(June2025).pdf" download="CV_Osmar_Bolivar(June2025).pdf" style="display: inline-block; padding: 10px 20px; background-color: #8fb538; color: white; text-decoration: none; border-radius: 5px; font-size: 18px;">Download CV</a>
+  <a href="docs/CV_Osmar_Bolivar (Ago2025).pdf" download="CV_Osmar_Bolivar (Ago2025).pdf" style="display: inline-block; padding: 10px 20px; background-color: #8fb538; color: white; text-decoration: none; border-radius: 5px; font-size: 18px;">Download CV</a>
 
 
 
