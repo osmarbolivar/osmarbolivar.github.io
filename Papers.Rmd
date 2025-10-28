@@ -83,6 +83,8 @@ output:
 ::: {style="margin-bottom: 30px;"}
 :::
 
+<h4>--- Bolivar, O. (2025). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5583571" target="_blank"><strong>"Fire Vulnerability Mapping in the Chiquitano Biome: A Machine Learning Approach with MapBiomas Data"</strong></a>. <em>Available at SSRN</em>.</h4>
+
 <h4>--- Bolivar, O., Canavire-Bacarreza, G. & Balthrop. A. (2025). <a href="docs/papers_docs/PAPER_Hit_the_road_Juan.pdf" target="_blank"><strong>"Hit the Road Juan: Welfare and Labor Market Effects of High-Quality Roads in Ecuador"</strong></a>. <em>Proceeding Paper -- 18th Meeting LACEA Impact Evaluation Network</em>, 2025 RIDGE May Forum</em>.</h4>
 
 <h4>--- Bolivar, O. & Huanto, C. (2025). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353057" target="_blank"><strong>"Sentiment, Cryptocurrency and Inflation: A Transmission Chanel in Bolivia"</strong></a>. <em>Available at SSRN</em>.</h4>
