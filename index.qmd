@@ -1,0 +1,64 @@
+---
+title: "My Website - Osmar Bolivar Rosales"
+description: "I share insights in regard to applied econometrics, AI and data science for data-driven economics."
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-depth: 2
+    toc-title: Contents
+    toc-expand: true
+    toc-collapse: false
+    toc_float: true
+    css:
+      - css/quarto_custom.css
+      - styles_others.css
+      - css/rmarkdown.css
+    include-before-body:
+      - include_header.html
+      - include_header_navpage.html
+---
+
+```{=html}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HJ5VRY62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F5HJ5VRY62');
+</script>
+```
+
+# Welcome
+
+<div id="homeContent">
+  <div class="band full orange first rightText">
+    <div class="bandContent vCenter">
+      <div class="blurb">
+        <div class="tagline">A Little About Myself.</div>
+        <div>As an economist specializing in economic research, policy analysis, and data-driven decision-making, I am passionate about harnessing the transformative potential of AI and advanced econometric methods to address complex macro and microeconomic challenges.
+        </div>
+      </div>
+      <div class="actions">
+        <div><a href="About.html"><button class="bigButton getStarted">Learn more</button></a></div>
+        </div>
+    </div>
+    <img class="imageOne" src="images/profile-circle_pic.png"/>
+  </div>
+
+  <div class="band full gray1 second leftText">
+    <div class="bandContent vCenter">
+      <div class="blurb">
+        <div>
+        Access a repository of empirical evidence and insights designed to advance economic research and support evidence-based decision-making. This platform offers both academic resources and practical applications of econometric and AI tools in socioeconomic analysis.
+        </div>
+        <div class="actions">
+        <div><a href="portfolio.html"><button class="bigButton gallery">My Portfolio</button></a></div>
+        </div>
+      </div>
+    </div>
+    <img class="imageTwo" src="images/images_for_band2.png"/>
+  </div>
+
+  <!-- Continue with the rest of your HTML and content as in the original Rmd file -->
+</div>

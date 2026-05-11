@@ -1,0 +1,100 @@
+/* Custom Quarto-only CSS: Use this file with .qmd (Quarto) documents to override Quarto's defaults and preserve your R Markdown look. */
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  color: #404040;
+  font-size: 16px;
+  font-weight: normal;
+  max-width: 100% !important;
+}
+
+/* Make main content span full width */
+.main-content, .content, .page-content, .quarto-container {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* Headings */
+h1, .section h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #336b85;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+h2, .section h2 {
+  color: #668b86;
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+h3, .section h3 {
+  color: #99ab87;
+  font-size: 26px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+p {
+  line-height: 1.7em;
+  margin-bottom: 1em;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Images full width if needed */
+img, figure > img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove Quarto's default content width restriction */
+.quarto-article {
+  max-width: 100% !important;
+}
+
+/* Optional: override Quarto's default font size for code blocks */
+pre, code {
+  font-size: 15px;
+}
+
+/* Optional: style for .bandContent and other custom classes from your Rmd CSS */
+.bandContent, .standardPadding .articleBandContent {
+  margin: 0 auto;
+  max-width: 1140px;
+  z-index: 2;
+}
+
+/* Footer and header tweaks if needed */
+footer, .footer, #rStudioFooter {
+  font-size: 12px;
+  color: #fff;
+  background: #ff890e;
+  padding: 30px 5%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1023px) {
+  h1, .section h1 { font-size: 30px; }
+  h2, .section h2 { font-size: 24px; }
+  .main-content, .content, .page-content, .quarto-container {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1, .section h1 { font-size: 22px; }
+  h2, .section h2 { font-size: 18px; }
+}
+
+/* Add any other custom styles from your rmarkdown.css as needed */

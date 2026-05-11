@@ -1,0 +1,33 @@
+---
+title: "Education in Bolivia: Striving for Equitable Access and Quality"
+description: "Research - Education in Bolivia"
+format:
+  html:
+    css:
+      - css/quarto_custom.css
+      - styles_others.css
+      - css/rmarkdown.css
+    include-before-body:
+      - include_header.html
+      - include_header_navpage.html
+---
+
+```{=html}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HJ5VRY62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F5HJ5VRY62');
+</script>
+```
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(kableExtra)
+```
+
+# Education in Bolivia: Striving for Equitable Access and Quality
+
+...existing content from Rmd...
