@@ -2,3 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Build caches and working files
+*_cache/
+*.pptx
+*.docx
+~$*
