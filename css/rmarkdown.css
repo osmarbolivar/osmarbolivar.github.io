@@ -187,7 +187,6 @@ p {
   display: inline-block;
   width: 70px;
   height: 25px;
-  background-image:url(../images/logoRStudio.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -321,7 +320,6 @@ p {
   background-repeat: no-repeat;
   background-position: left 8px;
   background-size: 8px 8px;
-  background-image: url(../images/link-icon.png);
 }
 
 #pageContent .linkSection .articleBlurb {
@@ -577,10 +575,6 @@ p {
 
 #rStudioFooter .bandContent #logos .footerLogo:last-child {
   margin-right: 0px;
-}
-
-#rStudioFooter .bandContent .footerLogo.twitter {
-  background-image: url(../images/twitterLogo.svg);
 }
 
 #rStudioFooter .bandContent .footerLogo.gitHub {
