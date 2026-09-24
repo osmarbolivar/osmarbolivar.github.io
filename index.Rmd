@@ -40,7 +40,7 @@ $("#pageContent").removeClass("standardPadding");
         <div><a href="About.html"><button class="bigButton getStarted">Learn more</button></a></div>
         </div>
     </div>
-    <img class="imageOne" src="images/profile-circle_pic.png"/>
+    <img class="imageOne" src="images/foto_perfil_redondo.webp"/>
   </div>
 
   <div class="band full gray1 second leftText">
