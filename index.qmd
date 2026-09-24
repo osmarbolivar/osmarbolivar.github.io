@@ -31,6 +31,7 @@ format:
 
 # Welcome
 
+```{=html}
 <div id="homeContent">
   <div class="band full orange first rightText">
     <div class="bandContent vCenter">
@@ -43,7 +44,7 @@ format:
         <div><a href="About.html"><button class="bigButton getStarted">Learn more</button></a></div>
         </div>
     </div>
-    <img class="imageOne" src="images/profile-circle_pic.png"/>
+    <img class="imageOne" src="images/foto_perfil_redondo.png"/>
   </div>
 
   <div class="band full gray1 second leftText">
@@ -62,3 +63,4 @@ format:
 
   <!-- Continue with the rest of your HTML and content as in the original Rmd file -->
 </div>
+```
