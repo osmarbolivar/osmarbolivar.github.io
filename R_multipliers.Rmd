@@ -5,6 +5,7 @@ output:
   html_document:
     toc_float: false
     includes:
+      in_header: [include_head.html, google_analytics.html, og_tags/R_multipliers.html]
       before_body: [include_header.html, include_header_navpage.html]
 ---
 

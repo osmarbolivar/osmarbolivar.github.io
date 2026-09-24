@@ -7,6 +7,8 @@ format:
       - css/quarto_custom.css
       - styles_others.css
       - css/rmarkdown.css
+    include-in-header:
+      - og_tags/R_Week_Inflation.html
     include-before-body:
       - include_header.html
       - include_header_navpage.html
