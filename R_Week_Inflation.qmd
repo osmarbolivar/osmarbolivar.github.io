@@ -6,7 +6,6 @@ format:
     css:
       - css/quarto_custom.css
       - styles_others.css
-      - css/rmarkdown.css
       - css/site.css
     include-in-header:
       - include_head_quarto.html

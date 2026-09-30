@@ -1,5 +1,5 @@
 ---
-title: "My Portfolio"
+title: "Portfolio · Osmar Bolivar Rosales"
 description: "I share insights in regard to applied econometrics, AI and data science for data-driven economics."
 output:
   html_document:
@@ -24,79 +24,107 @@ output:
 ```
 
 <!--html_preserve-->
+<script>
+  // Listing layout manages its own width and spacing.
+  document.getElementById("pageContent").classList.remove("standardPadding");
+</script>
 
-<div class="band full">
-  <div class="bandContent pageTitle">My Portfolio</div>
-  <div class="bandContent pageIntro">Repository of empirical evidence and technical insights.</div>
-  <div class="bandContent gallerySection">
-    <div class="gallerySectionTitle">Research</div>
-    <div class="galleryIntro">Embark on an academic voyage through empirical studies, econometric analyses, and impactful insights in the Research section. Uncover the intricacies of socioeconomic phenomena and contribute to the broader academic dialogue.</div>
-    <div class="galleryItems">
-      <div class="galleryItem">
-        <a href="Portfolio/subvencion_diesel_inflacion/diesel_subsidy_pass_through.html"><img class="galleryItemImage" src="images/diesel_pass_through.png"/></a>
-        <a href="Portfolio/subvencion_diesel_inflacion/diesel_subsidy_pass_through.html" class="galleryItemLabel">Diesel Subsidy Removal and Inflation</a>
-        <div class="galleryItemDescription">How Bolivia's 2026 diesel price liberalization passes through to prices, sector by sector (in Spanish).</div>
-      </div>
-      <div class="galleryItem">
-        <a href="R_Week_Inflation.html"><img class="galleryItemImage" src="images/week_inflation.png"/></a>
-        <a href="R_Week_Inflation.html" class="galleryItemLabel">Forecasting Weekly Inflation with Machine Learning</a>
-        <div class="galleryItemDescription">A novel two-step machine learning methodology for forecasting weekly inflation</div>
-      </div>
-      <div class="galleryItem">
-        <a href="R_poverty.html"><img class="galleryItemImage" src="images/poverty_2.png"/></a>
-        <a href="R_poverty.html" class="galleryItemLabel">Community-level Poverty Map</a>
-        <div class="galleryItemDescription">How community-level poverty evolved between 2012 and 2022 in Bolivia?</div>
-      </div>
-      <div class="galleryItem">
-        <a href="R_multipliers.html"><img class="galleryItemImage" src="images/multipliers.png"/></a>
-        <a href="R_multipliers.html" class="galleryItemLabel">Growth-and-employment Enhancing Activities</a>
-        <div class="galleryItemDescription">How to prioritize economic activities to foster growth and job creation.</div>
-      </div>
-	</div>
-    <div class="galleryItems">
-      <div class="galleryItem">
-        <a href="R_Fiscal_Multiplier.html"><img class="galleryItemImage" src="images/fis_mult_portfolio.png"/></a>
-        <a href="R_Fiscal_Multiplier.html" class="galleryItemLabel">Fiscal Multipliers</a>
-        <div class="galleryItemDescription">Empirical Evidence for a Cost-Effective Allocation of Public Investment</div>
-      </div>
-      <div class="galleryItem">
-        <a href="R_built_up.html"><img class="galleryItemImage" src="images/built_up_areas.png"/></a>
-        <a href="R_built_up.html" class="galleryItemLabel">Bolivia's Built-up areas</a>
-        <div class="galleryItemDescription">Download a raster file with Bolivia's 2022 Built-Up Classification.</div>
-      </div>
-      <div class="galleryItem">
-        <a href="R_Education.html"><img class="galleryItemImage" src="images/back-to-school.jpg"/></a>
-        <a href="R_Education.html" class="galleryItemLabel">Education in Bolivia</a>
-        <div class="galleryItemDescription">Access to education, disparities, and efforts to optimize the allocation of resources.</div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="bandContent gallerySection">
-    <div class="gallerySectionTitle">Dashboards</div>
-    <div class="galleryIntro">The Dashboards section transforms complex economic data into engaging visuals, offering insightful perspectives on various economic dimensions.</div>
-    <div class="galleryItems">
-      <div class="galleryItem">
-        <a href="https://osmarbolivar.github.io/bolivia-exchange-rate-dashboard/"><img class="galleryItemImage" src="images/monitor_cambiario_bolivia.png"/></a>
-        <a href="https://osmarbolivar.github.io/bolivia-exchange-rate-dashboard/" class="galleryItemLabel">Monitor Cambiario de Bolivia</a>
-        <div class="galleryItemDescription">Official and parallel exchange rate, exchange market dynamics.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bandContent gallerySection">
-    <div class="gallerySectionTitle">Articles</div>
-    <div class="galleryIntro">Explore thought-provoking narratives in the Articles section. From in-depth analyses of structural matters to timely reflections on economic events, each article contributes to informed discussions in the realm of economics.</div>
-    <div class="galleryItems">
-      <div class="galleryItem">
-        <a href="A_early_child.html"><img class="galleryItemImage" src="images/90_percent_brain_dev.jpg"/></a>
-        <a href="A_early_child.html" class="galleryItemLabel">Early childhood.</a>
-        <div class="galleryItemDescription">How early childhood determines success?</div>
-      </div>
-    </div>
+<div class="page-title">
+  <div class="wrap-wide">
+    <h1>Portfolio</h1>
+    <p class="dek">Repository of empirical evidence and technical insights.</p>
   </div>
 </div>
 
+<section class="page-block">
+  <div class="wrap-wide">
+    <div class="block-head"><h2>Research</h2></div>
+    <p class="block-intro">Embark on an academic voyage through empirical studies, econometric analyses, and impactful insights in the Research section. Uncover the intricacies of socioeconomic phenomena and contribute to the broader academic dialogue.</p>
+    <div class="card-grid">
+      <a class="card" href="Portfolio/subvencion_diesel_inflacion/diesel_subsidy_pass_through.html">
+        <div class="card-img"><img src="images/thumbs/diesel_pass_through.jpg" alt="" width="960" height="720" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag lang" title="En español">ES</span></div>
+          <h3 class="card-title">Diesel Subsidy Removal and Inflation</h3>
+          <p class="card-desc">How Bolivia's 2026 diesel price liberalization passes through to prices, sector by sector.</p>
+        </div>
+      </a>
+      <a class="card" href="R_Week_Inflation.html">
+        <div class="card-img"><img src="images/thumbs/week_inflation.jpg" alt="" width="960" height="720" loading="lazy"></div>
+        <div class="card-body">
+          <h3 class="card-title">Forecasting Weekly Inflation with Machine Learning</h3>
+          <p class="card-desc">A novel two-step machine learning methodology for forecasting weekly inflation.</p>
+        </div>
+      </a>
+      <a class="card" href="R_poverty.html">
+        <div class="card-img"><img src="images/thumbs/poverty_2.jpg" alt="" width="960" height="720" loading="lazy"></div>
+        <div class="card-body">
+          <h3 class="card-title">Community-level Poverty Map</h3>
+          <p class="card-desc">How community-level poverty evolved between 2012 and 2022 in Bolivia.</p>
+        </div>
+      </a>
+      <a class="card" href="R_multipliers.html">
+        <div class="card-img"><img src="images/thumbs/multipliers.jpg" alt="" width="720" height="540" loading="lazy"></div>
+        <div class="card-body">
+          <h3 class="card-title">Growth-and-employment Enhancing Activities</h3>
+          <p class="card-desc">How to prioritize economic activities to foster growth and job creation.</p>
+        </div>
+      </a>
+      <a class="card" href="R_Fiscal_Multiplier.html">
+        <div class="card-img"><img src="images/thumbs/fis_mult_portfolio.jpg" alt="" width="960" height="720" loading="lazy"></div>
+        <div class="card-body">
+          <h3 class="card-title">Fiscal Multipliers</h3>
+          <p class="card-desc">Empirical evidence for a cost-effective allocation of public investment.</p>
+        </div>
+      </a>
+      <a class="card" href="R_built_up.html">
+        <div class="card-img"><img src="images/thumbs/built_up_areas.jpg" alt="" width="720" height="540" loading="lazy"></div>
+        <div class="card-body">
+          <h3 class="card-title">Bolivia's Built-up Areas</h3>
+          <p class="card-desc">Download a raster file with Bolivia's 2022 built-up classification.</p>
+        </div>
+      </a>
+      <a class="card" href="R_Education.html">
+        <div class="card-img"><img src="images/thumbs/back-to-school.jpg" alt="" width="960" height="638" loading="lazy"></div>
+        <div class="card-body">
+          <h3 class="card-title">Education in Bolivia</h3>
+          <p class="card-desc">Access to education, disparities, and efforts to optimize the allocation of resources.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
+<section class="page-block">
+  <div class="wrap-wide">
+    <div class="block-head"><h2>Dashboards</h2></div>
+    <p class="block-intro">The Dashboards section transforms complex economic data into engaging visuals, offering insightful perspectives on various economic dimensions.</p>
+    <div class="card-grid">
+      <a class="card" href="https://osmarbolivar.github.io/bolivia-exchange-rate-dashboard/">
+        <div class="card-img"><img src="images/thumbs/monitor_cambiario_bolivia.jpg" alt="" width="960" height="507" loading="lazy"></div>
+        <div class="card-body">
+          <h3 class="card-title">Monitor Cambiario de Bolivia</h3>
+          <p class="card-desc">Official and parallel exchange rate, exchange market dynamics.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="page-block">
+  <div class="wrap-wide">
+    <div class="block-head"><h2>Articles</h2></div>
+    <p class="block-intro">Explore thought-provoking narratives in the Articles section. From in-depth analyses of structural matters to timely reflections on economic events, each article contributes to informed discussions in the realm of economics.</p>
+    <div class="card-grid">
+      <a class="card" href="A_early_child.html">
+        <div class="card-img"><img src="images/thumbs/90_percent_brain_dev.jpg" alt="" width="960" height="613" loading="lazy"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag soon">Forthcoming</span></div>
+          <h3 class="card-title">Early Childhood</h3>
+          <p class="card-desc">How early childhood determines success?</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 <!--/html_preserve-->

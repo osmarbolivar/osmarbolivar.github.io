@@ -12,7 +12,7 @@ output:
       in_header: [include_head.html, google_analytics.html]
       before_body: include_header.html
       after_body: include_footer.html
-    css: [css/rmarkdown.css, css/site.css]
+    css: css/site.css
     pandoc_args: --wrap=preserve
 site:
   author: "Osmar Bolivar Rosales"
