@@ -61,6 +61,10 @@ output:
     <h2>Honors &amp; Awards</h2>
     <div class="award-grid">
       <article class="award">
+        <div class="award-img"><img src="images/thumbs/caf2025.jpg" alt="CAF 2025 Research Proposal Call" loading="lazy"></div>
+        <div class="award-body"><span class="award-rank">Winner &amp; Funding</span><p>Research Proposal Call by the Development Bank of Latin America (CAF), 2025.</p></div>
+      </article>
+      <article class="award">
         <div class="award-img"><img src="images/CEMLA2023.jpg" alt="CEMLA 2023 Award" loading="lazy"></div>
         <div class="award-body"><span class="award-rank">First Place</span><p>2023 Central Bank Award Rodrigo Gómez by the Center for Latin American Monetary Studies (CEMLA).</p></div>
       </article>
@@ -99,6 +103,7 @@ output:
       <div class="logo"><img src="images/thumbs/avi_lab_logo.jpg" alt="AVI Lab" width="320" height="320" loading="lazy"></div>
       <a class="logo" href="https://quarcs.netlify.app/about/"><img src="images/QuaRCSnetwork.png" alt="QuaRCS Lab" loading="lazy"></a>
       <a class="logo" href="https://www.linkedin.com/company/lac-investment-network/"><img src="images/LAC_in_logo.jpg" alt="LAC IN" loading="lazy"></a>
+      <a class="logo" href="https://cebec.cainco.org.bo/"><img src="images/thumbs/cebec_logo.png" alt="CEBEC, Centro Boliviano de Economía" width="600" height="236" loading="lazy"></a>
     </div>
   </div>
 </section>
