@@ -1,0 +1,53 @@
+<!-- Spanish header (pages in /es/). Keep in step with ../include_header.html. -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SMWF48P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="site-header" id="siteHeader">
+  <div class="sh-inner">
+    <a class="sh-brand" href="index.html">Osmar Bolivar Rosales</a>
+    <a class="sh-lang" id="langSwitch" hidden hreflang="en" lang="en" title="Read in English" aria-label="Read this page in English">EN</a>
+    <button class="sh-toggle" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="Menú">
+      <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="sh-nav" id="siteNav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="portfolio.html">Portafolio</a>
+      <a href="Papers.html">Publicaciones</a>
+      <a href="About.html">Sobre mí</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+(function () {
+  var header = document.getElementById("siteHeader");
+  var toggle = header.querySelector(".sh-toggle");
+  toggle.addEventListener("click", function () {
+    var open = header.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  // Mark the current page in the menu.
+  var page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  header.querySelectorAll(".sh-nav a").forEach(function (a) {
+    if (a.getAttribute("href").toLowerCase() === page) a.setAttribute("aria-current", "page");
+  });
+  // Language switch: shown only on pages that exist in both languages.
+  var LANG_PAIRS = {"index.html": "../index.html", "portfolio.html": "../portfolio.html", "papers.html": "../Papers.html", "about.html": "../About.html"};
+  var sw = document.getElementById("langSwitch");
+  var pair = LANG_PAIRS[page];
+  if (sw && pair) { sw.href = pair; sw.hidden = false; }
+  // R Markdown wraps content in Bootstrap's container; the site layout handles width instead.
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".main-container").forEach(function (el) {
+      el.classList.remove("main-container", "container-fluid");
+      el.classList.add("footerPushDown");
+    });
+  });
+})();
+</script>
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">

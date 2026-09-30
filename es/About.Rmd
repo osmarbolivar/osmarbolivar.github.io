@@ -1,0 +1,120 @@
+---
+title: "Sobre mí · Osmar Bolivar Rosales"
+lang: es
+output:
+  html_document:
+    theme: sandstone
+    highlight: tango
+    self_contained: false
+    lib_dir: site_libs
+    toc_float: false
+    css: ../css/site.css
+    includes:
+      in_header: [include_head.html, ../google_analytics.html, ../i18n/es_About.html]
+      before_body: [include_header.html, ../include_header_navpage.html]
+      after_body: ../include_footer.html
+    pandoc_args: ["--wrap=preserve"]
+---
+
+<!-- Spanish version of ../About.Rmd. When you change that page, update this one too. -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HJ5VRY62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F5HJ5VRY62');
+</script>
+
+<!--html_preserve-->
+<script>
+  // Listing layout manages its own width and spacing.
+  document.getElementById("pageContent").classList.remove("standardPadding");
+</script>
+
+<section class="about-hero home-hero">
+  <div class="wrap-wide">
+    <div class="photo">
+      <img src="../images/foto_perfil_redondo.webp" alt="Osmar Bolivar Rosales" width="800" height="800">
+    </div>
+    <div>
+      <h1>Sobre mí</h1>
+      <p class="lede">Como economista especializado en investigación económica, análisis de políticas y toma de decisiones basada en datos, me apasiona aprovechar el potencial transformador de la inteligencia artificial y de los métodos econométricos avanzados para abordar desafíos macroeconómicos y microeconómicos complejos. Con una trayectoria comprobada en la conducción de proyectos basados en inteligencia artificial, la realización de evaluaciones socioeconómicas y el diseño de marcos de gobernanza de datos, estoy comprometido con la formulación de políticas basadas en evidencia que promuevan el desarrollo sostenible. Mi experiencia incluye la colaboración con organismos internacionales y la provisión de insumos técnicos para orientar la política pública en Bolivia, uniendo la tecnología y el análisis económico en favor de un futuro mejor informado y más resiliente.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="../docs/CV_Osmar_Bolivar_Sep2026.pdf" download="CV_Osmar_Bolivar_Sep2026.pdf" hreflang="en">Descargar CV (PDF, en inglés)</a>
+        <a class="btn btn-secondary" href="Papers.html">Ver mis publicaciones</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-block">
+  <div class="wrap-wide">
+    <h2>Experiencia / Habilidades</h2>
+    <ul class="skill-chips">
+      <li>Investigación económica</li>
+      <li>Inteligencia artificial</li>
+      <li>Machine learning</li>
+      <li>Econometría</li>
+      <li>Teledetección</li>
+      <li>Ciencia de datos</li>
+      <li>Pensamiento crítico</li>
+      <li>Resolución de problemas</li>
+    </ul>
+  </div>
+</section>
+
+<section class="page-block subtle">
+  <div class="wrap-wide">
+    <h2>Premios y reconocimientos</h2>
+    <div class="award-grid">
+      <article class="award">
+        <div class="award-img"><img src="../images/thumbs/caf2025.jpg" alt="Convocatoria de propuestas de investigación de CAF 2025" loading="lazy"></div>
+        <div class="award-body"><span class="award-rank">Ganador y financiamiento</span><p>Convocatoria de propuestas de investigación del Banco de Desarrollo de América Latina y el Caribe (CAF), 2025.</p></div>
+      </article>
+      <article class="award">
+        <div class="award-img"><img src="../images/CEMLA2023.jpg" alt="Premio CEMLA 2023" loading="lazy"></div>
+        <div class="award-body"><span class="award-rank">Primer lugar</span><p>Premio de Banca Central Rodrigo Gómez 2023, otorgado por el Centro de Estudios Monetarios Latinoamericanos (CEMLA).</p></div>
+      </article>
+      <article class="award">
+        <div class="award-img"><img src="../images/15EEB.jpg" alt="Premio del Encuentro de Economistas de Bolivia 2022" loading="lazy"></div>
+        <div class="award-body"><span class="award-rank">Primer lugar</span><p>Encuentro de Economistas de Bolivia 2022, organizado por el Banco Central de Bolivia.</p></div>
+      </article>
+      <article class="award">
+        <div class="award-img"><img src="../images/caf_roads.jpg" alt="Convocatoria de CAF 2021" loading="lazy"></div>
+        <div class="award-body"><span class="award-rank">Finalista y financiamiento</span><p>Convocatoria de propuestas de investigación del Banco de Desarrollo de América Latina (CAF), 2021.</p></div>
+      </article>
+      <article class="award">
+        <div class="award-img"><img src="../images/thumbs/caf2019.jpg" alt="Convocatoria de CAF 2020" loading="lazy"></div>
+        <div class="award-body"><span class="award-rank">Ganador y financiamiento</span><p>Convocatoria de propuestas de investigación «Desarrollo Económico en Bolivia» de CAF, 2020.</p></div>
+      </article>
+      <article class="award">
+        <div class="award-img"><img src="../images/ee2015.png" alt="Premio del Encuentro de Economistas de Bolivia 2015" loading="lazy"></div>
+        <div class="award-body"><span class="award-rank">Primer lugar</span><p>Encuentro de Economistas de Bolivia 2015, organizado por el Banco Central de Bolivia.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="page-block">
+  <div class="wrap-wide">
+    <h2>Insignias</h2>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1ecb82e6-a19e-4e0f-af9d-9938734efe69" data-share-badge-host="https://www.credly.com"></div>
+    <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+  </div>
+</section>
+
+<section class="page-block">
+  <div class="wrap-wide">
+    <h2>Afiliaciones / Redes</h2>
+    <div class="logo-row">
+      <div class="logo"><img src="../images/thumbs/avi_lab_logo.jpg" alt="AVI Lab" width="320" height="320" loading="lazy"></div>
+      <a class="logo" href="https://quarcs.netlify.app/about/"><img src="../images/QuaRCSnetwork.png" alt="QuaRCS Lab" loading="lazy"></a>
+      <a class="logo" href="https://www.linkedin.com/company/lac-investment-network/"><img src="../images/LAC_in_logo.jpg" alt="LAC IN" loading="lazy"></a>
+      <a class="logo" href="https://cebec.cainco.org.bo/"><img src="../images/thumbs/cebec_logo.png" alt="CEBEC, Centro Boliviano de Economía" width="600" height="236" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+<!--/html_preserve-->

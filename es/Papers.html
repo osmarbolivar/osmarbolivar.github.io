@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="es" xml:lang="es">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Publicaciones · Osmar Bolivar Rosales</title>
+
+<script src="site_libs/header-attrs-2.31/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<!-- Head assets for Spanish pages in /es/ (English pages use ../include_head.html). -->
+<meta name="description" content="Comparto análisis sobre econometría aplicada, inteligencia artificial y ciencia de datos para una economía basada en evidencia."/>
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5SMWF48P');</script>
+<!-- End Google Tag Manager -->
+<link rel="canonical" href="https://osmarbolivar.github.io/es/Papers.html">
+<link rel="alternate" hreflang="en" href="https://osmarbolivar.github.io/Papers.html">
+<link rel="alternate" hreflang="es" href="https://osmarbolivar.github.io/es/Papers.html">
+<link rel="alternate" hreflang="x-default" href="https://osmarbolivar.github.io/Papers.html">
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../css/site.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<!-- Spanish header (pages in /es/). Keep in step with ../include_header.html. -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SMWF48P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="site-header" id="siteHeader">
+  <div class="sh-inner">
+    <a class="sh-brand" href="index.html">Osmar Bolivar Rosales</a>
+    <a class="sh-lang" id="langSwitch" hidden hreflang="en" lang="en" title="Read in English" aria-label="Read this page in English">EN</a>
+    <button class="sh-toggle" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="Menú">
+      <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="sh-nav" id="siteNav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="portfolio.html">Portafolio</a>
+      <a href="Papers.html">Publicaciones</a>
+      <a href="About.html">Sobre mí</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+(function () {
+  var header = document.getElementById("siteHeader");
+  var toggle = header.querySelector(".sh-toggle");
+  toggle.addEventListener("click", function () {
+    var open = header.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  // Mark the current page in the menu.
+  var page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  header.querySelectorAll(".sh-nav a").forEach(function (a) {
+    if (a.getAttribute("href").toLowerCase() === page) a.setAttribute("aria-current", "page");
+  });
+  // Language switch: shown only on pages that exist in both languages.
+  var LANG_PAIRS = {"index.html": "../index.html", "portfolio.html": "../portfolio.html", "papers.html": "../Papers.html", "about.html": "../About.html"};
+  var sw = document.getElementById("langSwitch");
+  var pair = LANG_PAIRS[page];
+  if (sw && pair) { sw.href = pair; sw.hidden = false; }
+  // R Markdown wraps content in Bootstrap's container; the site layout handles width instead.
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".main-container").forEach(function (el) {
+      el.classList.remove("main-container", "container-fluid");
+      el.classList.add("footerPushDown");
+    });
+  });
+})();
+</script>
+
+<div id="pageContent" class="standardPadding">
+  <div class="articleBandContent">
+
+<style type="text/css">
+.title {
+  display: none;
+}
+#disqus_thread {
+  display: none;
+}
+</style>
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Publicaciones · Osmar Bolivar Rosales</h1>
+
+</div>
+
+
+<!-- Spanish version of ../Papers.Rmd. The publication list is read from ../Papers.Rmd
+     when this page is knit, so add or edit papers only there, then knit both pages. -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HJ5VRY62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F5HJ5VRY62');
+</script>
+
+<script>
+  // Listing layout manages its own width and spacing.
+  document.getElementById("pageContent").classList.remove("standardPadding");
+</script>
+
+<!-- Publication list. To add a paper, copy one <li class="pub"> block into the right section.
+     Tags: <span class="tag">PDF</span>, <span class="tag lang">ES</span>, <span class="tag award">Primer lugar</span>. -->
+<div class="page-title">
+  <div class="wrap-wide">
+    <h1>Publicaciones</h1>
+    <p class="dek">Artículos en revistas arbitradas, capítulos de libro y documentos de trabajo.</p>
+    <nav class="jump" aria-label="Secciones">
+      <a href="#journal-articles">Artículos en revistas <span>10</span></a>
+      <a href="#book-chapters">Capítulos de libro <span>4</span></a>
+      <a href="#working-papers">Documentos de trabajo <span>9</span></a>
+    </nav>
+  </div>
+</div>
+<section class="page-block pubs-block" id="journal-articles">
+  <div class="wrap-wide">
+    <h2>Artículos en revistas</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S2666143825000109" target="_blank" rel="noopener">High-frequency Inflation Forecasting: A Two-step Machine Learning Methodology</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Latin American Journal of Central Banking</em>, Available online 17 May 2025, 100172</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://www.sciencedirect.com/science/article/pii/S2666143824000085" target="_blank" rel="noopener">GDP Nowcasting: A Machine Learning and Remote Sensing Data-based Approach for Bolivia</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Latin American Journal of Central Banking</em>, 5(3). 100126</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2023</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://ideas.repec.org/a/efp/journl/v6y2023i2p62-83.html" target="_blank" rel="noopener">Geopolitical Risk Shocks: Macroeconomic Effects in Bolivia, Chile, and Peru</a>
+          <div class="pub-authors"><b>Bolivar, O.</b> &amp; Huanto, C.</div>
+          <div class="pub-venue"><em>Bolivian Economic Research Papers</em>, 6(2): 62-83.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2023</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://ideas.repec.org/a/efp/journl/v6y2023i1p3-24.html" target="_blank" rel="noopener">Inflation Expectations: Dynamics and Effects for South America</a>
+          <div class="pub-authors"><b>Bolivar, O.</b>, Huanto, C. &amp; Teran, R.</div>
+          <div class="pub-venue"><em>Bolivian Economic Research Papers</em>, 6(1): 3-24.</div>
+          <div class="pub-alt"><span class="tag lang" title="En español">ES</span> Edición en español: <a href="https://ideas.repec.org/a/efp/journl/v6y2023i1p7-50.html" target="_blank" rel="noopener">Expectativas de inflación: Dinámica y efectos para América del Sur</a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 6(1): 7-50.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2022</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://ideas.repec.org/a/efp/journl/v5y2022i2p1-28.html" target="_blank" rel="noopener">Fiscal Multipliers: Empirical Evidence for a Cost-Effective Allocation of Public Investment</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Bolivian Economic Research Papers</em>, 5(2): 1-28.</div>
+          <div class="pub-alt"><span class="tag lang" title="En español">ES</span> Edición en español: <a href="https://ideas.repec.org/a/efp/journl/v5y2022i2p7-64.html" target="_blank" rel="noopener">Multiplicadores Fiscales: Evidencia Empírica para una Asignación Costo-Efectiva de la Inversión Pública</a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 5(2): 7-64.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2021</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://ideas.repec.org/a/efp/journl/v4y2021i2p53-96.html" target="_blank" rel="noopener">Boyanza Tributaria: Relación con la sostenibilidad fiscal y estabilizadores automáticos</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Cuadernos de Investigación Económica Boliviana</em>, 4(2): 53-95.</div>
+          <div class="pub-tags"><span class="tag lang" title="En español">ES</span></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2016</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://ideas.repec.org/a/efp/journl/v1y2015i2p1-40.html" target="_blank" rel="noopener">Bolivianization (De-dollarization) and Effectiveness of the Monetary Policy</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Bolivian Economic Research Papers</em>, 1(2): 1-40.</div>
+          <div class="pub-alt"><span class="tag lang" title="En español">ES</span> Edición en español: <a href="https://ideas.repec.org/a/efp/journl/v1y2015i2p55-98.html" target="_blank" rel="noopener">Bolivianización (Desdolarización) y la Efectividad de la Política Monetaria</a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 1(2): 55-98.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2015</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://ideas.repec.org/a/efp/journl/v1y2015i1p1-27.html" target="_blank" rel="noopener">Domestic Demand as Engine of the Economic Growth in Bolivia</a>
+          <div class="pub-authors"><b>Bolivar, O.</b> &amp; D. Ugarte</div>
+          <div class="pub-venue"><em>Bolivian Economic Research Papers</em>, 1(1): 1-27.</div>
+          <div class="pub-alt"><span class="tag lang" title="En español">ES</span> Edición en español: <a href="https://ideas.repec.org/a/efp/journl/v1y2015i1p7-44.html" target="_blank" rel="noopener">Demanda Interna Motor del Crecimiento Económico en Bolivia</a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 1(1): 7-44.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2015</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://ideas.repec.org/a/efp/journl/v1y2015i1p1-25.html" target="_blank" rel="noopener">The Effect of Income Redistribution on Poverty Reduction of Bolivia</a>
+          <div class="pub-authors">Ugarte, D. &amp; <b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Bolivian Economic Research Papers</em>, 1(1): 1-25.</div>
+          <div class="pub-alt"><span class="tag lang" title="En español">ES</span> Edición en español: <a href="https://ideas.repec.org/a/efp/journl/v1y2015i1p45-80.html" target="_blank" rel="noopener">El Efecto de la Redistribución del Ingreso sobre la Reducción de la Pobreza en Bolivia</a>. <em>Cuadernos de Investigación Económica Boliviana</em>, 1(1): 45-80.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2015</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://ideas.repec.org/a/blv/journl/v22y2015i2p9-40.html" target="_blank" rel="noopener">La Relación Precio del Petróleo y Crecimiento Económico en Bolivia: El Rol de la Política Económica</a>
+          <div class="pub-authors">Ugarte, D. &amp; <b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Revista de Análisis del Banco Central de Bolivia</em>, 22(1): 9-40.</div>
+          <div class="pub-tags"><span class="tag lang" title="En español">ES</span></div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+<section class="page-block pubs-block" id="book-chapters">
+  <div class="wrap-wide">
+    <h2>Capítulos de libro</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <a class="pub-title" href="../docs/papers_docs/PAPER_community_poverty_mapping.pdf" target="_blank" rel="noopener">Predicting community-level poverty in Bolivia: Insights from satellite imagery, census data, and spatial modeling</a>
+          <div class="pub-authors"><b>Bolivar, O.</b> &amp; Mendez, C.</div>
+          <div class="pub-venue"><em>Nagoya University (Ed.), Revisiting the Poverty-Growth-Inequality Triangle in the Post-Pandemic Era (in progress).</em> Japan: Routledge – Taylor & Francis Group</div>
+          <div class="pub-tags"><span class="tag">PDF</span></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2020</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://www.researchgate.net/publication/381968382_Evaluacion_de_Impacto_de_la_Infraestructura_Vial_en_el_Crecimiento_Economico_Una_Aproximacion_con_base_en_Informacion_Satelital_de_Luminosidad_para_Bolivia" target="_blank" rel="noopener">Evaluación de impacto de la infraestructura vial en el crecimiento económico: Una aproximación con base en información satelital de luminosidad para Bolivia</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>CAF-UDAPE, Osmar Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (págs. 11-70).</em> La Paz, Bolivia.</div>
+          <div class="pub-tags"><span class="tag lang" title="En español">ES</span></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2020</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://www.researchgate.net/publication/381969941_Evaluacion_de_Impacto_de_la_Infraestructura_Vial_en_las_Condiciones_Socioeconomicas_de_la_Poblacion" target="_blank" rel="noopener">Evaluación de impacto de la infraestructura vial sobre las condiciones socioeconómicas de la población</a>
+          <div class="pub-authors"><b>Bolivar, O.</b> &amp; Ugarte, D.</div>
+          <div class="pub-venue"><em>CAF-UDAPE, Osmar Bolivar (Ed.), Evaluación de impacto de la infraestructura vial en Bolivia (pp. 71-117)</em>. La Paz, Bolivia.</div>
+          <div class="pub-tags"><span class="tag lang" title="En español">ES</span></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2018</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://ideas.repec.org/h/adv/chaptr/201901c.html" target="_blank" rel="noopener">Descentralización en Bolivia: Eficacia y Externalidades</a>
+          <div class="pub-authors">Ugarte, D. &amp; <b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>CAF-INESAD-ABCE & Beatriz Muriel (Ed.), Investigaciones para el Desarrollo Económico de Bolivia (pp. 113-168)</em>. La Paz, Bolivia.</div>
+          <div class="pub-tags"><span class="tag lang" title="En español">ES</span></div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+<section class="page-block pubs-block" id="working-papers">
+  <div class="wrap-wide">
+    <h2>Documentos de trabajo</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <a class="pub-title" href="../docs/papers_docs/PAPER_Hit_the_road_Juan.pdf" target="_blank" rel="noopener">Hit the Road Juan: Welfare and Labor Market Effects of High-Quality Roads in Ecuador</a>
+          <div class="pub-authors"><b>Bolivar, O.</b>, Canavire-Bacarreza, G. &amp; Balthrop. A.</div>
+          <div class="pub-venue"><em>Proceeding Paper -- 18th Meeting LACEA Impact Evaluation Network</em>, 2025 RIDGE May Forum.</div>
+          <div class="pub-tags"><span class="tag">PDF</span></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5583571" target="_blank" rel="noopener">Fire Vulnerability Mapping in the Chiquitano Biome: A Machine Learning Approach with MapBiomas Data</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Available at SSRN</em>.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353057" target="_blank" rel="noopener">Sentiment, Cryptocurrency and Inflation: A Transmission Channel in Bolivia</a>
+          <div class="pub-authors"><b>Bolivar, O.</b> &amp; Huanto, C.</div>
+          <div class="pub-venue"><em>Available at SSRN</em>.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5001681" target="_blank" rel="noopener">Weekly Inflation Forecasting: A Two-Step Machine Learning Methodology</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Available at SSRN</em>.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <a class="pub-title" href="../docs/papers_docs/WP_Geopolitical_Shocks.pdf" target="_blank" rel="noopener">Tensiones Geopolíticas: Efectos Macroeconómicos en Bolivia, Chile y Perú</a>
+          <div class="pub-authors"><b>Bolivar, O.</b> &amp; Huanto, C.</div>
+          <div class="pub-venue"><em>Proceeding Paper - Call for Papers: 2024 Meeting of Economists of Bolivia</em>, Central Bank of Bolivia.</div>
+          <div class="pub-tags"><span class="tag">PDF</span><span class="tag lang" title="En español">ES</span></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2023</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://mpra.ub.uni-muenchen.de/118932/1/MPRA_paper_118932.pdf" target="_blank" rel="noopener">Evolución de la pobreza en las comunidades de Bolivia entre 2012 y 2022: Un enfoque de machine learning y teledetección</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>MPRA Paper from University Library of Munich</em>.</div>
+          <div class="pub-tags"><span class="tag">PDF</span><span class="tag lang" title="En español">ES</span></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2022</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://www.researchgate.net/publication/381860975_Dinamica_Inflacionaria_Crecimiento_Economico_y_Empleo_en_los_contextos_de_pandemia_y_pospandemia_para_America_del_Sur" target="_blank" rel="noopener">Dinámica Inflacionaria, Crecimiento Económico y Empleo en los contextos de pandemia y pospandemia para América del Sur</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Proceeding Paper - First Place in the Call for Papers: 2022 Meeting of Economists of Bolivia</em>, Central Bank of Bolivia.</div>
+          <div class="pub-tags"><span class="tag award">Primer lugar</span><span class="tag lang" title="En español">ES</span></div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2022</div>
+        <div class="pub-body">
+          <a class="pub-title" href="https://scioteca.caf.com/handle/123456789/1910" target="_blank" rel="noopener">Roads illuminate development: Using nightlight luminosity to assess the impact of transport infrastructure</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Research Department Working Papers 1910</em>, CAF - Development Bank of Latin America.</div>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="pub-year">2017</div>
+        <div class="pub-body">
+          <a class="pub-title" href="../docs/papers_docs/Final_Desdolarización en Bolivia.pdf" target="_blank" rel="noopener">Desdolarización en Bolivia: Interacción con la Política Monetaria y el Tipo de Cambio</a>
+          <div class="pub-authors"><b>Bolivar, O.</b></div>
+          <div class="pub-venue"><em>Proceeding Paper - Call for Papers: 2017 Meeting of Economists of Bolivia</em>, Central Bank of Bolivia.</div>
+          <div class="pub-tags"><span class="tag">PDF</span><span class="tag lang" title="En español">ES</span></div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+  </div> <!-- articleBandContent -->
+</div> <!-- pageContent -->
+
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div>&copy; 2026 Osmar Bolivar Rosales</div>
+    <nav class="sf-links" aria-label="Profiles">
+      <a href="https://www.linkedin.com/in/osmar-bolivar-rosales/">LinkedIn</a>
+      <a href="https://www.researchgate.net/profile/Osmar-Bolivar">ResearchGate</a>
+      <a href="https://orcid.org/0009-0002-2297-2217">ORCID</a>
+      <a href="https://github.com/osmarbolivar">GitHub</a>
+      <a href="https://x.com/OsmarBolivarR" rel="me">X</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+/* Article helpers: "On this page" contents and tap-to-enlarge figures. */
+(function () {
+  var article = document.querySelector("#pageContent .articleBandContent > .section.level1, #pageContent .articleBandContent > section.level1");
+  if (!article) return;
+
+  // Contents box for articles with three or more sections.
+  var heads = Array.prototype.filter.call(article.querySelectorAll("h2"), function (h) {
+    return (h.closest(".section, section") || {}).id;
+  });
+  if (heads.length >= 3) {
+    var box = document.createElement("details");
+    box.className = "page-toc";
+    if (!window.matchMedia("(max-width: 760px)").matches) box.open = true;
+    var html = "<summary>On this page</summary><ol>";
+    heads.forEach(function (h) {
+      html += '<li><a href="#' + h.closest(".section, section").id + '">' + h.textContent.trim() + "</a></li>";
+    });
+    box.innerHTML = html + "</ol>";
+    var dek = article.querySelector("p.dek"), h1 = article.querySelector("h1");
+    var after = dek || h1;
+    if (after) after.parentNode.insertBefore(box, after.nextSibling);
+  }
+
+  // Figures open full screen on click or tap.
+  var lightbox = null, lastFocus = null;
+  function close() {
+    if (!lightbox) return;
+    lightbox.remove(); lightbox = null;
+    document.removeEventListener("keydown", onKey);
+    if (lastFocus) lastFocus.focus();
+  }
+  function onKey(e) { if (e.key === "Escape") close(); }
+  function open(img) {
+    lastFocus = img;
+    lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-label", img.alt || "Figure");
+    lightbox.innerHTML = '<img alt=""><button type="button" aria-label="Close">×</button>';
+    lightbox.querySelector("img").src = img.currentSrc || img.src;
+    lightbox.addEventListener("click", close);
+    document.body.appendChild(lightbox);
+    document.addEventListener("keydown", onKey);
+    lightbox.querySelector("button").focus();
+  }
+  article.querySelectorAll("img").forEach(function (img) {
+    if (img.closest("a")) return;              // linked images keep their link (e.g. downloads)
+    img.classList.add("zoomable");
+    img.setAttribute("tabindex", "0");
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", "Enlarge figure" + (img.alt ? ": " + img.alt : ""));
+    img.addEventListener("click", function () { open(img); });
+    img.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(img); } });
+  });
+})();
+</script>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

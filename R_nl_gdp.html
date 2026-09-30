@@ -166,6 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="site-header" id="siteHeader">
   <div class="sh-inner">
     <a class="sh-brand" href="index.html">Osmar Bolivar Rosales</a>
+    <a class="sh-lang" id="langSwitch" hidden hreflang="es" lang="es" title="Ver en español" aria-label="Ver esta página en español">ES</a>
     <button class="sh-toggle" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="Menu">
       <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
@@ -192,6 +193,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   header.querySelectorAll(".sh-nav a").forEach(function (a) {
     if (a.getAttribute("href").toLowerCase() === page) a.setAttribute("aria-current", "page");
   });
+  // Language switch: shown only on pages that exist in both languages.
+  var LANG_PAIRS = {"index.html": "es/index.html", "portfolio.html": "es/portfolio.html", "papers.html": "es/Papers.html", "about.html": "es/About.html"};
+  var sw = document.getElementById("langSwitch");
+  var pair = LANG_PAIRS[page];
+  if (sw && pair) { sw.href = pair; sw.hidden = false; }
   // R Markdown wraps content in Bootstrap's container; the site layout handles width instead.
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".main-container").forEach(function (el) {

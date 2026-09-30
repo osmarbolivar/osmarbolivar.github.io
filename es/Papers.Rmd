@@ -1,0 +1,59 @@
+---
+title: "Publicaciones · Osmar Bolivar Rosales"
+lang: es
+output:
+  html_document:
+    theme: sandstone
+    highlight: tango
+    self_contained: false
+    lib_dir: site_libs
+    toc_float: false
+    css: ../css/site.css
+    includes:
+      in_header: [include_head.html, ../google_analytics.html, ../i18n/es_Papers.html]
+      before_body: [include_header.html, ../include_header_navpage.html]
+      after_body: ../include_footer.html
+    pandoc_args: ["--wrap=preserve"]
+---
+
+<!-- Spanish version of ../Papers.Rmd. The publication list is read from ../Papers.Rmd
+     when this page is knit, so add or edit papers only there, then knit both pages. -->
+
+<!-- Google tag (gtag.js) -->
+
+```{=html}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F5HJ5VRY62"></script>
+```
+```{=html}
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F5HJ5VRY62');
+</script>
+```
+
+```{r publications, echo=FALSE}
+src <- paste(readLines("../Papers.Rmd", encoding = "UTF-8", warn = FALSE), collapse = "\n")
+start <- regexpr("<!--html_preserve-->", src, fixed = TRUE)
+end <- regexpr("<!--/html_preserve-->", src, fixed = TRUE)
+stopifnot(start > 0, end > start)
+block <- substr(src, start + nchar("<!--html_preserve-->"), end - 1)
+
+# Translate the page's own labels; paper titles, authors and venues stay as published.
+labels <- c(
+  "<h1>Papers</h1>" = "<h1>Publicaciones</h1>",
+  "Peer-reviewed journal articles, book chapters and working papers." =
+    "Artículos en revistas arbitradas, capítulos de libro y documentos de trabajo.",
+  'aria-label="Sections"' = 'aria-label="Secciones"',
+  ">Journal articles" = ">Artículos en revistas",
+  ">Book chapters" = ">Capítulos de libro",
+  ">Working papers" = ">Documentos de trabajo",
+  "Spanish edition:" = "Edición en español:",
+  ">First Place</span>" = ">Primer lugar</span>",
+  'href="docs/' = 'href="../docs/'
+)
+for (from in names(labels)) block <- gsub(from, labels[[from]], block, fixed = TRUE)
+htmltools::HTML(block)
+```
