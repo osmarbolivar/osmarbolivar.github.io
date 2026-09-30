@@ -13,7 +13,7 @@
 
 <title>Education in Bolivia: Striving for Equitable Access and Quality</title>
 
-<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.31/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -32,9 +32,13 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<meta name="google-site-verification" content="5CiWJ3uijCVJ7jXsqZjTl4o-YXI09ctUxyptsj08XSE" />
 <meta name="description" content="I share insights in regard to applied AI and data science for data-driven economics"/>
-
-
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -42,6 +46,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5SMWF48P');</script>
 <!-- End Google Tag Manager -->
+<!-- Link previews (LinkedIn, WhatsApp, Facebook, X) -->
+<link rel="canonical" href="https://osmarbolivar.github.io/R_Education.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Osmar Bolivar Rosales">
+<meta property="og:title" content="Education in Bolivia: Striving for Equitable Access and Quality">
+<meta property="og:description" content="Access to education in Bolivia: disparities, and efforts to optimize the allocation of resources.">
+<meta property="og:url" content="https://osmarbolivar.github.io/R_Education.html">
+<meta property="og:image" content="https://osmarbolivar.github.io/images/og/back-to-school.jpg">
+<meta property="og:image:secure_url" content="https://osmarbolivar.github.io/images/og/back-to-school.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="798">
+<meta property="og:image:alt" content="Education in Bolivia: Striving for Equitable Access and Quality">
+<meta name="author" content="Osmar Bolivar Rosales">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Education in Bolivia: Striving for Equitable Access and Quality">
+<meta name="twitter:description" content="Access to education in Bolivia: disparities, and efforts to optimize the allocation of resources.">
+<meta name="twitter:image" content="https://osmarbolivar.github.io/images/og/back-to-school.jpg">
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
+<link rel="stylesheet" href="css/site.css" type="text/css" />
 
 
 
@@ -147,24 +170,6 @@ pre code {
 
 
 
-<!-- Link previews (LinkedIn, WhatsApp, Facebook, X) -->
-<link rel="canonical" href="https://osmarbolivar.github.io/R_Education.html">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="Osmar Bolivar Rosales">
-<meta property="og:title" content="Education in Bolivia: Striving for Equitable Access and Quality">
-<meta property="og:description" content="Access to education in Bolivia: disparities, and efforts to optimize the allocation of resources.">
-<meta property="og:url" content="https://osmarbolivar.github.io/R_Education.html">
-<meta property="og:image" content="https://osmarbolivar.github.io/images/og/back-to-school.jpg">
-<meta property="og:image:secure_url" content="https://osmarbolivar.github.io/images/og/back-to-school.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="798">
-<meta property="og:image:alt" content="Education in Bolivia: Striving for Equitable Access and Quality">
-<meta name="author" content="Osmar Bolivar Rosales">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Education in Bolivia: Striving for Equitable Access and Quality">
-<meta name="twitter:description" content="Access to education in Bolivia: disparities, and efforts to optimize the allocation of resources.">
-<meta name="twitter:image" content="https://osmarbolivar.github.io/images/og/back-to-school.jpg">
 </head>
 
 <body>
@@ -179,38 +184,44 @@ pre code {
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<meta name="description" content="I share insights in regard to applied AI and data science for data-driven economics"/>
-
-<div id="rStudioHeader" class="alwaysShrunk">
-  <div class="innards bandContent">
-    <div>
-      <a class="productName" href="index.html">My Website</a>
-      <div class="rStudio"><span class="light">Osmar Bolivar Rosales</span></div>
-    </div>
-
-    <div id="menu">
-      <div id="menuToggler"></div>
-      <div id="menuItems">
-        <a class="menuItem" href="index.html">Home</a>
-        <a class="menuItem" href="portfolio.html">My Portfolio</a>
-        <a class="menuItem" href="Papers.html">Papers</a>
-        <a class="menuItem" href="About.html">About</a>
-      </div>
-    </div>
+<header class="site-header" id="siteHeader">
+  <div class="sh-inner">
+    <a class="sh-brand" href="index.html">Osmar Bolivar Rosales</a>
+    <button class="sh-toggle" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="Menu">
+      <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="sh-nav" id="siteNav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="Papers.html">Papers</a>
+      <a href="About.html">About</a>
+    </nav>
   </div>
-</div>
+</header>
 
-<style type="text/css">
-#TOC {
-  margin-left: 35px;
-  margin-top: 90px;
-}
-</style>
-
-<script type="text/javascript">
-$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+<script>
+(function () {
+  var header = document.getElementById("siteHeader");
+  var toggle = header.querySelector(".sh-toggle");
+  toggle.addEventListener("click", function () {
+    var open = header.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  // Mark the current page in the menu.
+  var page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  header.querySelectorAll(".sh-nav a").forEach(function (a) {
+    if (a.getAttribute("href").toLowerCase() === page) a.setAttribute("aria-current", "page");
+  });
+  // R Markdown wraps content in Bootstrap's container; the site layout handles width instead.
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".main-container").forEach(function (el) {
+      el.classList.remove("main-container", "container-fluid");
+      el.classList.add("footerPushDown");
+    });
+  });
+})();
 </script>
-
 
 <div id="pageContent" class="standardPadding">
   <div class="articleBandContent">
@@ -281,16 +292,16 @@ TABLE 1. 10th highest teacher-to-school municipalities
 </caption>
 <thead>
 <tr>
-<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(204, 203, 136, 1) !important;text-align: center;">
 Department
 </th>
-<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(204, 203, 136, 1) !important;text-align: center;">
 Municipality
 </th>
-<th style="text-align:right;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+<th style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(204, 203, 136, 1) !important;text-align: center;">
 2000
 </th>
-<th style="text-align:right;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+<th style="text-align:right;font-weight: bold;color: white !important;background-color: rgba(204, 203, 136, 1) !important;text-align: center;">
 2016
 </th>
 </tr>
@@ -458,13 +469,13 @@ TABLE 2. Logit model: Teacher-to-1000-inhabitants marginal effects
 </caption>
 <thead>
 <tr>
-<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(204, 203, 136, 1) !important;text-align: center;">
 Dep. Variable: 1 if teacher-to-1000 &gt; mean
 </th>
-<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(204, 203, 136, 1) !important;text-align: center;">
 dy_dx
 </th>
-<th style="text-align:left;font-weight: bold;color: white !important;background-color: #cccb88 !important;text-align: center;">
+<th style="text-align:left;font-weight: bold;color: white !important;background-color: rgba(204, 203, 136, 1) !important;text-align: center;">
 SE
 </th>
 </tr>
@@ -633,17 +644,17 @@ Obs.
   </div> <!-- articleBandContent -->
 </div> <!-- pageContent -->
 
-<div id="rStudioFooter" class="band full">
-<div class="bandContent">
-  <div id="copyright">© Copyright 2026.</div>
-  <div id="logos">
-    <a href="https://github.com/osmarbolivar" class="footerLogo gitHub"></a>
-    <a href="https://www.researchgate.net/profile/Osmar-Bolivar" class="footerLogo researchgate"></a>
-    <a href="https://www.linkedin.com/in/osmar-bolivar-rosales/" class="footerLogo linkedIn"></a>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div>&copy; 2026 Osmar Bolivar Rosales</div>
+    <nav class="sf-links" aria-label="Profiles">
+      <a href="https://www.linkedin.com/in/osmar-bolivar-rosales/">LinkedIn</a>
+      <a href="https://www.researchgate.net/profile/Osmar-Bolivar">ResearchGate</a>
+      <a href="https://orcid.org/0009-0002-2297-2217">ORCID</a>
+      <a href="https://github.com/osmarbolivar">GitHub</a>
+    </nav>
   </div>
-</div>
-</div>
-
+</footer>
 
 
 

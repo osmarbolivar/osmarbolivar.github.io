@@ -1,19 +1,10 @@
-body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica Neue, Arial, Arial;
-  background-color:#fff;
+/* Legacy components still used by the Home bands and Portfolio gallery.
+   Typography, header, footer and layout now live in css/site.css. */
 
-  font-weight: normal;
-  color: #404040;
-  font-size: 16px;
-}
-
-html, body, .footerPushDown {
-  height: 100%;
-}
-
-p {
-  line-height: 1.7em;
-  margin-bottom: 1em;
+.bandContent {
+  margin: 0 auto;
+  max-width: 1140px;
+  z-index: 2;
 }
 
 .band.full {
@@ -38,12 +29,6 @@ p {
 .band.full.fourth {
   height: 450px;
   overflow: hidden;
-}
-
-.bandContent, .standardPadding .articleBandContent {
-  margin: 0 auto;
-  max-width: 1140px;
-  z-index: 2;
 }
 
 .vCenter {
@@ -96,189 +81,6 @@ p {
   z-index:1;
 }
 
-.band .imageFive {
-  position: absolute;
-  width: 10px;
-  height: auto;
-  left: 10px;
-}
-
-
-#rStudioHeader {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  height: auto;
-  z-index: 100;
-  padding: 0 5%;
-/*
-  color: #fff;
-}
-
-#rStudioHeader.shrunk, #rStudioHeader.alwaysShrunk {
-  color: inherit;
-*/
-  background-color: rgba(255, 255, 255, .98);
-
-  -webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.1);
-}
-
-#rStudioHeader .innards {
-  padding: 40px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  -webkit-transition-property: padding;
-  -moz-transition-property: padding;
-  -o-transition-property: padding;
-  transition-property: padding;
-
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-
-#rStudioHeader.shrunk .innards, #rStudioHeader.alwaysShrunk .innards {
-  padding: 9px 0;
-}
-
-#rStudioHeader .productName {
-  font-family: "Source Sans Pro", Helvetica Neue, Helvetica;
-  font-weight: normal;
-  font-size: 40px;
-  color: inherit;
-
-  white-space: nowrap;
-
-  -webkit-transition-property: font-size;
-  -moz-transition-property: font-size;
-  -o-transition-property: font-size;
-  transition-property: font-size;
-
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-}
-
-#rStudioHeader .productName:hover {
-  text-decoration: none;
-}
-
-#rStudioHeader.shrunk .productName, #rStudioHeader.alwaysShrunk .productName {
-  display: inline-block;
-  font-size: 20px;
-}
-
-#rStudioHeader .rStudio {
-  margin-top: 5px;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 200;
-  color: #4d4d4d;
-}
-
-#rStudioHeader .rStudio .logo {
-  display: inline-block;
-  width: 70px;
-  height: 25px;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}
-
-#rStudioHeader.shrunk .rStudio, #rStudioHeader.alwaysShrunk .rStudio {
-  display: inline-block;
-  margin-left: 3px;
-}
-
-#rStudioHeader .rStudio a {
-  text-decoration: none;
-  color: inherit;
-}
-
-#rStudioHeader #menu {
-  text-align: right;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-#rStudioHeader #menu #menuToggler {
-  display: none;
-}
-
-#rStudioHeader #menu #menuItems {
-  display: block;
-}
-
-#rStudioHeader #menu .menuItem {
-  display: inline-block;
-  padding: 0px 15px;
-
-  opacity: .8;
-  cursor: pointer;
-
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-
-  -webkit-transition-duration: .5s;
-  -moz-transition-duration: .5s;
-  -o-transition-duration: .5s;
-  transition-duration: .5s;
-
-  color: inherit;
-}
-
-#rStudioHeader #menu .menuItem:hover {
-  opacity: 1;
-  text-decoration: none;
-}
-
-#rStudioHeader #menu .menuItem.gitHub {
-  width: 20px;
-  height: 20px;
-  padding: 0px;
-  margin: 0px 0px 0px 10px;
-
-  background-image: url(../images/gitHubLogo.svg);
-  background-repeat: no-repeat;
-  background-size: 20px auto;
-  background-position: center center;
-
-  vertical-align: bottom;
-}
-
-#rStudioHeader #menu .menuItem.gitHubText {
-  display: none;
-}
-
-
-#homeContent, #pageContent {
-  position: relative;
-  z-index: 1;
-  min-height: 100%;
-  margin-bottom: -91px;  /* height of footer */
-}
-
-#homeContent:after, #pageContent:after {
-  content: "";
-  height: 91px; /* height of footer */
-  display: block;
-}
-
-.standardPadding {
-  padding: 80px 5%;
-}
-
 #pageContent .pageTitle {
   font-size: 40px;
   font-weight: 300;
@@ -288,58 +90,6 @@ p {
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 30px;
-}
-
-#pageContent .columns {
-  display: flex;
-  justify-content: space-between;
-
-  display: -ms-flexbox;
-  -ms-flex-pack: justify;
-}
-
-#pageContent .columns .column2 {
-  max-width: 46%;
-}
-
-#pageContent .linkSection {
-  line-height: 20px;
-  margin-bottom: 20px;
-}
-
-#pageContent .linkSection .linkSectionTitle {
-  font-size: 1.4em;
-  margin-bottom: 12px;
-}
-
-#pageContent .links a {
-  display: block;
-  line-height: 24px;
-  max-width: 500px;
-  padding: 0 0 0 16px;
-  background-repeat: no-repeat;
-  background-position: left 8px;
-  background-size: 8px 8px;
-}
-
-#pageContent .linkSection .articleBlurb {
-  padding-left: 16px;
-  line-height: 20px;
-  margin-bottom: 10px;
-  display: none;
-}
-
-.gallerySection, .formatSection {
-  margin-bottom: 2em;
-}
-
-.gallerySection .gallerySectionTitle, .formatSection .formatSectionTitle {
-  font-size: 25px;
-  font-weight: 300;
-}
-
-.formatSection .formatSectionTitle {
-  margin-bottom: 10px;
 }
 
 .gallerySection .galleryIntro {
@@ -381,55 +131,6 @@ p {
   padding: 0px 10px 10px 10px;
 }
 
-.formatSection a.doc, .formatSection a.pres, .formatSection a.more {
-  display: inline-block;
-  margin: 0 15px 15px 0;
-
-  color: #fff;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-
-  vertical-align: top;
-
-  background-color: #f0f0f0;
-}
-
-.formatTable {
-  display: table;
-  width: 100%;
-}
-
-.formatTable .formatTableRow {
-  display: table-row;
-  text-decoration: none;
-}
-
-.formatTable .formatTableRow:hover {
-  background-color: #f8f8f8;
-}
-
-.formatTable .formatName {
-  display: table-cell;
-  padding: 5px;
-  width: 200px;
-}
-
-.formatTable .formatDescription {
-  display: table-cell;
-  line-height: 15px;
-  padding-bottom: 5px;
-}
-
-.formatTable a.formatTableRow .formatDescription {
-  color: #404040;
-}
-
-
 #homeContent .tagline {
   padding-top: 100px;
   font-size: 32px;
@@ -439,11 +140,6 @@ p {
 #homeContent a {
   text-decoration: none;
   color: #2780e3;
-}
-
-#homeContent .blue a {
-  color: #fcbf49;
-  font-weight: normal;
 }
 
 #homeContent a:hover {
@@ -462,13 +158,8 @@ p {
   background-color: #f0f0f0;
 }
 
-#homeContent .band.blue {
-  background-color: #75aadb;
-  color: #fff;
-}
-
 #homeContent .band.orange {
-  background-color: #ff890e;
+  background-color: #146eb4;
   color: #fff;
 }
 
@@ -509,97 +200,17 @@ p {
 
 #homeContent .bigButton.gallery {
   color: #fff;
-  background-color: #8fb538;
+  background-color: #146eb4;
 }
 
 #homeContent .bigButton.getStarted {
-  color: #fff;
-  background-color: #e1b877;
+  color: #146eb4;
+  background-color: #ffffff;
 }
 
 #homeContent .bigButton.papers {
   color: #fff;
-  background-color: #32bced;
-}
-
-#rStudioFooter {
-  position: relative;
-  z-index: 2;
-
-  box-sizing: border-box;
-  height: 91px;
-}
-
-#rStudioFooter.band {
-
-  background-color: #ff890e;
-  padding: 30px 5%;
-
-  color: #fff;
-
-  font-weight: 300;
-  font-size: 12px;
-
-  line-height: 25px;
-}
-
-#rStudioFooter .bandContent {
-  color: #fff;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  line-height: 20px;
-}
-
-#rStudioFooter .bandContent #copyright {
-  flex-shrink: 5;
-}
-
-#rStudioFooter .bandContent #logos {
-  flex-shrink: 1;
-}
-
-#rStudioFooter .bandContent .footerLogo {
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
-
-  margin: 0 8px;
-}
-
-#rStudioFooter .bandContent #logos .footerLogo:last-child {
-  margin-right: 0px;
-}
-
-#rStudioFooter .bandContent .footerLogo.gitHub {
-  background-image: url(../images/gitHubLogo2.svg);
-}
-
-#rStudioFooter .bandContent .footerLogo.linkedIn {
-  background-image: url(../images/linkedInLogo.svg);
-}
-
-#rStudioFooter .bandContent .footerLogo.facebook {
-  background-image: url(../images/facebookLogo.svg);
-}
-
-#rStudioFooter .bandContent .footerLogo.researchgate {
-  background-image: url(../images/researchgate.svg);
-}
-
-.screenshot {
-  border: 1px solid #ccc;
-}
-
-.notebook-screenshot {
-  border: 1px solid #ccc;
-  margin-bottom: 8px;
+  background-color: #146eb4;
 }
 
 /* Don't show link underlines in tables (too busy) */
@@ -610,104 +221,6 @@ table.table td a:only-child:visited {
 table.table td a:only-child:hover,
 table.table td a:only-child:active {
   text-decoration: underline;
-}
-
-/* Use the background color from the R logo for the floating toc nav */
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-  background-color: rgb(97,151,213);
-}
-
-/* offset scroll position for anchor links  */
-
-.section h1 {
-  padding-top: 20px;
-  margin-top: -10px;
-  margin-bottom: 30px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #336b85;
-}
-
-.section h2 {
-  padding-top: 58px;
-  margin-top: -58px;
-  color: #668b86;
-}
-.section h3 {
-  padding-top: 58px;
-  margin-top: -58px;
-  color: #99ab87;
-}
-.section h4 {
-  padding-top: 58px;
-  margin-top: -58px;
-}
-.section h5 {
-  padding-top: 58px;
-  margin-top: -58px;
-}
-.section h6 {
-  padding-top: 58px;
-  margin-top: -58px;
-}
-
-.lessonPage {
-  display: flex;
-  display: -ms-flexbox;
-}
-
-.lessonPage .lessonsNav {
-  margin-top: 23px;
-  min-width: 290px;
-  line-height: 40px;
-  padding-right: 30px;
-}
-
-.lessonPage .lessonsNav a {
-  display: block;
-  padding: 0 10px;
-}
-
-.lessonPage .lessonsNav a:hover {
-  text-decoration: none;
-  background-color: #f8f8f8;
-}
-
-.lessonPage .lessonsNav a.current {
-  background-color: #75aadb;
-  color: #fff;
-}
-
-.lessonPage .lessonContent #show-answer h2 {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 7px 20px;
-  background-color: #75aadb;
-  color: #fff;
-
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.lessonPage .lessonContent #show-answer.showing {
-  display: none;
-}
-
-.lessonPage .lessonContent #model-answer {
-  display: none;
-}
-
-.lessonPage .lessonContent #model-answer.showing {
-  display: block;
-}
-
-.lessonPage .lessonContent #continue-to-next-lesson h2 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.lessonPage .continue-link {
-  font-size: 24px;
 }
 
 /* adjustments for smaller screens */
@@ -725,47 +238,7 @@ table.table td a:only-child:active {
   }
 }
 
-@media screen and (max-width: 1023px){
-
-  #rStudioHeader .productName {
-    font-size: 30px;
-  }
-
-  #rStudioHeader .innards {
-    align-items: flex-start;
-  }
-
-  #rStudioHeader #menu #menuToggler {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/menuToggler.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
-  }
-
-  #rStudioHeader #menu #menuItems {
-    display: none;
-  }
-
-  #rStudioHeader #menu #menuItems.showMenu {
-    display: block;
-  }
-
-  #rStudioHeader #menu .menuItem {
-    display: block;
-    line-height: 30px;
-    text-align: left;
-  }
-
-  #rStudioHeader #menu .menuItem.gitHub {
-    display: none;
-  }
-
-  #rStudioHeader #menu .menuItem.gitHubText {
-    display: block;
-  }
+@media screen and (max-width: 1023px) {
 
   #homeContent {
     overflow-x: hidden;
@@ -832,74 +305,10 @@ table.table td a:only-child:active {
   .gallerySection .gallerySectionTitle {
     font-size: 24px;
   }
-
-  #pageContent .columns {
-    display: block;
-  }
-
-  #pageContent .columns .column2 {
-    max-width: none;
-  }
-
-  .lessonPage .lessonsNav {
-    min-width: 200px;
-  }
 }
 
-@media screen and (max-width: 768px){
-  .lessonPage {
-    display: block;
-  }
-
-  .lessonPage .lessonsNav {
-    display: none;
-  }
-
-}
-
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .gallerySection .galleryItems .galleryItem {
     width: 100%;
   }
-  .formatTable .formatName {
-    width: 150px;
-  }
-}
-
-@media screen and (max-width: 350px){
-
-    #rStudioHeader .productName {
-      font-size: 26px;
-    }
-
-    #rStudioFooter .bandContent .footerLogo {
-      margin: 0 2px;
-    }
-
-}
-
-iframe.scale65 {
-  width: 154%;
-  border: #ddd 8px solid;
-  overflow: hidden;
-  position: relative;
-  -ms-zoom: 0.65;
-  -moz-transform: scale(0.65);
-  -moz-transform-origin: 0px 0;
-  -o-transform: scale(0.65);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.65);
-  -webkit-transform-origin: 0 0;
-}
-
-
-.snippet {
-  border: solid 1px #cccccc;
-  margin-bottom: 12px;
-  width: 100%;
-}
-
-.holder {
-  padding-right: 5px;
-  padding-bottom: 5px;
 }

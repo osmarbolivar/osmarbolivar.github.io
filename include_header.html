@@ -3,38 +3,44 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<meta name="description" content="I share insights in regard to applied AI and data science for data-driven economics"/>
-
-<div id="rStudioHeader" class="alwaysShrunk">
-  <div class="innards bandContent">
-    <div>
-      <a class="productName" href="index.html">My Website</a>
-      <div class="rStudio"><span class="light">Osmar Bolivar Rosales</span></div>
-    </div>
-
-    <div id="menu">
-      <div id="menuToggler"></div>
-      <div id="menuItems">
-        <a class="menuItem" href="index.html">Home</a>
-        <a class="menuItem" href="portfolio.html">My Portfolio</a>
-        <a class="menuItem" href="Papers.html">Papers</a>
-        <a class="menuItem" href="About.html">About</a>
-      </div>
-    </div>
+<header class="site-header" id="siteHeader">
+  <div class="sh-inner">
+    <a class="sh-brand" href="index.html">Osmar Bolivar Rosales</a>
+    <button class="sh-toggle" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="Menu">
+      <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="sh-nav" id="siteNav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="Papers.html">Papers</a>
+      <a href="About.html">About</a>
+    </nav>
   </div>
-</div>
+</header>
 
-<style type="text/css">
-#TOC {
-  margin-left: 35px;
-  margin-top: 90px;
-}
-</style>
-
-<script type="text/javascript">
-$(".main-container").removeClass("main-container").removeClass("container-fluid").addClass("footerPushDown");
+<script>
+(function () {
+  var header = document.getElementById("siteHeader");
+  var toggle = header.querySelector(".sh-toggle");
+  toggle.addEventListener("click", function () {
+    var open = header.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  // Mark the current page in the menu.
+  var page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  header.querySelectorAll(".sh-nav a").forEach(function (a) {
+    if (a.getAttribute("href").toLowerCase() === page) a.setAttribute("aria-current", "page");
+  });
+  // R Markdown wraps content in Bootstrap's container; the site layout handles width instead.
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".main-container").forEach(function (el) {
+      el.classList.remove("main-container", "container-fluid");
+      el.classList.add("footerPushDown");
+    });
+  });
+})();
 </script>
-
 
 <div id="pageContent" class="standardPadding">
   <div class="articleBandContent">

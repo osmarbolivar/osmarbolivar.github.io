@@ -7,11 +7,15 @@ format:
       - css/quarto_custom.css
       - styles_others.css
       - css/rmarkdown.css
+      - css/site.css
     include-in-header:
+      - include_head_quarto.html
       - og_tags/R_Week_Inflation.html
     include-before-body:
       - include_header.html
       - include_header_navpage.html
+    include-after-body:
+      - include_footer.html
 ---
 
 <!-- Google tag (gtag.js) -->
