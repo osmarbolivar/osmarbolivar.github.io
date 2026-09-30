@@ -285,6 +285,14 @@ strong, b { color: var(--ink); font-weight: 700; }
 .pub-list .pub-year { font-weight: 700; color: var(--warm); margin-right: 8px; font-variant-numeric: tabular-nums; }
 #pageContent .pub-list .pub-title { font-weight: 600; }
 .pub-list .pub-venue { display: block; color: var(--text-soft); font-style: italic; font-size: 15px; margin-top: 2px; }
+#pageContent h3.sub-head { font-family: var(--serif); font-size: 21px; font-weight: 600; color: var(--ink); margin: 40px 0 14px 0; }
+#pageContent .pub-list.press { max-width: 880px; }
+.pub-list.press .pub-year { white-space: nowrap; }
+.pub-list.press .pub-venue { font-style: normal; font-weight: 600; color: var(--text); }
+.pub-list.press .pub-venue .tag { margin-left: 4px; vertical-align: 1px; }
+.pub-list .press-desc { display: block; color: var(--text-soft); font-size: 15px; margin-top: 4px; }
+#pageContent .press-more { margin: 16px 0 0 0; font-weight: 600; }
+#pageContent .press-more a { text-decoration: none; }
 
 .contact { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: center; }
 #pageContent .contact h2 { border: 0; padding: 0; margin: 0; color: var(--ink); }
