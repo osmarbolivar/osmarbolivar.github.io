@@ -115,17 +115,6 @@ output:
   <div class="wrap-wide">
     <div class="block-head"><h2>Articles</h2></div>
     <p class="block-intro">Explore thought-provoking narratives in the Articles section. From in-depth analyses of structural matters to timely reflections on economic events, each article contributes to informed discussions in the realm of economics.</p>
-    <div class="card-grid">
-      <a class="card" href="A_early_child.html">
-        <div class="card-img"><img src="images/thumbs/90_percent_brain_dev.jpg" alt="" width="960" height="613" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-tags"><span class="tag soon">Forthcoming</span></div>
-          <h3 class="card-title">Early Childhood</h3>
-          <p class="card-desc">How early childhood determines success?</p>
-        </div>
-      </a>
-    </div>
-    <h3 class="sub-head">Opinion columns</h3>
     <ul class="pub-list press">
         <li><time class="pub-year" datetime="2026-09-30">30 Sep 2026</time><a class="pub-title" href="https://eldeber.com.bo/opinion/diesel-efecto-domino-precios_1790734236" target="_blank" rel="noopener" lang="es">Diésel: el efecto dominó en los precios</a><span class="pub-venue">El Deber · <span class="tag lang" title="En español">ES</span></span><span class="press-desc">How the 83% diesel price rise spreads through prices, well beyond the sectors that use the most fuel.</span></li>
         <li><time class="pub-year" datetime="2026-09-18">18 Sep 2026</time><a class="pub-title" href="https://eldeber.com.bo/opinion/credibilidad-exito-politica-economica_1789680686" target="_blank" rel="noopener" lang="es">Credibilidad y éxito de la política económica</a><span class="pub-venue">El Deber · <span class="tag lang" title="En español">ES</span></span><span class="press-desc">Why the same technical measure can succeed or fail depending on the credibility of the government behind it.</span></li>
