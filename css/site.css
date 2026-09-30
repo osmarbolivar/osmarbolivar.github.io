@@ -210,6 +210,8 @@ strong, b { color: var(--ink); font-weight: 700; }
 .page-block { padding: 56px 0; }
 .page-block + .page-block { border-top: 1px solid var(--rule); }
 .page-block.subtle { background: var(--bg-subtle); }
+#pageContent .page-block h2 { margin-top: 0; }
+#pageContent .page-block > .wrap-wide > h2 { margin-bottom: 20px; }
 .block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
 #pageContent .block-head h2 { border: 0; padding: 0; margin: 0; color: var(--ink); }
 .block-head .more { font-weight: 600; font-size: 16px; white-space: nowrap; }
@@ -286,6 +288,65 @@ strong, b { color: var(--ink); font-weight: 700; }
 #pageContent .contact .links a.email { background: var(--accent); border-color: var(--accent); color: #fff; }
 #pageContent .contact .links a.email:hover { background: #0f5a94; color: #fff; }
 
+/* ---------- papers ---------- */
+.tag.award { color: #7a4a00; background: #fff1cc; }
+.jump { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+#pageContent .jump a {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 14px;
+  border: 1px solid var(--rule); border-radius: 999px; background: #fff;
+  font-weight: 600; font-size: 15px; color: var(--ink);
+}
+#pageContent .jump a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.jump a span { font-size: 12.5px; font-weight: 700; color: var(--text-soft); background: var(--bg-subtle); border-radius: 999px; padding: 0 8px; }
+.pubs-block { scroll-margin-top: 70px; }
+#pageContent .pubs-block h2 { max-width: 880px; }
+#pageContent ol.pubs { list-style: none; margin: 0; padding: 0; max-width: 880px; }
+#pageContent ol.pubs li.pub {
+  display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 4px 20px;
+  margin: 0; padding: 18px 0; border-bottom: 1px solid var(--rule);
+}
+#pageContent ol.pubs li.pub:last-child { border-bottom: 0; }
+.pub .pub-year { font-weight: 700; color: var(--warm); font-size: 16px; line-height: 1.5; font-variant-numeric: tabular-nums; padding-top: 1px; }
+#pageContent .pub a.pub-title { font-size: 17px; font-weight: 600; line-height: 1.45; color: var(--link); }
+.pub .pub-authors { font-size: 15px; color: var(--text); margin-top: 4px; }
+.pub .pub-authors b { color: var(--ink); }
+.pub .pub-venue { font-size: 15px; color: var(--text-soft); line-height: 1.5; }
+.pub .pub-venue em { font-style: italic; }
+.pub .pub-alt { font-size: 14.5px; color: var(--text-soft); margin-top: 6px; line-height: 1.5; }
+.pub .pub-alt .tag { margin-right: 4px; }
+.pub .pub-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+
+/* ---------- about ---------- */
+.about-hero .wrap-wide {
+  display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 44px; align-items: start;
+  padding-top: 48px; padding-bottom: 48px;
+}
+#pageContent .about-hero .photo img {
+  width: 100%; height: auto; aspect-ratio: 1; border-radius: 50%; display: block; margin: 0;
+  box-shadow: 0 0 0 6px #fff, 0 10px 28px rgba(23, 34, 48, 0.14);
+}
+#pageContent .about-hero h1 { margin: 0 0 16px 0; }
+#pageContent .about-hero p { max-width: 42em; }
+#pageContent .skill-chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+#pageContent .skill-chips li {
+  margin: 0; padding: 6px 14px; border-radius: 999px; background: #e8f1fa; color: #0f5a94;
+  font-size: 15px; font-weight: 600;
+}
+.award-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.award { background: #fff; border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+.award .award-img { position: relative; background: #fff; aspect-ratio: 3 / 1; border-bottom: 1px solid var(--rule); overflow: hidden; }
+#pageContent .award .award-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; display: block; margin: 0; border-radius: 0; }
+.award .award-body { padding: 14px 18px 18px 18px; }
+.award .award-rank { display: block; font-weight: 700; color: var(--ink); font-size: 16px; }
+#pageContent .award .award-body p { font-size: 15px; line-height: 1.55; color: var(--text-soft); margin: 4px 0 0 0; }
+.logo-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+.logo-row .logo {
+  display: flex; align-items: center; justify-content: center; width: 150px; height: 150px; padding: 14px;
+  background: #fff; border: 1px solid var(--rule); border-radius: 12px;
+}
+#pageContent .logo-row img { max-width: 100%; max-height: 100%; width: auto; height: auto; margin: 0; }
+#pageContent .logo-row a.logo:hover { border-color: var(--accent); }
+
 #TOC { font-family: var(--sans); }
 
 /* ---------- small screens ---------- */
@@ -323,6 +384,15 @@ strong, b { color: var(--ink); font-weight: 700; }
   .btn-row .btn { flex: 1 1 auto; }
   .contact { grid-template-columns: 1fr; }
   #pageContent .pub-list li { padding: 14px 16px; font-size: 15.5px; }
+
+  #pageContent ol.pubs li.pub { grid-template-columns: 1fr; padding: 16px 0; }
+  #pageContent .pub a.pub-title { font-size: 16.5px; }
+
+  .about-hero .wrap-wide { grid-template-columns: 1fr; gap: 20px; padding-top: 28px; padding-bottom: 32px; }
+  .about-hero .photo { max-width: 150px; }
+  .award-grid { grid-template-columns: 1fr; }
+  .logo-row { gap: 12px; }
+  .logo-row .logo { width: calc(33.33% - 8px); height: auto; aspect-ratio: 1; padding: 10px; }
 }
 
 @media print {
