@@ -13,7 +13,7 @@ output:
       before_body: include_header.html
       after_body: include_footer.html
     css: css/site.css
-    pandoc_args: --wrap=preserve
+    pandoc_args: ["--wrap=preserve", "--metadata=lang:en"]
 site:
   author: "Osmar Bolivar Rosales"
   description: "I share insights in regard to applied AI and data science for data-driven economics"

@@ -34,7 +34,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <p class="dek">How community-level poverty evolved between 2012 and 2022 in Bolivia, combining machine learning and remote sensing.</p>
 ```
 
-In the vast tapestry of Bolivia's evolving socioeconomic landscape, understanding the dynamics of poverty at the community level is of paramount importance. To decipher the threads of change that weave through these communities, I have developed a methodology (click [**here**](https://ideas.repec.org/p/pra/mprapa/118932.html) to download working paper) that combines machine learning and remote sensing. The objective? To forecast the poverty headcount ratio for the year 2022 and draw comparisons with the state of affairs in 2012 at the community level.
+In the vast tapestry of Bolivia's evolving socioeconomic landscape, understanding the dynamics of poverty at the community level is of paramount importance. To decipher the threads of change that weave through these communities, I have developed a methodology (download the [**working paper**](https://ideas.repec.org/p/pra/mprapa/118932.html)) that combines machine learning and remote sensing. The objective? To forecast the poverty headcount ratio for the year 2022 and draw comparisons with the state of affairs in 2012 at the community level.
 
 ## Unveiling the Methodology: A Meld of Data and Technology
 
@@ -71,7 +71,7 @@ The study begins by fine-tuning eight machine learning algorithms using a 10-fol
 Our journey doesn't end with algorithms; it extends into the realm of remote sensing. The study unravels the relevance of variables generated through remote sensing in predicting community-level poverty headcount ratios. Among these, the number of banks and schools in each community emerges as the most influential. These factors are closely followed by indicators such as the extent of urban settlements, built-up areas, and luminosity (Figure 2). These variables are key because they mirror access to financial services, education, infrastructure, economic activity, and population concentration ----all pivotal elements in a community's socioeconomic well-being.
 
 <div style="text-align:center;">
-![FIGURE 2. Feature importance by algorithm](Poverty/feature_importance.PNG){width=55% height=65%}
+![FIGURE 2. Feature importance by algorithm](Poverty/feature_importance.PNG){loading="lazy"}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 
@@ -80,7 +80,7 @@ Our journey doesn't end with algorithms; it extends into the realm of remote sen
 The study unfurls the shifting contours of poverty, unveiling a significant transformation between 2012 and 2022. On the whole, there's a downward trend in the number of people living in poverty across the analyzed communities compared to 2012. However, the real standout here is that nearly 50% of these communities in 2022 would witness a UBN poverty headcount ratio below the 42.5% threshold. This marks a remarkable improvement of 14.2 percentage points from 2012, considering that the median poverty incidence based on 2012 data stood at 56.7%. Delving deeper into the projected poverty headcount ratio distribution, a considerable reduction emerges, especially in the first quartile, indicating a positive change in the socioeconomic conditions of these communities during this decade (Figure 3).
 
 <div style="text-align:center;">
-![FIGURE 3. Distribution of the community-level UBN poverty headcount ratio, 2012 and 2022](Poverty/box_plot.PNG){width=60% height=60%}
+![FIGURE 3. Distribution of the community-level UBN poverty headcount ratio, 2012 and 2022](Poverty/box_plot.PNG){loading="lazy"}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 
@@ -89,7 +89,7 @@ The study unfurls the shifting contours of poverty, unveiling a significant tran
 The data paints an intriguing picture of varying degrees of poverty reduction among communities, based on their initial poverty levels in 2012. What stands out is that communities starting from a lower poverty threshold in 2012 (below 60%) have seen more significant reductions in poverty incidence (Figure 4). This could be due to a threshold phenomenon, where communities with initial poverty levels below 60% have crossed a developmental threshold, fostering poverty reduction through economic opportunities and existing infrastructure. On the flip side, communities that began with higher poverty levels (60% or more) experienced more moderate reductions, likely due to deeper-rooted structural challenges demanding long-term, multifaceted interventions.
 
 <div style="text-align:center;">
-![FIGURE 4: Scatter plot between 2012 and 2022 UBN poverty headcount ratios](Poverty/threshold.PNG){width=60% height=60%}
+![FIGURE 4: Scatter plot between 2012 and 2022 UBN poverty headcount ratios](Poverty/threshold.PNG){loading="lazy"}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 
@@ -98,7 +98,7 @@ The data paints an intriguing picture of varying degrees of poverty reduction am
 An in-depth examination also spotlights regional disparities in poverty headcount ratio reduction rates. The department of Santa Cruz emerges as a success story, displaying the most substantial decrease in median poverty headcount ratio. In contrast, departments like Oruro and La Paz show more moderate reductions, indicating structural challenges that demand tailored policies (Figure 5). A localized approach, involving collaboration between governmental bodies, NGOs, and the local community, is essential for designing and implementing strategies that address the unique needs of each department and promote equitable development.
 
 <div style="text-align:center;">
-![FIGURE 5. Distribution of the community-level UBN poverty headcount ratio by department, 2012 and 2022](Poverty/by_depto.PNG){width=60% height=60%}
+![FIGURE 5. Distribution of the community-level UBN poverty headcount ratio by department, 2012 and 2022](Poverty/by_depto.PNG){loading="lazy"}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 
@@ -111,12 +111,12 @@ The research culminates in maps (Figures 6 and 7) that offers a detailed glimpse
 The study's geospatial analysis brings to light the stark contrast between urban and rural areas. Capital cities and their surroundings shine as areas with the lowest poverty rates. However, rural regions, especially highland areas and Cochabamba, grapple with higher poverty rates. The data highlights 68 communities where over 90% of the population lives in poverty, emphasizing economic and developmental disparities. The study underlines the necessity for policies targeting regional inequalities and promoting equitable development.
 
 <div style="text-align:center;">
-![FIGURE 6: 2022 Community-level Poverty Headcount Ratio](Poverty/mapa_pobreza2022.png){width=60% height=60%}
+![FIGURE 6: 2022 Community-level Poverty Headcount Ratio](Poverty/mapa_pobreza2022.png){loading="lazy"}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 
 <div style="text-align:center;">
-![FIGURE 7: Difference between poverty in 2022 and 2012](Poverty/mapa_avance_pobreza.png){width=60% height=60%}
+![FIGURE 7: Difference between poverty in 2022 and 2012](Poverty/mapa_avance_pobreza.png){loading="lazy"}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 

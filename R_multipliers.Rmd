@@ -77,7 +77,7 @@ The secret behind this remarkable performance lies in the substantial indirect e
 In stark contrast, extractive activities showcase a less impressive multiplier effect on global production. For instance, a Bs 1 increase in the demand for products from the oil and gas sector translates to a mere Bs 1.6 expansion in Bolivia's gross output. This is due to their weak interrelationship with other economic activities in intermediate consumption and a reduced induced effect.
 
 <div style="text-align:center;">
-![FIGURE 1. GVP Multipliers by activity](Files_multipliers/multip_gvp.png){width=80% height=80%}
+![FIGURE 1. GVP Multipliers by activity](Files_multipliers/multip_gvp.png){loading="lazy"}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 
@@ -88,7 +88,7 @@ Shifting our focus to Value Added (VA), Figure 2 paints a compelling picture. Mo
 Leading the pack in generating high returns in national value added are education and health services, general government, building construction (spanning residential, commercial, industrial buildings, hospitals, schools, hotels, and more), along with forestry and timber activities. These activities exhibit relatively high direct effects, coupled with substantial induced effects that even outshine the direct impact. Their cost structure heavily relies on labor, making them labor-intensive and well-paid sectors.  
 
 <div style="text-align:center;">
-![FIGURE 2. VA Multipliers by activity](Files_multipliers/multip_va.png){width=80% height=80%}
+![FIGURE 2. VA Multipliers by activity](Files_multipliers/multip_va.png){loading="lazy"}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 
@@ -97,7 +97,7 @@ Leading the pack in generating high returns in national value added are educatio
 Finally, let's explore the multiplier effects on employment. On average, an increase of Bs 1 million in demand translates to the creation of 51 new jobs in Bolivia. However, agricultural activities stand out, producing multiplier effects that are 1.8 to 2.7 times the average. The majority of these new jobs are direct, further highlighting the significance of the agricultural sector. Additionally, industries related to food, education, health, and hotels and restaurants have a profound impact on job creation.
 
 <div style="text-align:center;">
-![FIGURE 3. Employment Multipliers by activity](Files_multipliers/multip_employment.png){width=80% height=80%}
+![FIGURE 3. Employment Multipliers by activity](Files_multipliers/multip_employment.png){loading="lazy"}
 </div>
 <div style="margin-bottom: 30px;"></div>  
 

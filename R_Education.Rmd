@@ -55,7 +55,7 @@ Despite the observed improvement in the teacher-to-school ratio at the national 
 The plot presented below displays the distributions of municipal data concerning the teacher-to-school ratio for the years 2000 and 2016. It is noteworthy that the mode of the distribution corresponding to 2016 surpasses that of 2000, consistent with the national-level finding of an improvement in this ratio. Additionally, it is observed that the mode of the municipal data for both 2016 and 2000 falls below the corresponding national ratio (9 teachers per school at the national level in 2016, and 7 in 2000). This observation indicates that the allocation of teachers per school in the majority of municipalities tends to concentrate around values lower than the national ratio.
 
 <div style="text-align:center;">
-  ![FIGURE 1. Teacher-to-school ratio distribution, 2000 and 2016](Education/edu_plt1.png)
+  ![FIGURE 1. Teacher-to-school ratio distribution, 2000 and 2016](Education/edu_plt1.png){loading="lazy"}
 </div>
 
 ::: {style="margin-bottom: 30px;"}
@@ -64,7 +64,7 @@ The plot presented below displays the distributions of municipal data concerning
 Furthermore, the subsequent maps illustrate that, by 2016, a considerable number of municipalities exhibited an enhancement in their teacher-to-school ratio in comparison to their status in 2000. Nonetheless, it is evident that the most significant progress in this indicator is concentrated primarily in municipalities encompassing capital cities and those situated in close proximity to them.
 
 <div style="text-align:center;">
-  ![FIGURE 2. Teacher-to-school ratio distribution across municipalities, 2000 and 2016](Education/teacher_to_school_map.png)
+  ![FIGURE 2. Teacher-to-school ratio distribution across municipalities, 2000 and 2016](Education/teacher_to_school_map.png){loading="lazy"}
 </div>
 
 ::: {style="margin-bottom: 30px;"}
@@ -86,7 +86,7 @@ kable(data, "html", caption = "TABLE 1. 10th highest teacher-to-school municipal
   kable_styling(full_width = FALSE, position = "center") %>%
   #column_spec(1, bold = TRUE) %>%
   #column_spec(2, italic = FALSE) %>%
-  row_spec(0, bold = TRUE, color = "white", background = "#cccb88", align="c") 
+  row_spec(0, bold = TRUE, color = "white", background = "#146eb4", align="c") 
 ```
 
 
@@ -97,7 +97,7 @@ Upon calculating the ratio of teachers per 1000 inhabitants within the age range
 [^2]: It is essential to acknowledge that the population in the age range of 5 to 29 years is calculated by multiplying the total population of the municipality in 2016 with the percentage that represented this age group in the National Population and Housing Census 2012, considering the limited information available.
 
 <div style="text-align:center;">
-![FIGURE 3. Teachers per 1000 inhabitants within age ranges, 2000 and 2016](Education/edu_plt3.png)
+![FIGURE 3. Teachers per 1000 inhabitants within age ranges, 2000 and 2016](Education/edu_plt3.png){loading="lazy"}
 </div>
 
 ::: {style="margin-bottom: 30px;"}
@@ -149,7 +149,7 @@ colnames(data) <- c("Dep. Variable: 1 if teacher-to-1000 > mean", "dy_dx", "SE")
 
 kable(data, "html", caption = "TABLE 2. Logit model: Teacher-to-1000-inhabitants marginal effects") %>%
   kable_styling(full_width = FALSE, position = "center") %>%
-  row_spec(0, bold = TRUE, color = "white", background = "#cccb88", align="c") %>%
+  row_spec(0, bold = TRUE, color = "white", background = "#146eb4", align="c") %>%
   add_footnote(c("Note: *** indicates statistical significance at the 1% level."), notation = "none") 
 ```
 
