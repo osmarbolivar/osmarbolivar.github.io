@@ -101,8 +101,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="css/quarto_custom.css">
-<link rel="stylesheet" href="styles_others.css">
 <link rel="stylesheet" href="css/site.css">
 </head>
 
@@ -210,8 +208,10 @@ window.Quarto = {
 
   gtag('config', 'G-F5HJ5VRY62');
 </script>
+<div class="article-kicker"><a href="portfolio.html">Portfolio</a><span aria-hidden="true">/</span><span>Research</span></div>
 <section id="forecasting-weekly-inflation-with-machine-learning" class="level1">
 <h1>Forecasting Weekly Inflation with Machine Learning</h1>
+<p class="dek">A novel two-step machine learning methodology for forecasting weekly inflation.</p>
 <div style="text-align:center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -286,14 +286,179 @@ x_{i,w} = \frac{1}{N_w} \sum_{t \in W} x_{i,t}^{d}
 <h3 class="anchored" data-anchor-id="monthly-inflation-forecasting">Monthly Inflation Forecasting</h3>
 <p>The methodology commenced with training and validating seven machine learning algorithms to forecast monthly inflation in Bolivia <strong>(Step 1)</strong>. Each model underwent 5-fold cross-validation, evaluated using mean squared error (MSE), mean absolute error (MAE), and the <span class="math inline">\(R^2\)</span>. Hyperparameter tuning significantly enhanced all models, underscoring the importance of optimal parameter selection.</p>
 <p>Table 1 displays the performance of individual algorithms and aggregated forecast metrics. At individual level, the Extra Trees (ET) algorithm emerged as the most accurate, followed by Gradient Boosting Regressor (GBR) and Ridge. Ensemble methods, particularly the weighted arithmetic mean of the three best-performing algorithms (<span class="math inline">\(\hat{\pi}_{\text{WAM-BEST}}\)</span>), achieved the highest accuracy.</p>
-<div style="text-align:center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Weekly_inflation/Evaluation_forecast.PNG" style="width:70.0%;height:80.0%" class="figure-img"></p>
+<figure class="data-table figure">
 <figcaption>Table 1. Forecast Evaluation by Aggregated Forecast Metrics and Algorithms</figcaption>
+<div class="table-wrap">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th rowspan="2" class="l" data-quarto-table-cell-role="th">Forecast</th>
+<th colspan="3" data-quarto-table-cell-role="th">Full Sample</th>
+<th colspan="3" data-quarto-table-cell-role="th">Train Set</th>
+<th colspan="3" data-quarto-table-cell-role="th">Validation Set</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">MSE</th>
+<th data-quarto-table-cell-role="th">MAE</th>
+<th data-quarto-table-cell-role="th"><em>R</em><sup>2</sup></th>
+<th data-quarto-table-cell-role="th">MSE</th>
+<th data-quarto-table-cell-role="th">MAE</th>
+<th data-quarto-table-cell-role="th"><em>R</em><sup>2</sup></th>
+<th data-quarto-table-cell-role="th">MSE</th>
+<th data-quarto-table-cell-role="th">MAE</th>
+<th data-quarto-table-cell-role="th"><em>R</em><sup>2</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th class="l" data-quarto-table-cell-role="th" scope="row"><em>π̂</em><sub>WAM-BEST</sub><sup>†</sup></th>
+<td>0.019</td>
+<td>0.097</td>
+<td>0.997</td>
+<td>0.011</td>
+<td>0.079</td>
+<td>0.998</td>
+<td>0.051</td>
+<td>0.168</td>
+<td>0.986</td>
+</tr>
+<tr class="even">
+<th class="l" data-quarto-table-cell-role="th" scope="row"><em>π̂</em><sub>WGM-BEST</sub><sup>†</sup></th>
+<td>0.019</td>
+<td>0.097</td>
+<td>0.997</td>
+<td>0.011</td>
+<td>0.079</td>
+<td>0.998</td>
+<td>0.051</td>
+<td>0.168</td>
+<td>0.986</td>
+</tr>
+<tr class="odd">
+<th class="l" data-quarto-table-cell-role="th" scope="row"><em>π̂</em><sub>WGM</sub></th>
+<td>0.024</td>
+<td>0.114</td>
+<td>0.996</td>
+<td>0.015</td>
+<td>0.095</td>
+<td>0.998</td>
+<td>0.056</td>
+<td>0.188</td>
+<td>0.985</td>
+</tr>
+<tr class="even">
+<th class="l" data-quarto-table-cell-role="th" scope="row"><em>π̂</em><sub>WAM</sub></th>
+<td>0.024</td>
+<td>0.114</td>
+<td>0.996</td>
+<td>0.016</td>
+<td>0.095</td>
+<td>0.998</td>
+<td>0.056</td>
+<td>0.189</td>
+<td>0.985</td>
+</tr>
+<tr class="odd">
+<th class="l" data-quarto-table-cell-role="th" scope="row">ET</th>
+<td>0.017</td>
+<td>0.071</td>
+<td>0.997</td>
+<td>0.003</td>
+<td>0.041</td>
+<td>1.000</td>
+<td>0.072</td>
+<td>0.189</td>
+<td>0.981</td>
+</tr>
+<tr class="even">
+<th class="l" data-quarto-table-cell-role="th" scope="row"><em>π̂</em><sub>AM</sub></th>
+<td>0.070</td>
+<td>0.208</td>
+<td>0.989</td>
+<td>0.065</td>
+<td>0.200</td>
+<td>0.991</td>
+<td>0.091</td>
+<td>0.239</td>
+<td>0.976</td>
+</tr>
+<tr class="odd">
+<th class="l" data-quarto-table-cell-role="th" scope="row">GBR</th>
+<td>0.023</td>
+<td>0.087</td>
+<td>0.996</td>
+<td>0.003</td>
+<td>0.042</td>
+<td>1.000</td>
+<td>0.103</td>
+<td>0.264</td>
+<td>0.972</td>
+</tr>
+<tr class="even">
+<th class="l" data-quarto-table-cell-role="th" scope="row">Ridge</th>
+<td>0.132</td>
+<td>0.278</td>
+<td>0.980</td>
+<td>0.137</td>
+<td>0.278</td>
+<td>0.981</td>
+<td>0.110</td>
+<td>0.278</td>
+<td>0.970</td>
+</tr>
+<tr class="odd">
+<th class="l" data-quarto-table-cell-role="th" scope="row">RF</th>
+<td>0.075</td>
+<td>0.179</td>
+<td>0.988</td>
+<td>0.061</td>
+<td>0.148</td>
+<td>0.991</td>
+<td>0.131</td>
+<td>0.300</td>
+<td>0.965</td>
+</tr>
+<tr class="even">
+<th class="l" data-quarto-table-cell-role="th" scope="row">ADA</th>
+<td>0.058</td>
+<td>0.150</td>
+<td>0.991</td>
+<td>0.019</td>
+<td>0.101</td>
+<td>0.997</td>
+<td>0.211</td>
+<td>0.340</td>
+<td>0.943</td>
+</tr>
+<tr class="odd">
+<th class="l" data-quarto-table-cell-role="th" scope="row">ENET</th>
+<td>0.310</td>
+<td>0.421</td>
+<td>0.952</td>
+<td>0.316</td>
+<td>0.424</td>
+<td>0.955</td>
+<td>0.285</td>
+<td>0.408</td>
+<td>0.923</td>
+</tr>
+<tr class="even">
+<th class="l" data-quarto-table-cell-role="th" scope="row">Lasso</th>
+<td>1.612</td>
+<td>1.003</td>
+<td>0.751</td>
+<td>1.650</td>
+<td>1.010</td>
+<td>0.767</td>
+<td>1.466</td>
+<td>0.975</td>
+<td>0.603</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="table-note">Note: The forecast evaluation is computed with observed and predicted values in y-o-y inflation rates. WAM and WGM stand for Weighted Arithmetic Mean and Weighted Geometric Mean, respectively.<br>(†) The three best-performing algorithms are Extra Trees Regressor, Gradient Boosting Regressor, and Ridge.</p>
 </figure>
-</div>
-</div>
 <div style="margin-bottom: 30px;">
 
 </div>
@@ -379,6 +544,64 @@ x_{i,w} = \frac{1}{N_w} \sum_{t \in W} x_{i,t}^{d}
     </nav>
   </div>
 </footer>
+
+<script>
+/* Article helpers: "On this page" contents and tap-to-enlarge figures. */
+(function () {
+  var article = document.querySelector("#pageContent .articleBandContent > .section.level1, #pageContent .articleBandContent > section.level1");
+  if (!article) return;
+
+  // Contents box for articles with three or more sections.
+  var heads = Array.prototype.filter.call(article.querySelectorAll("h2"), function (h) {
+    return (h.closest(".section, section") || {}).id;
+  });
+  if (heads.length >= 3) {
+    var box = document.createElement("details");
+    box.className = "page-toc";
+    if (!window.matchMedia("(max-width: 760px)").matches) box.open = true;
+    var html = "<summary>On this page</summary><ol>";
+    heads.forEach(function (h) {
+      html += '<li><a href="#' + h.closest(".section, section").id + '">' + h.textContent.trim() + "</a></li>";
+    });
+    box.innerHTML = html + "</ol>";
+    var dek = article.querySelector("p.dek"), h1 = article.querySelector("h1");
+    var after = dek || h1;
+    if (after) after.parentNode.insertBefore(box, after.nextSibling);
+  }
+
+  // Figures open full screen on click or tap.
+  var lightbox = null, lastFocus = null;
+  function close() {
+    if (!lightbox) return;
+    lightbox.remove(); lightbox = null;
+    document.removeEventListener("keydown", onKey);
+    if (lastFocus) lastFocus.focus();
+  }
+  function onKey(e) { if (e.key === "Escape") close(); }
+  function open(img) {
+    lastFocus = img;
+    lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-label", img.alt || "Figure");
+    lightbox.innerHTML = '<img alt=""><button type="button" aria-label="Close">×</button>';
+    lightbox.querySelector("img").src = img.currentSrc || img.src;
+    lightbox.addEventListener("click", close);
+    document.body.appendChild(lightbox);
+    document.addEventListener("keydown", onKey);
+    lightbox.querySelector("button").focus();
+  }
+  article.querySelectorAll("img").forEach(function (img) {
+    if (img.closest("a")) return;              // linked images keep their link (e.g. downloads)
+    img.classList.add("zoomable");
+    img.setAttribute("tabindex", "0");
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", "Enlarge figure" + (img.alt ? ": " + img.alt : ""));
+    img.addEventListener("click", function () { open(img); });
+    img.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(img); } });
+  });
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

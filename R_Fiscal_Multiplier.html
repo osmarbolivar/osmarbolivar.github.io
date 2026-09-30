@@ -251,8 +251,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   gtag('config', 'G-F5HJ5VRY62');
 </script>
+<div class="article-kicker"><a href="portfolio.html">Portfolio</a><span aria-hidden="true">/</span><span>Research</span></div>
 <div id="fiscal-multipliers" class="section level1">
 <h1>Fiscal Multipliers</h1>
+<p class="dek">Empirical evidence for a cost-effective allocation of public investment.</p>
 <div style="text-align:center;">
 <div class="float">
 <img src="Fiscal_multipliers/fig_1.PNG" style="width:70.0%;height:80.0%" alt="Figure 1. Multiplier Effect on Nominal GDP of Public Investment Shocks: Productive, Infrastructure, and Social. Note: Values indicate the expected monetary increase in nominal GDP following shocks that increase the fiscal variables by 1 monetary unit." />
@@ -266,12 +268,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="empirical-strategy" class="section level2">
 <h2>Empirical Strategy</h2>
 <p>The empirical approach estimates the multiplier effects of public investment across various sectors as reported by the Bolivia’s Vice Ministry of Public Investment and External Financing. The sectors are grouped into three major categories: Productive, Infrastructure, and Social. Each category consists of specific sub-sectors, as shown in <strong><em>Table 1</em></strong>.</p>
-<div style="text-align:center;">
-<div class="float">
-<img src="Fiscal_multipliers/tab_0.PNG" style="width:40.0%;height:20.0%" alt="Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia" />
-<div class="figcaption">Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia</div>
-</div>
-</div>
+<figure class="data-table text">
+<figcaption>Table 1. Major and Specific Sectors for Public Investment Allocation in Bolivia</figcaption>
+<div class="table-wrap"><table>
+<thead><tr><th>Major Sectors</th><th>Specific Sectors</th></tr></thead>
+<tbody>
+<tr><th class="l" scope="row">Productive</th><td class="l">Hydrocarbons; Agriculture; Industry; Mining; and Energy</td></tr>
+<tr><th class="l" scope="row">Infrastructure</th><td class="l">Transportation; Communication; and Water Resources</td></tr>
+<tr><th class="l" scope="row">Social</th><td class="l">Urban Planning; Education; Basic Sanitation; and Health</td></tr>
+</tbody></table></div>
+</figure>
 <div style="margin-bottom: 30px;">
 
 </div>
@@ -285,12 +291,19 @@ M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
 <p>To estimate these multiplier effects, Bayesian Structural Vector Autoregressive (BSVAR) models are employed. The key methodological challenge is identifying fiscal policy shocks, which is addressed using the identification algorithm by <strong>Arias et al. (2018)</strong><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. This method uses sign and zero restrictions to identify structural shocks, allowing for a robust estimation of the effects of public investment.</p>
 <p>Separate BSVAR models are constructed for each sector <span class="math inline">\(i\)</span> where public investment is allocated. The analysis uses quarterly data from 2006Q1 to 2022Q3, with the vector of endogenous variables including year-over-year variations in nominal GDP, nominal public investment in sector <span class="math inline">\(i\)</span>, the Consumer Price Index (CPI), financial system liquidity, and the WTI oil price. The models include four lags to account for seasonal effects.</p>
 <p>The identification strategy is designed to capture the dynamics of key structural shocks affecting the Bolivian economy, summarized in <strong><em>Table 2</em></strong>.</p>
-<div style="text-align:center;">
-<div class="float">
-<img src="Fiscal_multipliers/tab_1.PNG" style="width:65.0%;height:65.0%" alt="Table 2. Identification Strategy for Structural Shocks" />
-<div class="figcaption">Table 2. Identification Strategy for Structural Shocks</div>
-</div>
-</div>
+<figure class="data-table">
+<figcaption>Table 2. Identification Strategy for Structural Shocks</figcaption>
+<div class="table-wrap"><table>
+<thead><tr><th><span class="corner">Variables \ Shocks</span></th><th>Demand<sup>†</sup></th><th>Supply</th><th>Fiscal Policy</th><th>Monetary Policy</th><th>Commodities</th></tr></thead>
+<tbody>
+<tr><th class="l" scope="row">GDP</th><td>+ (<i>t</i> = 1)</td><td>+ (<i>t</i> = 1)</td><td>+ (<i>t</i> = 1)</td><td><span title="No restriction">•</span></td><td>+ (<i>t</i> = 1)</td></tr>
+<tr><th class="l" scope="row">CPI</th><td>+ (<i>t</i> = 1)</td><td>− (<i>t</i> = 1)</td><td><span title="No restriction">•</span></td><td><span title="No restriction">•</span></td><td><span title="No restriction">•</span></td></tr>
+<tr><th class="l" scope="row">Public Inv. in sector <i>i</i></th><td>0 (<i>t</i> = 1)</td><td><span title="No restriction">•</span></td><td>+ (<i>t</i> = 1, …, 4)</td><td><span title="No restriction">•</span></td><td><span title="No restriction">•</span></td></tr>
+<tr><th class="l" scope="row">Financial System Liquidity</th><td><span title="No restriction">•</span></td><td><span title="No restriction">•</span></td><td><span title="No restriction">•</span></td><td>+ (<i>t</i> = 1)</td><td><span title="No restriction">•</span></td></tr>
+<tr><th class="l" scope="row">WTI Price</th><td>0 (<i>t</i> = 1)</td><td>0 (<i>t</i> = 1)</td><td>0 (<i>t</i> = 1)</td><td>0 (<i>t</i> = 1)</td><td>+ (<i>t</i> = 1)</td></tr>
+</tbody></table></div>
+<p class="table-note">†: These demand shocks exclude the fiscal policy shock that increases public investment in sector <i>i</i> and the monetary policy shock.<br>Note: [+(<i>t</i> = 1)] indicates a positive contemporaneous effect on the variable of interest. [−(<i>t</i> = 1)] indicates a negative contemporaneous effect. [0(<i>t</i> = 1)] means the contemporaneous effect is null. [+(<i>t</i> = 1, …, 4)] indicates that the expansive effect is contemporaneous and persists for the following three quarters. [•] means no prior restriction is imposed, so the effect is determined by the model.</p>
+</figure>
 <div style="margin-bottom: 30px;">
 
 </div>
@@ -353,13 +366,32 @@ M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
 </div>
 <div id="comparative-analysis-of-sectoral-multipliers" class="section level2">
 <h2>Comparative Analysis of Sectoral Multipliers</h2>
-<p><strong><em>Table 2</em></strong> summarizes the estimated multiplier effects across sectors, highlighting those with the highest return per unit of investment.</p>
-<div style="text-align:center;">
-<div class="float">
-<img src="Fiscal_multipliers/tab_2.PNG" style="width:40.0%;height:65.0%" alt="Table 2. Summary of Public Investment Multiplier Effects by Sector" />
-<div class="figcaption">Table 2. Summary of Public Investment Multiplier Effects by Sector</div>
-</div>
-</div>
+<p><strong><em>Table 3</em></strong> summarizes the estimated multiplier effects across sectors, highlighting those with the highest return per unit of investment.</p>
+<figure class="data-table">
+<figcaption>Table 3. Summary of Public Investment Multiplier Effects by Sector</figcaption>
+<div class="table-wrap"><table>
+<thead><tr><th rowspan="2" class="l">Sector</th><th colspan="3">Contemporary</th><th colspan="3">Medium-Term</th></tr><tr><th><i>p25</i></th><th><i>p50</i></th><th><i>p75</i></th><th><i>p25</i></th><th><i>p50</i></th><th><i>p75</i></th></tr></thead>
+<tbody>
+<tr class="group"><th colspan="7">Major sectors</th></tr>
+<tr><th class="l" scope="row">Social</th><td>0.78</td><td>1.03</td><td>1.37</td><td>1.16</td><td>1.54</td><td>2.04</td></tr>
+<tr><th class="l" scope="row">Productive</th><td>0.58</td><td>0.63</td><td>0.79</td><td>0.93</td><td>1.06</td><td>1.38</td></tr>
+<tr><th class="l" scope="row">Infrastructure</th><td>0.33</td><td>0.45</td><td>0.61</td><td>0.61</td><td>0.78</td><td>1.13</td></tr>
+<tr class="group"><th colspan="7">Specific sectors</th></tr>
+<tr><th class="l" scope="row">Sanitation</th><td>0.50</td><td>0.76</td><td>0.96</td><td>0.86</td><td>1.17</td><td>1.66</td></tr>
+<tr><th class="l" scope="row">Hydrocarbons</th><td>0.71</td><td>1.04</td><td>1.28</td><td>0.85</td><td>1.16</td><td>1.54</td></tr>
+<tr><th class="l" scope="row">Urban Dev.</th><td>0.46</td><td>0.58</td><td>0.80</td><td>0.83</td><td>1.05</td><td>1.45</td></tr>
+<tr><th class="l" scope="row">Health</th><td>0.53</td><td>0.78</td><td>0.98</td><td>0.72</td><td>1.04</td><td>1.33</td></tr>
+<tr><th class="l" scope="row">Agriculture</th><td>0.38</td><td>0.48</td><td>0.66</td><td>0.79</td><td>0.98</td><td>1.37</td></tr>
+<tr><th class="l" scope="row">Communication</th><td>0.37</td><td>0.47</td><td>0.60</td><td>0.68</td><td>0.84</td><td>1.11</td></tr>
+<tr><th class="l" scope="row">Education</th><td>0.31</td><td>0.49</td><td>0.69</td><td>0.57</td><td>0.81</td><td>1.28</td></tr>
+<tr><th class="l" scope="row">Water</th><td>0.31</td><td>0.41</td><td>0.56</td><td>0.59</td><td>0.73</td><td>1.06</td></tr>
+<tr><th class="l" scope="row">Energy</th><td>0.20</td><td>0.25</td><td>0.34</td><td>0.43</td><td>0.51</td><td>0.74</td></tr>
+<tr><th class="l" scope="row">Transportation</th><td>0.16</td><td>0.24</td><td>0.30</td><td>0.34</td><td>0.44</td><td>0.64</td></tr>
+<tr><th class="l" scope="row">Industry</th><td>0.11</td><td>0.14</td><td>0.18</td><td>0.22</td><td>0.26</td><td>0.37</td></tr>
+<tr><th class="l" scope="row">Mining</th><td>0.06</td><td>0.11</td><td>0.18</td><td>0.13</td><td>0.19</td><td>0.39</td></tr>
+</tbody></table></div>
+<p class="table-note">Note: Sectors are ordered from highest to lowest based on the estimated median value of the medium-term cumulative multiplier effect.</p>
+</figure>
 <div style="margin-bottom: 30px;">
 
 </div>
@@ -398,6 +430,64 @@ M_T = \frac{\sum_{t=1}^T \Delta PIB_t}{\sum_{t=1}^T \Delta g_t}
     </nav>
   </div>
 </footer>
+
+<script>
+/* Article helpers: "On this page" contents and tap-to-enlarge figures. */
+(function () {
+  var article = document.querySelector("#pageContent .articleBandContent > .section.level1, #pageContent .articleBandContent > section.level1");
+  if (!article) return;
+
+  // Contents box for articles with three or more sections.
+  var heads = Array.prototype.filter.call(article.querySelectorAll("h2"), function (h) {
+    return (h.closest(".section, section") || {}).id;
+  });
+  if (heads.length >= 3) {
+    var box = document.createElement("details");
+    box.className = "page-toc";
+    if (!window.matchMedia("(max-width: 760px)").matches) box.open = true;
+    var html = "<summary>On this page</summary><ol>";
+    heads.forEach(function (h) {
+      html += '<li><a href="#' + h.closest(".section, section").id + '">' + h.textContent.trim() + "</a></li>";
+    });
+    box.innerHTML = html + "</ol>";
+    var dek = article.querySelector("p.dek"), h1 = article.querySelector("h1");
+    var after = dek || h1;
+    if (after) after.parentNode.insertBefore(box, after.nextSibling);
+  }
+
+  // Figures open full screen on click or tap.
+  var lightbox = null, lastFocus = null;
+  function close() {
+    if (!lightbox) return;
+    lightbox.remove(); lightbox = null;
+    document.removeEventListener("keydown", onKey);
+    if (lastFocus) lastFocus.focus();
+  }
+  function onKey(e) { if (e.key === "Escape") close(); }
+  function open(img) {
+    lastFocus = img;
+    lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-label", img.alt || "Figure");
+    lightbox.innerHTML = '<img alt=""><button type="button" aria-label="Close">×</button>';
+    lightbox.querySelector("img").src = img.currentSrc || img.src;
+    lightbox.addEventListener("click", close);
+    document.body.appendChild(lightbox);
+    document.addEventListener("keydown", onKey);
+    lightbox.querySelector("button").focus();
+  }
+  article.querySelectorAll("img").forEach(function (img) {
+    if (img.closest("a")) return;              // linked images keep their link (e.g. downloads)
+    img.classList.add("zoomable");
+    img.setAttribute("tabindex", "0");
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", "Enlarge figure" + (img.alt ? ": " + img.alt : ""));
+    img.addEventListener("click", function () { open(img); });
+    img.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(img); } });
+  });
+})();
+</script>
 
 
 

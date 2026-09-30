@@ -354,6 +354,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
+<script>
+/* Article helpers: "On this page" contents and tap-to-enlarge figures. */
+(function () {
+  var article = document.querySelector("#pageContent .articleBandContent > .section.level1, #pageContent .articleBandContent > section.level1");
+  if (!article) return;
+
+  // Contents box for articles with three or more sections.
+  var heads = Array.prototype.filter.call(article.querySelectorAll("h2"), function (h) {
+    return (h.closest(".section, section") || {}).id;
+  });
+  if (heads.length >= 3) {
+    var box = document.createElement("details");
+    box.className = "page-toc";
+    if (!window.matchMedia("(max-width: 760px)").matches) box.open = true;
+    var html = "<summary>On this page</summary><ol>";
+    heads.forEach(function (h) {
+      html += '<li><a href="#' + h.closest(".section, section").id + '">' + h.textContent.trim() + "</a></li>";
+    });
+    box.innerHTML = html + "</ol>";
+    var dek = article.querySelector("p.dek"), h1 = article.querySelector("h1");
+    var after = dek || h1;
+    if (after) after.parentNode.insertBefore(box, after.nextSibling);
+  }
+
+  // Figures open full screen on click or tap.
+  var lightbox = null, lastFocus = null;
+  function close() {
+    if (!lightbox) return;
+    lightbox.remove(); lightbox = null;
+    document.removeEventListener("keydown", onKey);
+    if (lastFocus) lastFocus.focus();
+  }
+  function onKey(e) { if (e.key === "Escape") close(); }
+  function open(img) {
+    lastFocus = img;
+    lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-label", img.alt || "Figure");
+    lightbox.innerHTML = '<img alt=""><button type="button" aria-label="Close">×</button>';
+    lightbox.querySelector("img").src = img.currentSrc || img.src;
+    lightbox.addEventListener("click", close);
+    document.body.appendChild(lightbox);
+    document.addEventListener("keydown", onKey);
+    lightbox.querySelector("button").focus();
+  }
+  article.querySelectorAll("img").forEach(function (img) {
+    if (img.closest("a")) return;              // linked images keep their link (e.g. downloads)
+    img.classList.add("zoomable");
+    img.setAttribute("tabindex", "0");
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", "Enlarge figure" + (img.alt ? ": " + img.alt : ""));
+    img.addEventListener("click", function () { open(img); });
+    img.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(img); } });
+  });
+})();
+</script>
+
 
 
 </div>

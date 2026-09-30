@@ -347,6 +347,95 @@ strong, b { color: var(--ink); font-weight: 700; }
 #pageContent .logo-row img { max-width: 100%; max-height: 100%; width: auto; height: auto; margin: 0; }
 #pageContent .logo-row a.logo:hover { border-color: var(--accent); }
 
+/* ---------- research articles ---------- */
+.article-kicker {
+  max-width: var(--read); margin: 8px auto 12px auto;
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--warm);
+}
+.article-kicker a { color: var(--text-soft); }
+.article-kicker span[aria-hidden] { color: var(--rule); font-weight: 400; }
+#pageContent p.dek { font-size: 20px; line-height: 1.55; color: var(--text-soft); margin: -6px 0 26px 0; max-width: 38em; }
+
+/* Figures: fill the column (the Rmd width/height percentages made them small). */
+#pageContent .section .figure img, #pageContent .section .float img, #pageContent .section p > img:only-child,
+#pageContent section.level1 figure img, #pageContent section.level1 p > img:only-child {
+  width: auto !important; height: auto !important; max-width: 100%; max-height: 82vh;
+}
+/* Download previews (image inside a download link, e.g. Built-up Areas). */
+#pageContent .section a[download] > img { width: auto !important; height: auto !important; max-width: 100%; display: block; margin: 0 auto; border-radius: 6px; }
+#pageContent .section .figure, #pageContent .section .float, #pageContent section.level1 .quarto-figure { margin: 28px 0; }
+#pageContent .section .float img { display: block; margin: 0 auto; border-radius: 6px; }
+#pageContent .section .float .figcaption { font-size: 14px; line-height: 1.5; color: var(--text-soft); text-align: center; margin: 10px 0 0 0; }
+
+/* Data tables (replacing pictures of tables). */
+#pageContent figure.data-table {
+  margin: 30px 0 30px 50%; transform: translateX(-50%);
+  width: max-content; max-width: min(1000px, calc(100vw - 40px));
+}
+#pageContent figure.data-table figcaption {
+  font-size: 15px; font-weight: 600; color: var(--ink); text-align: left; margin: 0 0 10px 0; line-height: 1.45;
+}
+.data-table .table-wrap {
+  overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--rule); border-radius: 10px; background: #fff;
+}
+#pageContent .data-table table {
+  display: table; width: 100%; margin: 0; border-collapse: collapse; font-size: 14.5px;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+#pageContent .data-table th, #pageContent .data-table td { padding: 8px 12px; text-align: right; border-bottom: 1px solid var(--rule); vertical-align: top; }
+#pageContent .data-table table thead th {
+  white-space: normal; min-width: 64px;
+  text-transform: none; letter-spacing: normal; font-size: 13.5px; font-weight: 700; color: var(--ink);
+  background: var(--bg-subtle); text-align: center; border-bottom: 1px solid var(--rule); vertical-align: bottom;
+}
+#pageContent .data-table .l, #pageContent .data-table tbody th { text-align: left; }
+#pageContent .data-table tbody th { font-weight: 600; color: var(--ink); background: #fff; position: sticky; left: 0; }
+#pageContent .data-table tbody tr:last-child > * { border-bottom: 0; }
+#pageContent .data-table tr.group th {
+  position: static; background: #eef3f8; color: var(--accent); font-size: 12.5px; letter-spacing: 0.06em;
+  text-transform: uppercase; text-align: left;
+}
+#pageContent .data-table td.hp { white-space: normal; min-width: 190px; color: var(--text); font-size: 13.5px; line-height: 1.5; }
+#pageContent .data-table.text table { white-space: normal; }
+#pageContent .data-table.text td { min-width: 220px; }
+#pageContent .data-table .corner { font-weight: 600; color: var(--text-soft); }
+#pageContent .data-table .table-note { font-size: 13.5px; line-height: 1.5; color: var(--text-soft); margin: 10px 0 0 0; text-align: left; }
+
+/* "On this page" (built by include_footer.html on long articles). */
+.page-toc {
+  margin: 0 0 30px 0; border: 1px solid var(--rule); border-radius: 10px; background: var(--bg-subtle);
+  font-size: 15.5px;
+}
+.page-toc summary {
+  cursor: pointer; padding: 12px 16px; font-weight: 700; color: var(--ink); list-style: none;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.page-toc summary::-webkit-details-marker { display: none; }
+.page-toc summary::after { content: "▾"; color: var(--text-soft); transition: transform .15s; }
+.page-toc[open] summary::after { transform: rotate(180deg); }
+#pageContent .page-toc ol { margin: 0; padding: 0 16px 14px 36px; }
+#pageContent .page-toc li { margin: 4px 0; font-size: 15.5px; line-height: 1.45; }
+
+/* Tap / click to enlarge figures. */
+img.zoomable { cursor: zoom-in; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 2000; background: rgba(15, 20, 28, 0.88);
+  display: flex; align-items: center; justify-content: center; padding: 24px; cursor: zoom-out;
+}
+.lightbox img { max-width: 100%; max-height: 100%; background: #fff; border-radius: 6px; box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+.lightbox button {
+  position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; border: 0; border-radius: 50%;
+  background: rgba(255,255,255,0.14); color: #fff; font-size: 24px; line-height: 44px; cursor: pointer;
+}
+
+/* Quarto page: drop Quarto's column grid so the site header, column and footer match other pages. */
+body.quarto-light #quarto-content, body.quarto-light #quarto-document-content {
+  display: block; max-width: none; width: auto; margin: 0; padding: 0;
+}
+body.quarto-light #title-block-header { display: none; }
+#pageContent .articleBandContent > section.level1 { max-width: var(--read); margin-left: auto; margin-right: auto; }
+
 #TOC { font-family: var(--sans); }
 
 /* ---------- small screens ---------- */
@@ -393,6 +482,12 @@ strong, b { color: var(--ink); font-weight: 700; }
   .award-grid { grid-template-columns: 1fr; }
   .logo-row { gap: 12px; }
   .logo-row .logo { width: calc(33.33% - 8px); height: auto; aspect-ratio: 1; padding: 10px; }
+
+  #pageContent p.dek { font-size: 17.5px; }
+  #pageContent figure.data-table { max-width: calc(100vw - 32px); }
+  #pageContent .data-table table { font-size: 13.5px; }
+  #pageContent .data-table th, #pageContent .data-table td { padding: 7px 9px; }
+  .lightbox { padding: 10px; }
 }
 
 @media print {

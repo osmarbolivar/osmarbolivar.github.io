@@ -25,7 +25,15 @@ library(knitr)
 library(kableExtra)
 ```
 
+```{=html}
+<div class="article-kicker"><a href="portfolio.html">Portfolio</a><span aria-hidden="true">/</span><span>Research</span></div>
+```
+
 # Bolivia’s Built-Up Areas
+
+```{=html}
+<p class="dek">Download a raster file with Bolivia's 2022 built-up classification.</p>
+```
 
 Click on the image below to download Bolivia's 2022 Built-Up Classification. Please reference as:  
 **Bolivar (2023). Bolivia’s Built-Up Areas. https://osmarbolivar.github.io/R_built_up.html.**

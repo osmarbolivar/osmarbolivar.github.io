@@ -24,7 +24,15 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{=html}
+<div class="article-kicker"><a href="portfolio.html">Portfolio</a><span aria-hidden="true">/</span><span>Research</span></div>
+```
+
 # Growth-and-employment Enhancing Activities
+
+```{=html}
+<p class="dek">How to prioritize economic activities to foster growth and job creation.</p>
+```
 
 In the dynamic landscape of Bolivia's economy, a profound question emerges: ***How can we prioritize economic activities to foster growth and job creation, while making the most of limited resources?*** This question lies at the heart of a strategic endeavor aimed at invigorating the Bolivian economy. I'll explore the multi-faceted world of multiplier effects and their profound impact on key economic variables.
 

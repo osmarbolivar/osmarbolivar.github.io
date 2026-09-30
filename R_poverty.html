@@ -251,8 +251,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   gtag('config', 'G-F5HJ5VRY62');
 </script>
+<div class="article-kicker"><a href="portfolio.html">Portfolio</a><span aria-hidden="true">/</span><span>Research</span></div>
 <div id="combining-machine-learning-and-remote-sensing-to-predict-community-level-poverty-in-bolivia" class="section level1">
 <h1>Combining Machine Learning and Remote-sensing to predict Community-level Poverty in Bolivia</h1>
+<p class="dek">How community-level poverty evolved between 2012 and 2022 in Bolivia, combining machine learning and remote sensing.</p>
 <p>In the vast tapestry of Bolivia’s evolving socioeconomic landscape, understanding the dynamics of poverty at the community level is of paramount importance. To decipher the threads of change that weave through these communities, I have developed a methodology (click <a href="https://ideas.repec.org/p/pra/mprapa/118932.html"><strong>here</strong></a> to download working paper) that combines machine learning and remote sensing. The objective? To forecast the poverty headcount ratio for the year 2022 and draw comparisons with the state of affairs in 2012 at the community level.</p>
 <div id="unveiling-the-methodology-a-meld-of-data-and-technology" class="section level2">
 <h2>Unveiling the Methodology: A Meld of Data and Technology</h2>
@@ -262,12 +264,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="the-power-of-machine-learning-key-insights" class="section level2">
 <h2>The Power of Machine Learning: Key Insights</h2>
 <p>The study begins by fine-tuning eight machine learning algorithms using a 10-fold cross-validation approach. What emerges is that algorithms capturing non-linear relationships between the poverty headcount ratio and its predictors outshine those focusing on linear associations. In this category, stars include AdaBoost, Gradient Boosting, Random Forest, and Extra Trees. This optimization process isn’t just a technical exercise; it enhances the predictive and generalization capabilities of these models (Figure 1).</p>
-<div style="text-align:center;">
-<div class="float">
-<img src="Poverty/fine_tuning_table.PNG" style="width:80.0%;height:80.0%" alt="FIGURE 1. Indicators of forecast error and goodness-of-fit for the validation set, and fine-tuned hyperparameters" />
-<div class="figcaption">FIGURE 1. Indicators of forecast error and goodness-of-fit for the validation set, and fine-tuned hyperparameters</div>
-</div>
-</div>
+<figure class="data-table">
+<figcaption>FIGURE 1. Indicators of forecast error and goodness-of-fit for the validation set, and fine-tuned hyperparameters</figcaption>
+<div class="table-wrap"><table>
+<thead><tr><th rowspan="2" class="l">Algorithm</th><th colspan="3">Without fine-tuning</th><th colspan="3">With fine-tuning (10-fold cross-validation)</th><th rowspan="2" class="l">Hyperparameters</th></tr><tr><th>MSE</th><th>MAE</th><th><i>R</i><sup>2</sup></th><th>MSE</th><th>MAE</th><th><i>R</i><sup>2</sup></th></tr></thead>
+<tbody>
+<tr><th class="l" scope="row">Ridge</th><td>2.256</td><td>0.556</td><td>-0.981</td><td>1.335</td><td>0.525</td><td>-0.171</td><td class="l hp"><i>λ</i> = 20.541</td></tr>
+<tr><th class="l" scope="row">Lasso</th><td>12.156</td><td>0.741</td><td>-9.671</td><td>1.140</td><td>0.911</td><td>-0.000</td><td class="l hp"><i>λ</i> = 0.05</td></tr>
+<tr><th class="l" scope="row">ElasticNet</th><td>1.689</td><td>0.833</td><td>-0.482</td><td>1.633</td><td>0.534</td><td>-0.434</td><td class="l hp"><i>λ</i> = 0.05<br><i>α</i> = 0.05</td></tr>
+<tr><th class="l" scope="row">Decision Tree</th><td>0.266</td><td>0.398</td><td>0.768</td><td>0.131</td><td>0.303</td><td>0.886</td><td class="l hp"><i>d</i> = 3<br><i>mss</i> = 13<br><i>msl</i> = 4</td></tr>
+<tr><th class="l" scope="row">AdaBoost</th><td>0.146</td><td>0.321</td><td>0.872</td><td>0.123</td><td>0.288</td><td>0.893</td><td class="l hp"><i>d</i> = 7<br><i>α<sub>t</sub></i> = 2.6<br><i>Loss</i> = Exponential<br><i>T</i> = 185</td></tr>
+<tr><th class="l" scope="row">Gradient Boosting</th><td>0.129</td><td>0.290</td><td>0.888</td><td>0.125</td><td>0.288</td><td>0.891</td><td class="l hp"><i>γ<sub>m</sub></i> = 0.07<br><i>mss</i> = 10</td></tr>
+<tr><th class="l" scope="row">Random Forest</th><td>0.134</td><td>0.292</td><td>0.884</td><td>0.128</td><td>0.289</td><td>0.889</td><td class="l hp"><i>T</i> = 225<br>out-of-bag samples = True<br>Criterion = Friedman MSE</td></tr>
+<tr><th class="l" scope="row">Extra Trees</th><td>0.139</td><td>0.300</td><td>0.879</td><td>0.128</td><td>0.291</td><td>0.889</td><td class="l hp"><i>d</i> = 14<br>out-of-bag samples = True</td></tr>
+</tbody></table></div>
+<p class="table-note">Note: Details on hyperparameters can be found in the research paper.</p>
+</figure>
 <div style="margin-bottom: 30px;">
 
 </div>
@@ -374,6 +386,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
   </div>
 </footer>
+
+<script>
+/* Article helpers: "On this page" contents and tap-to-enlarge figures. */
+(function () {
+  var article = document.querySelector("#pageContent .articleBandContent > .section.level1, #pageContent .articleBandContent > section.level1");
+  if (!article) return;
+
+  // Contents box for articles with three or more sections.
+  var heads = Array.prototype.filter.call(article.querySelectorAll("h2"), function (h) {
+    return (h.closest(".section, section") || {}).id;
+  });
+  if (heads.length >= 3) {
+    var box = document.createElement("details");
+    box.className = "page-toc";
+    if (!window.matchMedia("(max-width: 760px)").matches) box.open = true;
+    var html = "<summary>On this page</summary><ol>";
+    heads.forEach(function (h) {
+      html += '<li><a href="#' + h.closest(".section, section").id + '">' + h.textContent.trim() + "</a></li>";
+    });
+    box.innerHTML = html + "</ol>";
+    var dek = article.querySelector("p.dek"), h1 = article.querySelector("h1");
+    var after = dek || h1;
+    if (after) after.parentNode.insertBefore(box, after.nextSibling);
+  }
+
+  // Figures open full screen on click or tap.
+  var lightbox = null, lastFocus = null;
+  function close() {
+    if (!lightbox) return;
+    lightbox.remove(); lightbox = null;
+    document.removeEventListener("keydown", onKey);
+    if (lastFocus) lastFocus.focus();
+  }
+  function onKey(e) { if (e.key === "Escape") close(); }
+  function open(img) {
+    lastFocus = img;
+    lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-label", img.alt || "Figure");
+    lightbox.innerHTML = '<img alt=""><button type="button" aria-label="Close">×</button>';
+    lightbox.querySelector("img").src = img.currentSrc || img.src;
+    lightbox.addEventListener("click", close);
+    document.body.appendChild(lightbox);
+    document.addEventListener("keydown", onKey);
+    lightbox.querySelector("button").focus();
+  }
+  article.querySelectorAll("img").forEach(function (img) {
+    if (img.closest("a")) return;              // linked images keep their link (e.g. downloads)
+    img.classList.add("zoomable");
+    img.setAttribute("tabindex", "0");
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", "Enlarge figure" + (img.alt ? ": " + img.alt : ""));
+    img.addEventListener("click", function () { open(img); });
+    img.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(img); } });
+  });
+})();
+</script>
 
 
 

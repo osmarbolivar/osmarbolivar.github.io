@@ -25,7 +25,15 @@ library(knitr)
 library(kableExtra)
 ```
 
+```{=html}
+<div class="article-kicker"><a href="portfolio.html">Portfolio</a><span aria-hidden="true">/</span><span>Article</span></div>
+```
+
 # How early childhood determines success?
+
+```{=html}
+<p class="dek">Forthcoming article on how early childhood shapes later success.</p>
+```
 
 Work in progress. **FORTHCOMING**.
 
