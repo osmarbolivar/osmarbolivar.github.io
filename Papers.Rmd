@@ -38,7 +38,7 @@ output:
     <nav class="jump" aria-label="Sections">
       <a href="#journal-articles">Journal articles <span>10</span></a>
       <a href="#book-chapters">Book chapters <span>4</span></a>
-      <a href="#working-papers">Working papers <span>9</span></a>
+      <a href="#working-papers">Working papers <span>8</span></a>
     </nav>
   </div>
 </div>
@@ -249,15 +249,6 @@ output:
           <a class="pub-title" href="https://scioteca.caf.com/handle/123456789/1910" target="_blank" rel="noopener">Roads illuminate development: Using nightlight luminosity to assess the impact of transport infrastructure</a>
           <div class="pub-authors"><b>Bolivar, O.</b></div>
           <div class="pub-venue"><em>Research Department Working Papers 1910</em>, CAF - Development Bank of Latin America.</div>
-        </div>
-      </li>
-      <li class="pub">
-        <div class="pub-year">2017</div>
-        <div class="pub-body">
-          <a class="pub-title" href="docs/papers_docs/Final_Desdolarización en Bolivia.pdf" target="_blank" rel="noopener">Desdolarización en Bolivia: Interacción con la Política Monetaria y el Tipo de Cambio</a>
-          <div class="pub-authors"><b>Bolivar, O.</b></div>
-          <div class="pub-venue"><em>Proceeding Paper - Call for Papers: 2017 Meeting of Economists of Bolivia</em>, Central Bank of Bolivia.</div>
-          <div class="pub-tags"><span class="tag">PDF</span><span class="tag lang" title="En español">ES</span></div>
         </div>
       </li>
     </ol>
