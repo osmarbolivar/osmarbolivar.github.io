@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://osmarbolivar.github.io/sitemap.xml
+Sitemap: https://osmarbolivar.github.io/bolivia-exchange-rate-dashboard/sitemap.xml
